@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://doe8ab7csx7j5"]
+
+[sub_resource type="GDScript" id="GDScript_v4sot"]
+script/source = "extends Area2D
+
+@export var target_scene : String
+@export var entrance_name : String = \"default\"
+
+func _ready():
+	body_entered.connect(_on_body_entered)
+
+
+func _on_body_entered(body):
+	if body.name == \"Player1\":
+		GameState.entrance_name = \"SpawnPoint_CabinExit\"
+		get_tree().change_scene_to_file(\"res://MysticForest/scenes/world/CabinInside.tscn\")
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uavd7"]
+size = Vector2(514.5, 782.25)
+
+[node name="Portal" type="Area2D"]
+collision_layer = 2
+script = SubResource("GDScript_v4sot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(271.75, 408.875)
+shape = SubResource("RectangleShape2D_uavd7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

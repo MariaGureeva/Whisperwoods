@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmumalc1gxqm4"]
+
+[ext_resource type="Script" uid="uid://dcsin5c3ewtxl" path="res://MysticForest/scripts/attunement_overlay.gd" id="1_abp10"]
+[ext_resource type="Texture2D" uid="uid://dd55k735fcoby" path="res://MysticForest/assets/Textures/black-and-white-grunge-frame-for-dramatic-and-cinematic-effect-old-dirty-overlay-vignette-png.png" id="2_abp10"]
+
+[sub_resource type="Theme" id="Theme_kri2o"]
+
+[node name="Attunement_Overlay" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_abp10")
+
+[node name="FaderContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="FaderContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1293.0
+offset_top = -1133.0
+offset_right = 2771.0
+offset_bottom = 2350.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.156863, 0, 0.227451)
+
+[node name="TextureRect" type="TextureRect" parent="FaderContainer"]
+modulate = Color(0, 0.34902, 0.133333, 0.403922)
+self_modulate = Color(0, 1, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -16.0
+offset_right = 1107.0
+offset_bottom = 606.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_kri2o")
+texture = ExtResource("2_abp10")

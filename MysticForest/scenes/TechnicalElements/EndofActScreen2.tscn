@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://kfs1qm0a70sw"]
+
+[ext_resource type="Script" uid="uid://dierr66wsunps" path="res://MysticForest/scripts/endof_act_screen_2.gd" id="1_8so62"]
+[ext_resource type="FontFile" uid="uid://b5lej2fwmusx6" path="res://MysticForest/Fonts/OldEnglishGothic/OldEnglishGothicPixelRegular-gx1jp.otf" id="2_7ep6v"]
+
+[sub_resource type="Theme" id="Theme_ddbc0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_phr88"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_8so62")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1151.0
+offset_bottom = 648.0
+theme = SubResource("Theme_ddbc0")
+theme_override_colors/font_color = Color(0.969621, 0.783763, 0.861329, 1)
+theme_override_fonts/font = ExtResource("2_7ep6v")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxFlat_phr88")
+text = "End  of Act  2"
+horizontal_alignment = 1
+vertical_alignment = 1

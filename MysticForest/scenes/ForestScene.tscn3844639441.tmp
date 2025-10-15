@@ -1,0 +1,227 @@
+[gd_scene load_steps=35 format=3 uid="uid://gtyl6r86g0pq"]
+
+[ext_resource type="Texture2D" uid="uid://bq707uxy853v5" path="res://MysticForest/assets/tilesets/Grass Tiles.png" id="1_7jk41"]
+[ext_resource type="Texture2D" uid="uid://bb8qnbh7115ju" path="res://MysticForest/assets/tilesets/Sprite-0002.png" id="2_3n85q"]
+[ext_resource type="PackedScene" uid="uid://bfwgnggi8x7gm" path="res://MysticForest/scenes/character_body_2d.tscn" id="3_gay16"]
+[ext_resource type="Texture2D" uid="uid://c5vsxesaxt1tj" path="res://MysticForest/scenes/player/CharacterBody2D.png" id="4_i2v5l"]
+[ext_resource type="Texture2D" uid="uid://cq6isu7cjwnyb" path="res://MysticForest/scenes/player/Walk right/Character walk right1.png" id="5_88bsb"]
+[ext_resource type="Texture2D" uid="uid://dmfagyxcoufuw" path="res://MysticForest/scenes/player/Walk right/Character walk right2.png" id="6_o7pva"]
+[ext_resource type="Texture2D" uid="uid://b5bj5pl7tykl4" path="res://MysticForest/scenes/player/Walk right/Character walk right3.png" id="7_2scph"]
+[ext_resource type="Texture2D" uid="uid://b4iip4pbo22m5" path="res://MysticForest/scenes/player/Walk right/Character walk right4.png" id="8_f7sc8"]
+[ext_resource type="Texture2D" uid="uid://d08rfgd0qnid3" path="res://MysticForest/scenes/player/Walk right/Character walk right5.png" id="9_3fjv2"]
+[ext_resource type="Texture2D" uid="uid://0yx2gv7h035y" path="res://MysticForest/scenes/player/Walk right/Character walk right6.png" id="10_5o87c"]
+[ext_resource type="Texture2D" uid="uid://r4007k53vpuw" path="res://MysticForest/scenes/player/Walk right/Character walk right7.png" id="11_vot2p"]
+[ext_resource type="Texture2D" uid="uid://bausowsj23m00" path="res://MysticForest/scenes/player/Walk right/Character walk right8.png" id="12_nbmqh"]
+[ext_resource type="Texture2D" uid="uid://dctccsetscfty" path="res://MysticForest/scenes/player/Walk left/Character walk left1.png" id="13_elkcc"]
+[ext_resource type="Texture2D" uid="uid://b5iklaigc8s5f" path="res://MysticForest/scenes/player/Walk left/Character walk left2.png" id="14_6m5fd"]
+[ext_resource type="Texture2D" uid="uid://ckd2hmd6ehd0l" path="res://MysticForest/scenes/player/Walk left/Character walk left3.png" id="15_w3pn5"]
+[ext_resource type="Texture2D" uid="uid://bmg2hxrel7s5f" path="res://MysticForest/scenes/player/Walk left/Character walk left4.png" id="16_i82pj"]
+[ext_resource type="Texture2D" uid="uid://fbbndqyoomef" path="res://MysticForest/scenes/player/Walk left/Character walk left5.png" id="17_s2opy"]
+[ext_resource type="Texture2D" uid="uid://d0swflldfdxvd" path="res://MysticForest/scenes/player/Walk left/Character walk left6.png" id="18_audwd"]
+[ext_resource type="Texture2D" uid="uid://cnm01gyqe0ear" path="res://MysticForest/scenes/player/Walk left/Character walk left7.png" id="19_pu5aa"]
+[ext_resource type="Texture2D" uid="uid://ctxkcwk54bn8q" path="res://MysticForest/scenes/player/Walk left/Character walk left8.png" id="20_w1hnj"]
+[ext_resource type="Texture2D" uid="uid://c7gv0fxwufmch" path="res://MysticForest/assets/objects/CabinSprite.png" id="21_i7iiv"]
+[ext_resource type="Script" uid="uid://cttvepu1jcl7j" path="res://MysticForest/scripts/cabin_sprite.gd" id="22_3pokc"]
+[ext_resource type="Script" uid="uid://cwieb1mqg5g48" path="res://MysticForest/scripts/area_2d.gd" id="23_1cbp7"]
+[ext_resource type="PackedScene" uid="uid://d3pxik8skmaop" path="res://MysticForest/scenes/Portal.tscn" id="24_3n85q"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7exo"]
+texture = ExtResource("1_7jk41")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+20:0/0 = 0
+21:0/0 = 0
+22:0/0 = 0
+23:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mnefy"]
+texture = ExtResource("2_3n85q")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fqabo"]
+tile_size = Vector2i(320, 320)
+sources/1 = SubResource("TileSetAtlasSource_o7exo")
+sources/2 = SubResource("TileSetAtlasSource_mnefy")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsyvo"]
+size = Vector2(202, 74)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8tj1o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_i2v5l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_88bsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o7pva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2scph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_f7sc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3fjv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5o87c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vot2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nbmqh")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_elkcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6m5fd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_w3pn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_i82pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_s2opy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_audwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pu5aa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_w1hnj")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 8.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_qsyvo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tdg1m"]
+size = Vector2(1857, 1532.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hd73b"]
+size = Vector2(325, 523)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qsyvo"]
+font_size = 66
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3n85q"]
+size = Vector2(372.5, 292)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(35, -2)
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(5, 2)
+tile_set = SubResource("TileSet_fqabo")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 786433, 0, 1, 786433, 0, 65536, 1, 0, 131072, 131073, 0, 196608, 1507329, 0, 2, 786433, 0, 3, 786433, 0, 65538, 1, 0, 65537, 262145, 0, 262144, 393217, 0, 131073, 393217, 0, 196609, 196609, 0, 196610, 196609, 0, 131074, 1, 0, 131075, 1, 0, 196611, 196609, 0, 196612, 196609, 0, 196613, 196609, 0, 131077, 196609, 0, 131076, 1, 0, 65540, 1, 0, 65539, 196609, 0, 65541, 1, 0, 4, 720897, 0, 5, 720897, 0, 131078, 196609, 0, 6, 720897, 0, 7, 720897, 0, 8, 1376257, 0, 65544, 262145, 0, 131080, 1, 0, 196616, 1, 0, 262152, 262145, 0, 262151, 720897, 0, 262150, 458753, 0, 262149, 458753, 0, 262148, 524289, 0, 262147, 327681, 0, 262146, 327681, 0, 262145, 327681, 0, 196614, 655361, 0, 196615, 196609, 0, 131079, 327681, 0, 65542, 1, 0, 65543, 1, 0, 262143, 1, 0, 65535, 720897, 0, 131071, 393217, 0, 196607, 196609, 0, 327679, 1, 0, 262153, 262145, 0, 196617, 393217, 0, 131081, 262145, 0, 65545, 262145, 0, 9, 720897, 0, 10, 720897, 0, 65546, 262145, 0, 131082, 262145, 0, 196618, 262145, 0, 262154, 262145, 0, 65533, 720897, 0, 65534, 393217, 0, 131070, 262145, 0, 196606, 1, 0, 262142, 262145, 0, 327678, 1, 0, 327677, 262145, 0, 262141, 1, 0, 196605, 262145, 0, 131069, 262145, 0)
+
+[node name="Player1" parent="." instance=ExtResource("3_gay16")]
+z_index = 2
+position = Vector2(504, 86)
+collision_mask = 63
+speed = 400
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Player1"]
+position = Vector2(621, 570)
+shape = SubResource("RectangleShape2D_qsyvo")
+
+[node name="Player" type="AnimatedSprite2D" parent="Player1"]
+position = Vector2(639, 278)
+sprite_frames = SubResource("SpriteFrames_8tj1o")
+animation = &"walk_left"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1296, 320)
+offset = Vector2(5, 5)
+zoom = Vector2(0.25, 0.25)
+
+[node name="CabinSprite" type="Sprite2D" parent="."]
+visibility_layer = 9
+z_index = 1
+position = Vector2(1871, -286)
+texture = ExtResource("21_i7iiv")
+script = ExtResource("22_3pokc")
+
+[node name="CabinEntrance" type="StaticBody2D" parent="CabinSprite"]
+position = Vector2(169, 402)
+collision_layer = 3
+collision_mask = 3
+script = SubResource("GDScript_qsyvo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CabinSprite/CabinEntrance"]
+position = Vector2(-213, -638)
+shape = SubResource("RectangleShape2D_tdg1m")
+
+[node name="Area2D" type="Area2D" parent="CabinSprite/CabinEntrance"]
+position = Vector2(44, 269)
+collision_layer = 2
+script = ExtResource("23_1cbp7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CabinSprite/CabinEntrance/Area2D"]
+position = Vector2(1665, -1609)
+shape = SubResource("RectangleShape2D_hd73b")
+
+[node name="Text" type="Label" parent="CabinSprite/CabinEntrance/Area2D"]
+offset_left = -306.0
+offset_top = -845.0
+offset_right = 191.0
+offset_bottom = -754.0
+text = "Press E to enter"
+label_settings = SubResource("LabelSettings_qsyvo")
+horizontal_alignment = 1
+
+[node name="Portal" parent="." instance=ExtResource("24_3n85q")]
+position = Vector2(1895, 448)
+collision_mask = 3
+nextSceneName = "CabinInside"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
+position = Vector2(124.75, -146)
+shape = SubResource("RectangleShape2D_3n85q")
+
+[connection signal="body_entered" from="CabinSprite/CabinEntrance/Area2D" to="CabinSprite/CabinEntrance/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="CabinSprite/CabinEntrance/Area2D" to="CabinSprite/CabinEntrance/Area2D" method="_on_body_exited"]

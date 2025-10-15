@@ -1,0 +1,171 @@
+[gd_scene load_steps=29 format=3 uid="uid://b5xpjd3t8ox5b"]
+
+[ext_resource type="Texture2D" uid="uid://dlg8qiieymeuq" path="res://MysticForest/assets/tilesets/Frogs houses/Lily frog house/Tiles fo the Lily's inside house.png" id="1_g5oob"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="1_m4q4u"]
+[ext_resource type="Texture2D" uid="uid://hjbx231b057a" path="res://MysticForest/assets/tilesets/Borders.png" id="2_5cndt"]
+[ext_resource type="Texture2D" uid="uid://cftmbvotk2b4s" path="res://MysticForest/assets/tilesets/Frogs houses/Grumble house/tile001.png" id="3_5cndt"]
+[ext_resource type="PackedScene" uid="uid://yqdtpf6d1d5x" path="res://MysticForest/scenes/Characters/lily_frog.tscn" id="4_05pmb"]
+[ext_resource type="Texture2D" uid="uid://ctrxyw42jaoe5" path="res://MysticForest/assets/objects/Frogs houses interior/Carpet blue big.png" id="4_jihnj"]
+[ext_resource type="Texture2D" uid="uid://b1kvavvasm1e4" path="res://MysticForest/assets/objects/Frogs houses interior/Bed2.png" id="5_lo0fv"]
+[ext_resource type="Script" uid="uid://c8v1uuveu60f5" path="res://MysticForest/scenes/world/interaction_area_lily.gd" id="5_yk2ex"]
+[ext_resource type="Script" uid="uid://dirsg770obail" path="res://MysticForest/scenes/world/portalbackto_mistmarsh.gd" id="7_ob4t3"]
+[ext_resource type="PackedScene" uid="uid://caaaytigj6ebi" path="res://MysticForest/scenes/TechnicalElements/Main_DialogueUI.tscn" id="8_ml5wc"]
+[ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="8_tkvj8"]
+[ext_resource type="Texture2D" uid="uid://ubwqen4pdnui" path="res://MysticForest/assets/objects/Frogs houses interior/Vinyl record4.png" id="11_tkvj8"]
+[ext_resource type="Texture2D" uid="uid://bi1n32pwyd2v7" path="res://MysticForest/assets/objects/Frogs houses interior/Lily's flutes.png" id="12_1oe1s"]
+[ext_resource type="Texture2D" uid="uid://bfe1roohet6jw" path="res://MysticForest/assets/objects/Frogs houses interior/Books.png" id="13_iifpk"]
+[ext_resource type="Texture2D" uid="uid://c1j5a3byph1j5" path="res://MysticForest/assets/objects/Frogs houses interior/Couch.png" id="14_l42tn"]
+[ext_resource type="Texture2D" uid="uid://2duy40213cve" path="res://MysticForest/assets/objects/Frogs houses interior/Coffee table.png" id="15_xruh2"]
+[ext_resource type="Texture2D" uid="uid://dorr1lok8pk6k" path="res://MysticForest/assets/objects/Frogs houses interior/Small Vinyl record4.png" id="16_aehyt"]
+[ext_resource type="Texture2D" uid="uid://b1yys6gx23ob0" path="res://MysticForest/assets/objects/Frogs houses interior/Small Vinyl record3.png" id="17_oo63i"]
+[ext_resource type="Texture2D" uid="uid://csyokcof83tix" path="res://MysticForest/assets/objects/Frogs houses interior/Small Vinyl record2.png" id="18_bku2r"]
+[ext_resource type="Texture2D" uid="uid://dmwxqnnfq4txi" path="res://MysticForest/assets/objects/Frogs houses interior/Plant.png" id="19_lo0fv"]
+[ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="21_1oe1s"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_05pmb"]
+texture = ExtResource("1_g5oob")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m4q4u"]
+texture = ExtResource("2_5cndt")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_yk2ex"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_05pmb")
+sources/1 = SubResource("TileSetAtlasSource_m4q4u")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yk2ex"]
+texture = ExtResource("3_5cndt")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ob4t3"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_yk2ex")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yk2ex"]
+size = Vector2(794.25, 101)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ob4t3"]
+size = Vector2(678, 910)
+
+[node name="Lily\'s house" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_yk2ex")
+format = 2
+layer_0/tile_data = PackedInt32Array(-131072, 0, 805306369, -65536, 0, 268435457, -131071, 0, 1, -65535, 0, 0, -131070, 0, 805306369, -65534, 0, 805306368, -131069, 0, 805306369, -65533, 0, 1, -131068, 0, 0, -65532, 0, 536870912, 0, 65536, 0, 1, 65536, 0, 2, 65536, 0, 3, 65536, 0, 4, 65536, 0, 65540, 65536, 0, 131076, 65536, 0, 131075, 65536, 0, 131074, 65536, 0, 131073, 65536, 0, 131072, 65536, 0, 65536, 65536, 0, 65537, 65536, 0, 65538, 65536, 0, 65539, 65536, 0, 196608, 65536, 0, 196609, 65536, 0, 196610, 65536, 0, 196611, 65536, 0, 196612, 65536, 0, -196608, 196609, 0, -196607, 196609, 0, -196606, 196609, 0, -196605, 196609, 0, -196604, 196609, 0, -196603, 458753, 0, -131073, 524289, 0, -65537, 131073, 0, -1, 131073, 0, 65535, 131073, 0, 131071, 131073, 0, 196607, 131073, 0, 262143, 131073, 0, -131067, 65537, 0, -65531, 65537, 0, 5, 65537, 0, 65541, 65537, 0, 131077, 65537, 0, 196613, 65537, 0, 262149, 393217, 0, 327679, 327681, 0, 262144, 262145, 0, 262145, 393217, 0, 262147, 327681, 0, 262148, 262145, 0)
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ob4t3")
+format = 2
+layer_0/tile_data = PackedInt32Array(-131071, 0, 0, -131069, 0, 0)
+
+[node name="CarpetBlueBig" type="Sprite2D" parent="."]
+position = Vector2(722, 592)
+texture = ExtResource("4_jihnj")
+
+[node name="Bed2" type="Sprite2D" parent="."]
+position = Vector2(1284, 225)
+texture = ExtResource("5_lo0fv")
+
+[node name="Spawn from marshes" type="Marker2D" parent="."]
+position = Vector2(804, 955)
+
+[node name="Portalbackto mistmarsh" type="Area2D" parent="."]
+script = ExtResource("7_ob4t3")
+target_scene_path = "uid://7btypbnb40gd"
+target_spawn_point_name = "Lily's house"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portalbackto mistmarsh"]
+position = Vector2(792.125, 1299)
+shape = SubResource("RectangleShape2D_yk2ex")
+
+[node name="Lily frog" parent="." instance=ExtResource("4_05pmb")]
+position = Vector2(1278, 679)
+
+[node name="InteractionArea" type="Area2D" parent="Lily frog"]
+script = ExtResource("5_yk2ex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lily frog/InteractionArea"]
+position = Vector2(3, 137)
+shape = SubResource("RectangleShape2D_ob4t3")
+
+[node name="PromptLabel" type="Label" parent="Lily frog"]
+offset_left = -180.0
+offset_top = -577.0
+offset_right = 183.0
+offset_bottom = -210.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_tkvj8")
+theme_override_font_sizes/font_size = 300
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueUI" parent="." instance=ExtResource("8_ml5wc")]
+
+[node name="VinylRecord4" type="Sprite2D" parent="."]
+position = Vector2(158, -486)
+texture = ExtResource("11_tkvj8")
+
+[node name="Lily\'sFlutes" type="Sprite2D" parent="."]
+position = Vector2(801, -407)
+texture = ExtResource("12_1oe1s")
+
+[node name="Books" type="Sprite2D" parent="."]
+position = Vector2(674, -78)
+texture = ExtResource("13_iifpk")
+
+[node name="Couch" type="Sprite2D" parent="."]
+position = Vector2(234, -107)
+scale = Vector2(0.944, 0.944)
+texture = ExtResource("14_l42tn")
+
+[node name="CoffeeTable" type="Sprite2D" parent="."]
+position = Vector2(184, 155)
+texture = ExtResource("15_xruh2")
+
+[node name="SmallVinylRecord4" type="Sprite2D" parent="."]
+position = Vector2(1320, -569)
+texture = ExtResource("16_aehyt")
+
+[node name="SmallVinylRecord3" type="Sprite2D" parent="."]
+position = Vector2(1320, -456)
+texture = ExtResource("17_oo63i")
+
+[node name="SmallVinylRecord2" type="Sprite2D" parent="."]
+position = Vector2(1320, -343)
+texture = ExtResource("18_bku2r")
+
+[node name="Player1" parent="." instance=ExtResource("1_m4q4u")]
+position = Vector2(91, 514)
+speed = 1000
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+zoom = Vector2(0.3, 0.3)
+limit_left = -990
+limit_right = 2620
+
+[node name="Plant" type="Sprite2D" parent="."]
+position = Vector2(153, 754)
+texture = ExtResource("19_lo0fv")
+
+[node name="UI" parent="." instance=ExtResource("21_1oe1s")]

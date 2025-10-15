@@ -1,0 +1,183 @@
+[gd_scene load_steps=26 format=3 uid="uid://bffmhyiq18uw"]
+
+[ext_resource type="Script" uid="uid://cui2mplu13qh6" path="res://MysticForest/scripts/weaver_spider.gd" id="1_xjory"]
+[ext_resource type="Texture2D" uid="uid://ccb8c73wxneo8" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation1.png" id="2_ekdoo"]
+[ext_resource type="Texture2D" uid="uid://bo7d0u7youm5u" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation2.png" id="3_y8ned"]
+[ext_resource type="Texture2D" uid="uid://ccdjdamwxmots" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation3.png" id="4_knqjb"]
+[ext_resource type="Texture2D" uid="uid://ns86t0duw76i" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation4.png" id="5_x7w6y"]
+[ext_resource type="Texture2D" uid="uid://c0ljlpsemwo5s" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation5.png" id="6_pmvb8"]
+[ext_resource type="Texture2D" uid="uid://dy4r67w633vtp" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation6.png" id="7_aobhi"]
+[ext_resource type="Texture2D" uid="uid://c36u0s6ojld2x" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation7.png" id="8_yvrpw"]
+[ext_resource type="Texture2D" uid="uid://bp67mqgjh5hbp" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation8.png" id="9_jhx7h"]
+[ext_resource type="Texture2D" uid="uid://ddkdlnfpoh1qj" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation9.png" id="10_83011"]
+[ext_resource type="Texture2D" uid="uid://b22si2ahfv5mm" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation10.png" id="11_jkn2q"]
+[ext_resource type="Texture2D" uid="uid://bdlmjd1827hbf" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation11.png" id="12_bu4rx"]
+[ext_resource type="Texture2D" uid="uid://dp53evh8iroeb" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation12.png" id="13_p3oac"]
+[ext_resource type="Texture2D" uid="uid://cpsugn3s2cn1v" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation13.png" id="14_1bw3p"]
+[ext_resource type="Texture2D" uid="uid://ba4qg81j6c13p" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation14.png" id="15_152tv"]
+[ext_resource type="Texture2D" uid="uid://bcjhflech76s8" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation15.png" id="16_khcke"]
+[ext_resource type="Texture2D" uid="uid://2h052sn4xoy3" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation16.png" id="17_5evsp"]
+[ext_resource type="Texture2D" uid="uid://cvk7fsxkxyaqe" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation17.png" id="18_pqphv"]
+[ext_resource type="Texture2D" uid="uid://cdwno2e2jp3xu" path="res://MysticForest/assets/characters/Spiders/Cross Spider/3 act animations/Cross spider sprites1.png" id="19_aobhi"]
+[ext_resource type="Texture2D" uid="uid://du7lnr57wljjg" path="res://MysticForest/assets/characters/Spiders/Cross Spider/hurt animation/Cross spider hurt animation1.png" id="19_y8ned"]
+[ext_resource type="Texture2D" uid="uid://m8h3xtu1t3tt" path="res://MysticForest/assets/characters/Spiders/Cross Spider/hurt animation/Cross spider hurt animation2.png" id="20_knqjb"]
+[ext_resource type="Texture2D" uid="uid://chhaolb2syehd" path="res://MysticForest/assets/characters/Spiders/Cross Spider/3 act animations/Cross spider sprites2.png" id="20_yvrpw"]
+[ext_resource type="Texture2D" uid="uid://kdifx0s1silf" path="res://MysticForest/assets/characters/Spiders/Cross Spider/3 act animations/Cross spider sprites3.png" id="23_jhx7h"]
+[ext_resource type="Texture2D" uid="uid://7ery23lseyu0" path="res://MysticForest/assets/characters/Spiders/Cross Spider/3 act animations/Cross spider sprites4.png" id="24_83011"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lw7tg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_pqphv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_5evsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_khcke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_152tv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1bw3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_p3oac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bu4rx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jkn2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_83011")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jhx7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yvrpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aobhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pmvb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x7w6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_knqjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y8ned")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ekdoo")
+}],
+"loop": false,
+"name": &"appear",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ekdoo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y8ned")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_knqjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x7w6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pmvb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aobhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yvrpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jhx7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_83011")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jkn2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bu4rx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_p3oac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1bw3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_152tv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_khcke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_5evsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_pqphv")
+}],
+"loop": false,
+"name": &"escape",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_aobhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yvrpw")
+}],
+"loop": true,
+"name": &"healed",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_y8ned")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_knqjb")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_jhx7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_83011")
+}],
+"loop": true,
+"name": &"sorrow",
+"speed": 5.0
+}]
+
+[node name="WeaverSpider" type="CharacterBody2D"]
+script = ExtResource("1_xjory")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lw7tg")
+animation = &"escape"
+frame = 16
+frame_progress = 1.0

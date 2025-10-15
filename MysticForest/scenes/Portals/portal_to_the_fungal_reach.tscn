@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0gwcwuhm1ltg"]
+
+[ext_resource type="Script" uid="uid://q7ve4w4u8yke" path="res://MysticForest/scenes/Portals/portal_to_the_fungal_reach.gd" id="1_21k25"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3dh4"]
+size = Vector2(467.5, 3295)
+
+[node name="Portal to the fungal Reach" type="Area2D"]
+script = ExtResource("1_21k25")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(233.25, 1069.5)
+shape = SubResource("RectangleShape2D_v3dh4")

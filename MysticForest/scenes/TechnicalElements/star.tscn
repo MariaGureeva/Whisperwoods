@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhesfc85r20xh"]
+
+[ext_resource type="Script" uid="uid://bdnpiukpn8cqt" path="res://MysticForest/scripts/star.gd" id="1_kpc43"]
+[ext_resource type="Texture2D" uid="uid://b2xo8d63r0egl" path="res://MysticForest/assets/UI/Star1.png" id="2_alyhq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2p03t"]
+radius = 25.0
+
+[node name="Star" type="Area2D"]
+process_mode = 3
+script = ExtResource("1_kpc43")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+process_mode = 3
+texture = ExtResource("2_alyhq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+process_mode = 3
+shape = SubResource("CircleShape2D_2p03t")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://2eabtav8nl14"]
+
+[ext_resource type="Script" uid="uid://dg0ntujpl52ny" path="res://MysticForest/scripts/resonance_source.gd" id="1_hprkt"]
+[ext_resource type="Texture2D" uid="uid://d3j178iil5l3w" path="res://MysticForest/assets/objects/Hortensia growing animation/Hortensia growing4.png" id="2_r0std"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kj1yu"]
+radius = 383.0
+height = 994.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_hprkt")
+
+[node name="HortensiaGrowing4" type="Sprite2D" parent="."]
+position = Vector2(-18, -109)
+texture = ExtResource("2_r0std")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-31, 0)
+shape = SubResource("CapsuleShape2D_kj1yu")

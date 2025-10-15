@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://sy3cg4ma50xm"]
+
+[ext_resource type="Script" uid="uid://bwqo3v022nbfu" path="res://sol_frog.gd" id="1_yloqp"]
+[ext_resource type="Texture2D" uid="uid://c6x2yfp5f5osd" path="res://MysticForest/assets/characters/Twins Grogs (La&Sol)/Sol frog1.png" id="2_i2clh"]
+[ext_resource type="Texture2D" uid="uid://btmhf2minn1xc" path="res://MysticForest/assets/characters/Twins Grogs (La&Sol)/Sol frog2.png" id="3_2xhtb"]
+[ext_resource type="Texture2D" uid="uid://ymwd41mx3rg" path="res://MysticForest/assets/characters/Twins Grogs (La&Sol)/Sol singing/Sol frog singing1.png" id="4_2xhtb"]
+[ext_resource type="Texture2D" uid="uid://yxfl5p42obmr" path="res://MysticForest/assets/characters/Twins Grogs (La&Sol)/Sol singing/Sol frog singing2.png" id="5_qtrvq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qtrvq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i2clh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2xhtb")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2xhtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qtrvq")
+}],
+"loop": true,
+"name": &"singing",
+"speed": 3.0
+}]
+
+[node name="Sol frog" type="CharacterBody2D"]
+script = ExtResource("1_yloqp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qtrvq")
+animation = &"singing"
+frame_progress = 0.631406

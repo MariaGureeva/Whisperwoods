@@ -1,0 +1,118 @@
+[gd_scene load_steps=18 format=3 uid="uid://cys528mqr2k0w"]
+
+[ext_resource type="Script" uid="uid://ca1morhu0fxyk" path="res://MysticForest/scripts/moon_lake_gate.gd" id="1_aidxn"]
+[ext_resource type="Texture2D" uid="uid://cjgfbgnhec3h3" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake9.png" id="2_nhpcr"]
+[ext_resource type="Texture2D" uid="uid://cd71qh758hxif" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake8.png" id="3_vscrc"]
+[ext_resource type="Texture2D" uid="uid://g3fjrd20edc6" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake7.png" id="4_6grl7"]
+[ext_resource type="Texture2D" uid="uid://oqklqx0puejw" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake6.png" id="5_ai2qu"]
+[ext_resource type="Texture2D" uid="uid://bsj01c1j288ju" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake5.png" id="6_iog4g"]
+[ext_resource type="Texture2D" uid="uid://bdexn45iypkk4" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake4.png" id="7_l46il"]
+[ext_resource type="Texture2D" uid="uid://c1xiuqyu8eonj" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake3.png" id="8_aqo5j"]
+[ext_resource type="Texture2D" uid="uid://dka40tkvpvd81" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake2.png" id="9_xr0e2"]
+[ext_resource type="Texture2D" uid="uid://bdwshye0hgmua" path="res://MysticForest/assets/objects/GatetoMoonLake/Gate to the moon lake1.png" id="10_2fo4p"]
+[ext_resource type="Script" uid="uid://roeb6xirqhm1" path="res://MysticForest/scripts/portal to moon lake.gd" id="11_nhpcr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ph0ni"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nhpcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vscrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6grl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ai2qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iog4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_l46il")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_aqo5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xr0e2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2fo4p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_m80ym"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GateToTheMoonLake:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_x333h"]
+resource_name = "vines_crawl"
+length = 2.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GateToTheMoonLake:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7mq2l"]
+_data = {
+&"RESET": SubResource("Animation_m80ym"),
+&"vines_crawl": SubResource("Animation_x333h")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m4k1m"]
+size = Vector2(978, 970)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aidxn"]
+size = Vector2(1181.5, 211)
+
+[node name="MoonLakeGate" type="Node2D"]
+script = ExtResource("1_aidxn")
+
+[node name="GateToTheMoonLake" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_ph0ni")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_7mq2l")
+}
+
+[node name="Portal" type="Area2D" parent="."]
+script = ExtResource("11_nhpcr")
+target_scene_path = "uid://dkp3xothyse8v"
+target_spawn_point_name = "Spawn in moon lake"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
+position = Vector2(-6, -80)
+shape = SubResource("RectangleShape2D_m4k1m")
+
+[node name="Collider" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collider"]
+position = Vector2(12.25, 666.5)
+shape = SubResource("RectangleShape2D_aidxn")

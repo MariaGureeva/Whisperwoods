@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://lpdmspii10tg"]
+
+[ext_resource type="Script" uid="uid://dqalajt4rabbf" path="res://melody_note.gd" id="1_8jcmi"]
+[ext_resource type="Texture2D" uid="uid://brhb3wo2vbf44" path="res://MysticForest/assets/characters/Faerling flying.png" id="2_8rkkc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_erla0"]
+radius = 339.178
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_re501"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="Curve_hben5"]
+_data = [Vector2(0, 0.640449), 0.0, 0.0, 0, 0, Vector2(1, 0.325843), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="MelodyNote" type="Area2D" groups=["echo_objects"]]
+script = ExtResource("1_8jcmi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_erla0")
+
+[node name="Faelights" type="CPUParticles2D" parent="."]
+z_index = 6
+material = SubResource("CanvasItemMaterial_re501")
+amount = 40
+texture = ExtResource("2_8rkkc")
+lifetime = 60.0
+speed_scale = 2.4
+explosiveness = 0.37
+randomness = 0.04
+local_coords = true
+emission_shape = 1
+emission_sphere_radius = 123.11
+direction = Vector2(100, 20)
+spread = 180.0
+gravity = Vector2(-3, -0.3)
+initial_velocity_min = 50.0
+initial_velocity_max = 80.0
+scale_amount_min = 0.5
+scale_amount_curve = SubResource("Curve_hben5")
+color = Color(1, 1, 0.419608, 1)

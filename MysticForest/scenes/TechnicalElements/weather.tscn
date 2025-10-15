@@ -1,0 +1,256 @@
+[gd_scene load_steps=8 format=3 uid="uid://c04ynarvxg5q8"]
+
+[ext_resource type="Script" uid="uid://j6ixj0ew8da7" path="res://MysticForest/scripts/weather.gd" id="1_qa4ud"]
+[ext_resource type="AudioStream" uid="uid://bfqyx35m8lnbv" path="res://MysticForest/Sound/copyright-free-rain-sounds-331497.mp3" id="2_q7uli"]
+
+[sub_resource type="Animation" id="Animation_gbigj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rainfall:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RainSound:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RainSound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AtmosphereTint:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.711001, 0.66409, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pd4i2"]
+resource_name = "Raining"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rainfall:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AtmosphereTint:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.0627451, 0, 0.286275, 0.0980392), Color(0.0627451, 0, 0.286275, 0.0980392)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RainSound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(-0.166667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("RainSound:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_17pxe"]
+resource_name = "Start_raining"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rainfall:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RainSound:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-80.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RainSound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(-0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AtmosphereTint:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(0.0627451, 0, 0.286275, 0.0980392)]
+}
+
+[sub_resource type="Animation" id="Animation_ydywg"]
+resource_name = "Stop_raining"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath("Rainfall:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RainSound:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -80.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RainSound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(-0.366667, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AtmosphereTint:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.0627451, 0, 0.286275, 0.0980392), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p8lw2"]
+_data = {
+&"RESET": SubResource("Animation_gbigj"),
+&"Raining": SubResource("Animation_pd4i2"),
+&"Start_raining": SubResource("Animation_17pxe"),
+&"Stop_raining": SubResource("Animation_ydywg")
+}
+
+[node name="Weather" type="Node2D"]
+z_index = 6
+script = ExtResource("1_qa4ud")
+
+[node name="Rainfall" type="CPUParticles2D" parent="."]
+position = Vector2(185, -1839)
+amount = 500
+emission_shape = 3
+emission_rect_extents = Vector2(5000, 10)
+spread = 0.0
+gravity = Vector2(0, 10000)
+initial_velocity_min = 1.0
+initial_velocity_max = 10.0
+scale_amount_min = 10.0
+scale_amount_max = 15.0
+color = Color(0.596078, 0.827451, 0.827451, 0.843137)
+
+[node name="RainSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_q7uli")
+parameters/looping = false
+
+[node name="AtmosphereTint" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(5000, 5000)
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -5135.0
+offset_top = -3317.0
+offset_right = 5550.0
+offset_bottom = 4749.0
+grow_vertical = 2
+color = Color(0.711001, 0.66409, 1, 1)
+
+[node name="WeatherController" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_p8lw2")
+}
+
+[node name="WeatherTimer" type="Timer" parent="."]

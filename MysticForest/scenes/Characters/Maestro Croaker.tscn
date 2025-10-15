@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://cu6eqo8nwkggc"]
+
+[ext_resource type="Texture2D" uid="uid://d1own4gchbegp" path="res://MysticForest/assets/characters/Maestro Croaker/Maestro Croaker1.png" id="1_h7tgb"]
+[ext_resource type="Script" uid="uid://dr6wd8kf8wcn1" path="res://MysticForest/scripts/maestro_croaker.gd" id="1_ybhpj"]
+[ext_resource type="Texture2D" uid="uid://ccuibpteah63t" path="res://MysticForest/assets/characters/Maestro Croaker/Maestro Croaker2.png" id="2_ybhpj"]
+[ext_resource type="Texture2D" uid="uid://bqhvj8cowg8hx" path="res://MysticForest/assets/characters/Maestro Croaker/Orchestrating/Maestro music3.png" id="4_hvfh5"]
+[ext_resource type="Texture2D" uid="uid://ctcvidgcog6ed" path="res://MysticForest/assets/characters/Maestro Croaker/Orchestrating/Maestro music4.png" id="5_qjvfr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qistw"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("1_h7tgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ybhpj")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_hvfh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qjvfr")
+}],
+"loop": true,
+"name": &"orchestrating",
+"speed": 3.0
+}]
+
+[node name="Maestro Croaker" type="CharacterBody2D"]
+script = ExtResource("1_ybhpj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qistw")
+animation = &"orchestrating"
+frame_progress = 0.259741

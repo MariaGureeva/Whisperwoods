@@ -1,0 +1,89 @@
+[gd_scene load_steps=16 format=3 uid="uid://c2d8jrlbngkjd"]
+
+[ext_resource type="Script" uid="uid://crdk56winmcbs" path="res://MysticForest/scripts/toadling.gd" id="1_psudv"]
+[ext_resource type="Texture2D" uid="uid://dj815kbvk5ov8" path="res://MysticForest/assets/characters/Toadling/Toadling sprite1.png" id="2_dpdb0"]
+[ext_resource type="Texture2D" uid="uid://cmkw3yx810orf" path="res://MysticForest/assets/characters/Toadling/Toadling sprite2.png" id="3_dk3ed"]
+[ext_resource type="Texture2D" uid="uid://dfk1133mvuqpb" path="res://MysticForest/assets/characters/Toadling/Toadling sprite3.png" id="4_efpes"]
+[ext_resource type="Texture2D" uid="uid://7glhs6spv6bj" path="res://MysticForest/assets/characters/Toadling/Walking/Up/Toadling walkin up1.png" id="5_l7oem"]
+[ext_resource type="Texture2D" uid="uid://cms62i2fnrk45" path="res://MysticForest/assets/characters/Toadling/Walking/Up/Toadling walkin up2.png" id="6_tew8p"]
+[ext_resource type="Texture2D" uid="uid://dyyseae1a4kmt" path="res://MysticForest/assets/characters/Toadling/Walking/Left/Toadling walkin left4.png" id="7_bcomm"]
+[ext_resource type="Texture2D" uid="uid://bk1v4xpr4eg0g" path="res://MysticForest/assets/characters/Toadling/Walking/Left/Toadling walkin left5.png" id="8_ttt66"]
+[ext_resource type="Texture2D" uid="uid://4q147v1y2yfj" path="res://MysticForest/assets/characters/Toadling/Walking/Left/Toadling walkin left6.png" id="9_x4w0a"]
+[ext_resource type="Texture2D" uid="uid://dxqk2l2bjy3ia" path="res://MysticForest/assets/characters/Toadling/Walking/Left/Toadling walkin left7.png" id="10_vkmds"]
+[ext_resource type="Texture2D" uid="uid://c5j28ydfsccgf" path="res://MysticForest/assets/characters/Toadling/Walking/Right/Toadling walkin4.png" id="11_5abx0"]
+[ext_resource type="Texture2D" uid="uid://bhs65naw2yvf5" path="res://MysticForest/assets/characters/Toadling/Walking/Right/Toadling walkin5.png" id="12_kvlep"]
+[ext_resource type="Texture2D" uid="uid://b6vd3lyeele6w" path="res://MysticForest/assets/characters/Toadling/Walking/Right/Toadling walkin6.png" id="13_udfdd"]
+[ext_resource type="Texture2D" uid="uid://dv44jabyqgvuj" path="res://MysticForest/assets/characters/Toadling/Walking/Right/Toadling walkin7.png" id="14_clskt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p3x4k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dpdb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dk3ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_efpes")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_l7oem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tew8p")
+}],
+"loop": true,
+"name": &"Up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_bcomm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ttt66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x4w0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vkmds")
+}],
+"loop": true,
+"name": &"Walk left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_5abx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kvlep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_udfdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_clskt")
+}],
+"loop": true,
+"name": &"Walk right",
+"speed": 5.0
+}]
+
+[node name="Toadling" type="CharacterBody2D"]
+script = ExtResource("1_psudv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(168.75, 170.75)
+scale = Vector2(0.105781, 0.105781)
+sprite_frames = SubResource("SpriteFrames_p3x4k")
+animation = &"Up"
+frame_progress = 0.908331
+speed_scale = 0.5

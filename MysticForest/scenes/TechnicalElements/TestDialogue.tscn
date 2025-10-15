@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcwdcapk3h5va"]
+
+[ext_resource type="Script" uid="uid://bxxy34k0wrppt" path="res://MysticForest/scenes/TechnicalElements/test_dialogue.gd" id="1_sxl20"]
+[ext_resource type="PackedScene" uid="uid://caaaytigj6ebi" path="res://MysticForest/scenes/TechnicalElements/Main_DialogueUI.tscn" id="2_7yeen"]
+
+[node name="TestDialogue" type="Node2D"]
+script = ExtResource("1_sxl20")
+
+[node name="DialogueUI" parent="." instance=ExtResource("2_7yeen")]

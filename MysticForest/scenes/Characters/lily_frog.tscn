@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://yqdtpf6d1d5x"]
+
+[ext_resource type="Texture2D" uid="uid://bxtn6l565pkvo" path="res://MysticForest/assets/characters/Lily frog/Lily frog1.png" id="1_1w6mm"]
+[ext_resource type="Script" uid="uid://eup43r2gcnek" path="res://MysticForest/scenes/Characters/lily_frog.gd" id="1_sqaeq"]
+[ext_resource type="Texture2D" uid="uid://crs0t6jwixi1c" path="res://MysticForest/assets/characters/Lily frog/Lily frog2.png" id="2_sqaeq"]
+[ext_resource type="Texture2D" uid="uid://dxpatwe3t6qsb" path="res://MysticForest/assets/characters/Lily frog/Play flute/Lily music1.png" id="4_27eui"]
+[ext_resource type="Texture2D" uid="uid://bh7ddh41ilc08" path="res://MysticForest/assets/characters/Lily frog/Play flute/Lily music2.png" id="5_7u3jd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_orkic"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1w6mm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_sqaeq")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_27eui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7u3jd")
+}],
+"loop": true,
+"name": &"play_flute",
+"speed": 3.0
+}]
+
+[node name="Lily frog" type="CharacterBody2D"]
+script = ExtResource("1_sqaeq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_orkic")
+animation = &"play_flute"
+frame_progress = 0.978625

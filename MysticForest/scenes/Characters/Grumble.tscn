@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://baravb86tegir"]
+
+[ext_resource type="Texture2D" uid="uid://dxeg482ig8esj" path="res://MysticForest/assets/characters/Grumble frog/Grumble frog1.png" id="1_6g227"]
+[ext_resource type="Script" uid="uid://b3q58werjemc0" path="res://MysticForest/scenes/Characters/grumble.gd" id="1_iqsk6"]
+[ext_resource type="Texture2D" uid="uid://c70xuiufd4lds" path="res://MysticForest/assets/characters/Grumble frog/Grumble frog3.png" id="2_ejj4k"]
+[ext_resource type="Texture2D" uid="uid://dsxspqoxdffdr" path="res://MysticForest/assets/characters/Grumble frog/Grumble frog2.png" id="2_iqsk6"]
+[ext_resource type="Texture2D" uid="uid://chgx1t15sj8ok" path="res://MysticForest/assets/characters/Grumble frog/Grumble frog4.png" id="3_8hxuu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tk8gs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6g227")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_iqsk6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ejj4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8hxuu")
+}],
+"loop": true,
+"name": &"play_drums",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_iqsk6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tk8gs")
+animation = &"play_drums"
+frame_progress = 0.927438

@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://58goqqrxli5g"]
+
+[ext_resource type="Script" uid="uid://cnoiq3justop7" path="res://MysticForest/scripts/shadow_spider.gd" id="1_ojtwn"]
+[ext_resource type="Texture2D" uid="uid://cmym6wxrq5f2e" path="res://MysticForest/assets/characters/Spiders/Shadow spider warrior1.png" id="2_tx2bj"]
+[ext_resource type="Texture2D" uid="uid://dscmlpmtkqnmq" path="res://MysticForest/assets/characters/Spiders/Shadow spider warrior2.png" id="3_7kwo7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bky4b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tx2bj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7kwo7")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4dir"]
+size = Vector2(977.5, 982)
+
+[node name="ShadowSpider" type="Area2D"]
+script = ExtResource("1_ojtwn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bky4b")
+animation = &"Idle"
+frame_progress = 0.478184
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 1)
+shape = SubResource("RectangleShape2D_q4dir")
+
+[node name="Timer" type="Timer" parent="."]

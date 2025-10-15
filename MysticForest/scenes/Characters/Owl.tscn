@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dabrdhyfuin55"]
+
+[ext_resource type="Texture2D" uid="uid://cey4mlf4gtlgg" path="res://MysticForest/assets/characters/Owl/OwlSleep.png" id="1_aj8js"]
+[ext_resource type="Texture2D" uid="uid://da8uyvxy07eqq" path="res://MysticForest/assets/characters/Owl/Owl.png" id="2_nthc5"]
+
+[node name="Owl" type="CharacterBody2D"]
+
+[node name="Sprite_Sleeping" type="Sprite2D" parent="."]
+position = Vector2(251, 318)
+texture = ExtResource("1_aj8js")
+
+[node name="Sprite_Awake" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(251, 318)
+texture = ExtResource("2_nthc5")

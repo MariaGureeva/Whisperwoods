@@ -1,0 +1,291 @@
+[gd_scene load_steps=34 format=3 uid="uid://d2i6hgwq4pwnk"]
+
+[ext_resource type="Script" uid="uid://dqo2wn7dnckvo" path="res://MysticForest/scripts/the_library.gd" id="1_8g5cr"]
+[ext_resource type="Texture2D" uid="uid://dwkfpoura7d30" path="res://MysticForest/assets/tilesets/Library/Library floor and walls.png" id="1_s8n7d"]
+[ext_resource type="Texture2D" uid="uid://hjbx231b057a" path="res://MysticForest/assets/tilesets/Borders.png" id="2_6bb6r"]
+[ext_resource type="Texture2D" uid="uid://drykrmy78rajl" path="res://MysticForest/assets/tilesets/Library/stairs and window for librairy.png" id="3_6bb6r"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="3_pv4yh"]
+[ext_resource type="Texture2D" uid="uid://qdkjnh7xuiwo" path="res://MysticForest/assets/tilesets/Library/Carpetred.png" id="4_lh4if"]
+[ext_resource type="PackedScene" uid="uid://dabrdhyfuin55" path="res://MysticForest/scenes/Characters/Owl.tscn" id="5_pv4yh"]
+[ext_resource type="PackedScene" uid="uid://caaaytigj6ebi" path="res://MysticForest/scenes/TechnicalElements/Main_DialogueUI.tscn" id="7_uqifq"]
+[ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="8_1i1eq"]
+[ext_resource type="Texture2D" uid="uid://d0qu71rpe887" path="res://MysticForest/assets/characters/Owl/Magical barrier.png" id="8_ke5sn"]
+[ext_resource type="Script" uid="uid://8guqq6gt7r21" path="res://MysticForest/scripts/portalbacktotheforest.gd" id="9_1i1eq"]
+[ext_resource type="Script" uid="uid://dgvsiahqcolpf" path="res://MysticForest/scripts/owl.gd" id="9_e6peu"]
+[ext_resource type="Script" uid="uid://dalpxkh0sfel1" path="res://MysticForest/scripts/echo_sphere_1.gd" id="13_1xr20"]
+[ext_resource type="Texture2D" uid="uid://brhb3wo2vbf44" path="res://MysticForest/assets/characters/Faerling flying.png" id="14_oxwcc"]
+[ext_resource type="Script" uid="uid://b0qre3tp4ew5w" path="res://MysticForest/scripts/echo_sphere_2.gd" id="15_jx55p"]
+[ext_resource type="Script" uid="uid://2tdnsfojx4dt" path="res://MysticForest/scripts/echo_sphere_3.gd" id="16_134hy"]
+[ext_resource type="Script" uid="uid://roeb6xirqhm1" path="res://MysticForest/scripts/portal to moon lake.gd" id="17_ke5sn"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8g5cr"]
+texture = ExtResource("1_s8n7d")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ke5sn"]
+texture = ExtResource("2_6bb6r")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_uqifq"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_8g5cr")
+sources/1 = SubResource("TileSetAtlasSource_ke5sn")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uqifq"]
+texture = ExtResource("3_6bb6r")
+texture_region_size = Vector2i(640, 960)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lh4if"]
+tile_size = Vector2i(640, 960)
+sources/1 = SubResource("TileSetAtlasSource_uqifq")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e6peu"]
+texture = ExtResource("3_6bb6r")
+texture_region_size = Vector2i(640, 960)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_w42yy"]
+tile_size = Vector2i(640, 960)
+sources/0 = SubResource("TileSetAtlasSource_e6peu")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1i1eq"]
+texture = ExtResource("4_lh4if")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0vxts"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_1i1eq")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0vxts"]
+texture = ExtResource("4_lh4if")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kndpt"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_0vxts")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_84mev"]
+size = Vector2(518, 677)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0vxts"]
+size = Vector2(142, 811)
+
+[sub_resource type="Curve" id="Curve_8g5cr"]
+_data = [Vector2(0.0243902, 0.449438), 0.0, 0.0, 0, 0, Vector2(0.495935, 0.741573), 0.0, 0.0, 0, 0, Vector2(0.99187, 0.247191), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ke5sn"]
+radius = 475.432
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6peu"]
+size = Vector2(577.5, 627)
+
+[node name="The Library" type="Node2D"]
+position = Vector2(76, -5)
+script = ExtResource("1_8g5cr")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_uqifq")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65541, 0, 0, 65540, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, -65536, 65536, 0, -65535, 131072, 0, -65534, 131072, 0, -65533, 131072, 805306368, -65532, 131072, 0, -65531, 65536, 536870912, -131071, 131072, 0, -131072, 131072, 268435456, -196608, 131072, 0, -131070, 131072, 268435456, -196606, 131072, 0, -196607, 131072, 0, -196605, 65536, 268435456, -131069, 131072, 0, -196604, 131072, 805306368, -131068, 131072, 0, -131067, 131072, 805306368, -196603, 131072, 0, -1, 131073, 0, -65537, 131073, 0, -196609, 524289, 0, -131073, 131073, 0, -262144, 196609, 0, -262143, 196609, 0, -262142, 196609, 0, -262141, 196609, 0, -262140, 196609, 0, -262139, 196609, 0, 6, 0, 0, 65542, 0, 0, 131078, 0, 0, 196614, 0, 0, 7, 0, 0, 65543, 0, 0, 131079, 0, 0, 196615, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262143, 131073, 0, 327679, 131073, 0, 8, 0, 0, 65544, 0, 0, 131080, 0, 0, 196616, 0, 0, 262152, 0, 0, 9, 0, 0, 65545, 0, 0, 131081, 0, 0, 196617, 0, 0, 262153, 0, 0, -196602, 131072, 0, -131066, 131072, 268435456, -65530, 131072, 805306368, -196601, 131072, 0, -131065, 131072, 0, -65529, 131072, 0, -65528, 131072, 0, -196600, 131072, 0, -131064, 131072, 0, 10, 0, 0, 65546, 0, 0, 131082, 0, 0, 196618, 0, 0, 262154, 0, 0, 262155, 65537, 0, 196619, 65537, 0, 131083, 65537, 0, 65547, 65537, 0, 11, 65537, 0, -196597, 65537, 0, -131061, 65537, 0, -65525, 65537, 0, -262133, 458753, 0, -262138, 196609, 0, -262137, 196609, 0, -262136, 196609, 0, -262135, 196609, 0, -262134, 196609, 0, 196607, 131073, 0, 131071, 131073, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327689, 0, 0, 327690, 0, 0, 327688, 0, 0, 327687, 0, 0, 327686, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 458762, 0, 0, 458761, 0, 0, 458760, 0, 0, 458759, 0, 0, 458758, 0, 0, 458757, 0, 0, 458756, 0, 0, 458755, 0, 0, 458754, 0, 0, 458753, 0, 0, 458752, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 589834, 0, 0, 589833, 0, 0, 589832, 0, 0, 589831, 0, 0, 589830, 0, 0, 589829, 0, 0, 589828, 0, 0, 589827, 0, 0, 589826, 0, 0, 589825, 0, 0, 589824, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 393215, 131073, 0, 458751, 131073, 0, 524287, 131073, 0, 589823, 131073, 0, 655359, 131073, 0, 720895, 131073, 0, 786431, 131073, 0, 327691, 65537, 0, 393227, 65537, 0, 458763, 65537, 0, 524299, 65537, 0, 589835, 65537, 0, 655371, 65537, 0, 720907, 65537, 0, 786432, 262145, 0, 786433, 262145, 0, 786434, 262145, 0, 786435, 262145, 0, 786436, 262145, 0, 786437, 262145, 0, 786438, 262145, 0, 786439, 262145, 0, 786440, 262145, 0, 786441, 262145, 0, 786442, 262145, 0, 851967, 327681, 0, 786443, 393217, 0)
+
+[node name="TileMap2" type="TileMap" parent="."]
+position = Vector2(320, 0)
+tile_set = SubResource("TileSet_lh4if")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65532, 1, 0, -65536, 65537, 0, -65534, 65537, 0, -65535, 131073, 0, -65533, 131073, 268435456)
+
+[node name="TileMap3" type="TileMap" parent="."]
+position = Vector2(300, 600)
+tile_set = SubResource("TileSet_w42yy")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 131072, 0, 1, 131072, 268435456, 3, 131072, 268435456, 4, 131072, 0, 131072, 131072, 0, 131074, 131072, 0, 131075, 131072, 0, 131076, 131072, 0)
+
+[node name="TileMap4" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_0vxts")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 131072, 1610612736, 65536, 0, 1342177280, 131072, 0, 1342177280, 196608, 0, 1342177280, 262144, 0, 1342177280, 327680, 0, 1342177280, 458752, 0, 1342177280, 393216, 131072, 805306368, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 131072, 1610612736, 393221, 0, 0, 393222, 131072, 1342177280, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 458756, 0, 1342177280, 524292, 0, 1342177280, 589828, 0, 1342177280, 524288, 0, 1342177280, 589824, 0, 1342177280, 327686, 0, 1342177280, 262150, 0, 1342177280, 196614, 0, 1342177280, 131078, 0, 1342177280, 65542, 0, 1342177280, 6, 131072, 1610612736, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 655360, 0, 1342177280, 720896, 0, 1342177280, 655364, 0, 1342177280, 720900, 131072, 1342177280, 720898, 0, 0, 720899, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 393226, 0, 0, 720897, 0, 0)
+
+[node name="TileMap5" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_kndpt")
+format = 2
+
+[node name="Player1" parent="." instance=ExtResource("3_pv4yh")]
+z_index = 1
+position = Vector2(-240, -276)
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2(620, 184)
+zoom = Vector2(0.3, 0.3)
+
+[node name="Owl" parent="." instance=ExtResource("5_pv4yh")]
+position = Vector2(1909, -432)
+
+[node name="Barrier" type="Sprite2D" parent="Owl"]
+visible = false
+position = Vector2(239, 338)
+scale = Vector2(2.30312, 2.53125)
+texture = ExtResource("8_ke5sn")
+
+[node name="Area2D" type="Area2D" parent="Owl"]
+script = ExtResource("9_e6peu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Owl/Area2D"]
+position = Vector2(249, 328.5)
+shape = SubResource("RectangleShape2D_84mev")
+
+[node name="DialogueUI" parent="." instance=ExtResource("7_uqifq")]
+
+[node name="UI" parent="." instance=ExtResource("8_1i1eq")]
+
+[node name="entrancetothelibrary" type="Marker2D" parent="."]
+position = Vector2(359, -161)
+
+[node name="Portalbacktotheforest" type="Area2D" parent="."]
+script = ExtResource("9_1i1eq")
+target_scene_path = "uid://djqhq32kwmvg5"
+target_spawn_point_name = "Spawnfromthelibrary"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portalbacktotheforest"]
+position = Vector2(30, -65.5)
+shape = SubResource("RectangleShape2D_0vxts")
+
+[node name="DreamWorldElements" type="Node2D" parent="."]
+visible = false
+
+[node name="EchoSphere1" type="Area2D" parent="DreamWorldElements"]
+script = ExtResource("13_1xr20")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="DreamWorldElements/EchoSphere1"]
+position = Vector2(3425, 3663)
+amount = 64
+texture = ExtResource("14_oxwcc")
+lifetime = 244.92
+preprocess = 2.22
+speed_scale = 3.67
+randomness = 0.48
+lifetime_randomness = 0.07
+local_coords = true
+emission_shape = 1
+emission_sphere_radius = 20.0
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 30.0
+scale_amount_min = 0.3
+scale_amount_max = 0.8
+scale_amount_curve = SubResource("Curve_8g5cr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DreamWorldElements/EchoSphere1"]
+position = Vector2(3461, 3658)
+shape = SubResource("CircleShape2D_ke5sn")
+
+[node name="EchoSphere2" type="Area2D" parent="DreamWorldElements"]
+position = Vector2(123, 3743)
+script = ExtResource("15_jx55p")
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="DreamWorldElements/EchoSphere2"]
+position = Vector2(30, -88)
+amount = 64
+texture = ExtResource("14_oxwcc")
+lifetime = 244.92
+preprocess = 2.22
+speed_scale = 3.67
+randomness = 0.48
+lifetime_randomness = 0.07
+local_coords = true
+emission_shape = 1
+emission_sphere_radius = 20.0
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 30.0
+scale_amount_min = 0.3
+scale_amount_max = 0.8
+scale_amount_curve = SubResource("Curve_8g5cr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DreamWorldElements/EchoSphere2"]
+position = Vector2(172, -134)
+shape = SubResource("CircleShape2D_ke5sn")
+
+[node name="EchoSphere3" type="Area2D" parent="DreamWorldElements"]
+position = Vector2(3376, 1725)
+script = ExtResource("16_134hy")
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="DreamWorldElements/EchoSphere3"]
+position = Vector2(-32, 1)
+amount = 64
+texture = ExtResource("14_oxwcc")
+lifetime = 244.92
+preprocess = 2.22
+speed_scale = 3.67
+randomness = 0.48
+lifetime_randomness = 0.07
+local_coords = true
+emission_shape = 1
+emission_sphere_radius = 20.0
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 30.0
+scale_amount_min = 0.3
+scale_amount_max = 0.8
+scale_amount_curve = SubResource("Curve_8g5cr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="DreamWorldElements/EchoSphere3"]
+position = Vector2(-37, -5)
+shape = SubResource("CircleShape2D_ke5sn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -1735.0
+offset_top = -1831.0
+offset_right = 4762.0
+offset_bottom = 4997.0
+color = Color(0.0705882, 0.0862745, 0.262745, 0.478431)
+
+[node name="PortalToObservatory" type="Area2D" parent="."]
+script = ExtResource("17_ke5sn")
+target_scene_path = "uid://beqbv6ukjx6j1"
+target_spawn_point_name = "Library Spawn from the 1stfloor"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortalToObservatory"]
+position = Vector2(3235.75, -318)
+shape = SubResource("RectangleShape2D_e6peu")
+
+[node name="Spewn from observatory" type="Marker2D" parent="."]
+position = Vector2(2649, 37)

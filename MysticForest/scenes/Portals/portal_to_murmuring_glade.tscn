@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2v2cpg7wojy8"]
+
+[ext_resource type="Script" uid="uid://cr4jhs2bhcwn2" path="res://MysticForest/scripts/portal_to_murmuring_glade.gd" id="1_62f6w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62f6w"]
+size = Vector2(904.5, 111)
+
+[node name="Portal_to_MurmuringGlade" type="Area2D"]
+script = ExtResource("1_62f6w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(450.75, 55)
+shape = SubResource("RectangleShape2D_62f6w")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

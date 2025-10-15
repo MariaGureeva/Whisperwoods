@@ -1,0 +1,235 @@
+[gd_scene load_steps=35 format=3 uid="uid://byjqnnelke5if"]
+
+[ext_resource type="Texture2D" uid="uid://dhdoukxkfbbd7" path="res://MysticForest/assets/tilesets/Frogs houses/Grumble house/Interior of the Grumble's house1.png" id="1_udit2"]
+[ext_resource type="Texture2D" uid="uid://fb6i8vnqq4qv" path="res://MysticForest/assets/tilesets/Frogs houses/Grumble house/Interior of the Grumble's house2.png" id="2_ui0ky"]
+[ext_resource type="Texture2D" uid="uid://d1c2vpnqgkon8" path="res://MysticForest/assets/tilesets/Parquet tiles.png" id="3_0dtcw"]
+[ext_resource type="Texture2D" uid="uid://hjbx231b057a" path="res://MysticForest/assets/tilesets/Borders.png" id="4_cr3fg"]
+[ext_resource type="Texture2D" uid="uid://vvgxc13bbylh" path="res://MysticForest/assets/tilesets/Walls.png" id="5_tbt55"]
+[ext_resource type="Texture2D" uid="uid://d2nkt0bbr2xv6" path="res://MysticForest/assets/tilesets/Frogs houses/Grumble house/tile000.png" id="6_kw88v"]
+[ext_resource type="PackedScene" uid="uid://baravb86tegir" path="res://MysticForest/scenes/Characters/Grumble.tscn" id="7_agxxq"]
+[ext_resource type="Texture2D" uid="uid://c4cr75n3g6y6p" path="res://MysticForest/assets/objects/Frogs houses interior/Carpet blue.png" id="7_yf6ux"]
+[ext_resource type="Texture2D" uid="uid://k03rx4k25286" path="res://MysticForest/assets/objects/Grumble's house/Pumpkin2.png" id="8_0dtcw"]
+[ext_resource type="Script" uid="uid://2k7fc4hw06vi" path="res://MysticForest/scenes/world/interaction_area.gd" id="8_agxxq"]
+[ext_resource type="Texture2D" uid="uid://di2vytaunrhau" path="res://MysticForest/assets/objects/Frogs houses interior/Bed1.png" id="8_lw5ul"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="8_tbt55"]
+[ext_resource type="Texture2D" uid="uid://drneri1rf3tgy" path="res://MysticForest/assets/objects/Grumble's house/Pumpkin1.png" id="9_cr3fg"]
+[ext_resource type="Script" uid="uid://b6aabjpk05ops" path="res://MysticForest/scenes/world/pumpkin.gd" id="9_qimbo"]
+[ext_resource type="Texture2D" uid="uid://behjuka88k2vk" path="res://MysticForest/assets/objects/Frogs houses interior/Bedside table.png" id="10_0ljj4"]
+[ext_resource type="Script" uid="uid://dobvxg40mmvbi" path="res://MysticForest/scenes/world/portal_to_mist_marsh.gd" id="10_cr3fg"]
+[ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="12_5upql"]
+[ext_resource type="PackedScene" uid="uid://caaaytigj6ebi" path="res://MysticForest/scenes/TechnicalElements/Main_DialogueUI.tscn" id="14_qimbo"]
+[ext_resource type="Texture2D" uid="uid://8134bqrxxk52" path="res://MysticForest/assets/objects/Frogs houses interior/Drumsticks.png" id="18_0qcck"]
+[ext_resource type="Texture2D" uid="uid://dxvxiyxrb5od4" path="res://MysticForest/assets/objects/Frogs houses interior/Lanterns garland.png" id="19_f03bt"]
+[ext_resource type="Texture2D" uid="uid://cirslkva0frgg" path="res://MysticForest/assets/objects/Frogs houses interior/Small Vinyl record1.png" id="20_gox12"]
+[ext_resource type="Texture2D" uid="uid://csyokcof83tix" path="res://MysticForest/assets/objects/Frogs houses interior/Small Vinyl record2.png" id="21_abr3e"]
+[ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="23_lw5ul"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cmixb"]
+texture = ExtResource("1_udit2")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fix4l"]
+texture = ExtResource("2_ui0ky")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_gboow"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_cmixb")
+sources/1 = SubResource("TileSetAtlasSource_fix4l")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fivid"]
+texture = ExtResource("3_0dtcw")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6wd1"]
+texture = ExtResource("4_cr3fg")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xa4q"]
+texture = ExtResource("5_tbt55")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fqt1y"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_fivid")
+sources/3 = SubResource("TileSetAtlasSource_n6wd1")
+sources/4 = SubResource("TileSetAtlasSource_8xa4q")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_stktt"]
+radius = 325.707
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5upql"]
+size = Vector2(840, 1122)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbt55"]
+size = Vector2(504, 98)
+
+[sub_resource type="Environment" id="Environment_x74mc"]
+glow_enabled = true
+glow_bloom = 0.45
+
+[node name="DrummerHouse" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="Floor and walls" type="TileMap" parent="TileMapLayer"]
+tile_set = SubResource("TileSet_gboow")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1, 131072, 0, 2, 131073, 0, 805306368, 65537, 0, 805306369, 1, 0, 805306370, 2, 0, 0, 65538, 0, 268435457, 131074, 0, 268435458, 3, 0, 2, 65539, 0, 0, 131075, 0, 2, -196608, 1, 1, -131072, 1, 2, -65536, 0, 1, -196607, 1, 0, -131071, 1, 0, -65535, 0, 2, -196606, 1, 1, -131070, 1, 0, -65534, 0, 268435456, -196605, 1, 0, -131069, 1, 1, -65533, 0, 268435457)
+
+[node name="TileMap" type="TileMap" parent="TileMapLayer"]
+position = Vector2(5, 2)
+tile_set = SubResource("TileSet_fqt1y")
+format = 2
+layer_0/tile_data = PackedInt32Array(-131073, 131075, 0, -65537, 131075, 0, -1, 131075, 0, 65535, 131075, 0, 131071, 131075, 0, 196607, 131075, 0, -196609, 524291, 0, 262143, 327683, 0, -262144, 196611, 0, -262143, 196611, 0, -262142, 196611, 0, -262141, 196611, 0, -196604, 131075, 268435456, -131068, 131075, 268435456, -65532, 131075, 268435456, 4, 131075, 268435456, 65540, 131075, 268435456, 131076, 131075, 268435456, -262140, 458755, 0, 196612, 393219, 0, 196608, 262147, 0, 196611, 262147, 0, 196609, 393219, 0, 196610, 327683, 0)
+
+[node name="Tile000" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(280, -677)
+texture = ExtResource("6_kw88v")
+
+[node name="Tile000" type="Sprite2D" parent="TileMapLayer/Tile000"]
+position = Vector2(697, 0)
+texture = ExtResource("6_kw88v")
+
+[node name="CarpetBlue" type="Sprite2D" parent="."]
+position = Vector2(743, -23)
+texture = ExtResource("7_yf6ux")
+
+[node name="Bed1" type="Sprite2D" parent="."]
+position = Vector2(324, -113)
+texture = ExtResource("8_lw5ul")
+
+[node name="DialogueUI" parent="." instance=ExtResource("14_qimbo")]
+visible = false
+
+[node name="BedsideTable" type="Sprite2D" parent="."]
+position = Vector2(977, -398)
+texture = ExtResource("10_0ljj4")
+
+[node name="Pumpkin" type="Area2D" parent="."]
+position = Vector2(128, -223)
+script = ExtResource("9_qimbo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pumpkin"]
+position = Vector2(995, -7)
+shape = SubResource("CircleShape2D_stktt")
+
+[node name="Pumpkin healed" type="Sprite2D" parent="Pumpkin"]
+position = Vector2(997, -21)
+texture = ExtResource("9_cr3fg")
+
+[node name="Pumpkin broken" type="Sprite2D" parent="Pumpkin"]
+position = Vector2(997, -21)
+texture = ExtResource("8_0dtcw")
+
+[node name="PromptLabel" type="Label" parent="Pumpkin"]
+offset_left = 832.0
+offset_top = -577.0
+offset_right = 1172.0
+offset_bottom = -42.0
+theme_override_fonts/font = ExtResource("12_5upql")
+theme_override_font_sizes/font_size = 100
+metadata/_edit_use_anchors_ = true
+
+[node name="Grumble" parent="." instance=ExtResource("7_agxxq")]
+position = Vector2(327, 325)
+
+[node name="InteractionArea" type="Area2D" parent="Grumble"]
+script = ExtResource("8_agxxq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grumble/InteractionArea"]
+position = Vector2(134, 334)
+shape = SubResource("RectangleShape2D_5upql")
+
+[node name="PromptLabel" type="Label" parent="Grumble"]
+offset_left = -137.0
+offset_top = -517.0
+offset_right = 139.0
+offset_bottom = -247.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 300
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Portal to mistMarsh" type="Area2D" parent="."]
+position = Vector2(-8, 15)
+script = ExtResource("10_cr3fg")
+target_scene_path = "uid://7btypbnb40gd"
+target_spawn_point_name = "spawn from drummer house"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal to mistMarsh"]
+position = Vector2(645, 999)
+shape = SubResource("RectangleShape2D_tbt55")
+
+[node name="spawn to the drummer house" type="Marker2D" parent="."]
+position = Vector2(262, 201)
+
+[node name="Drumsticks" type="Sprite2D" parent="."]
+position = Vector2(689, -688)
+scale = Vector2(0.8625, 0.8625)
+texture = ExtResource("18_0qcck")
+
+[node name="LanternsGarland" type="Sprite2D" parent="."]
+position = Vector2(165, -839)
+texture = ExtResource("19_f03bt")
+
+[node name="LanternsGarland" type="Sprite2D" parent="LanternsGarland"]
+position = Vector2(322, 0)
+texture = ExtResource("19_f03bt")
+
+[node name="LanternsGarland2" type="Sprite2D" parent="LanternsGarland"]
+position = Vector2(638, 1)
+texture = ExtResource("19_f03bt")
+
+[node name="LanternsGarland" type="Sprite2D" parent="LanternsGarland/LanternsGarland2"]
+position = Vector2(322, 0)
+texture = ExtResource("19_f03bt")
+
+[node name="SmallVinylRecord1" type="Sprite2D" parent="."]
+position = Vector2(493, -753)
+texture = ExtResource("20_gox12")
+
+[node name="SmallVinylRecord2" type="Sprite2D" parent="."]
+position = Vector2(493, -643)
+texture = ExtResource("21_abr3e")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_x74mc")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.975021, 0.769554, 0.966282, 1)
+
+[node name="Player1" parent="." instance=ExtResource("8_tbt55")]
+position = Vector2(59, 293)
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+zoom = Vector2(0.3, 0.3)
+limit_left = -100
+limit_top = -5000
+limit_right = 2515
+
+[node name="UI" parent="." instance=ExtResource("23_lw5ul")]

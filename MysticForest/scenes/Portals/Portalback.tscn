@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr5qpx7gj2fb"]
+
+[sub_resource type="GDScript" id="GDScript_v4sot"]
+script/source = "extends Area2D
+
+@export var target_scene : String
+@export var entrance_name : String = \"default\"
+
+func _on_body_entered(body):
+	if body.name == \"Player1\":
+		GameState.entrance_name = \"SpawnPoint_Entrance\"
+		get_tree().change_scene_to_file(\"res://MysticForest/scenes/world/ForestScene_Morning.tscn\")
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uavd7"]
+size = Vector2(348.5, 579.25)
+
+[node name="PortalBack" type="Area2D"]
+collision_layer = 2
+script = SubResource("GDScript_v4sot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(188.75, 307.375)
+shape = SubResource("RectangleShape2D_uavd7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

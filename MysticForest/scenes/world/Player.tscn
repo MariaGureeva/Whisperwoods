@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://nlnj3iq7ru6a"]
+
+[ext_resource type="Script" uid="uid://bvbcwgsrdxip5" path="res://MysticForest/scripts/character_body_2d.gd" id="1_lw7ub"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+collision_mask = 35
+script = ExtResource("1_lw7ub")

@@ -1,0 +1,243 @@
+[gd_scene load_steps=37 format=3 uid="uid://ghps42swt0we"]
+
+[ext_resource type="Script" uid="uid://c35oaeb0d2p4y" path="res://MysticForest/scripts/cabin_inside.gd" id="1_ht5dj"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="7_5wj76"]
+[ext_resource type="PackedScene" uid="uid://c2d8jrlbngkjd" path="res://MysticForest/scenes/Characters/Toadling.tscn" id="12_0oeu1"]
+[ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="12_6c8vx"]
+[ext_resource type="Script" uid="uid://j5vwgm3iqbwg" path="res://MysticForest/scripts/Door.gd" id="12_kf78y"]
+[ext_resource type="PackedScene" uid="uid://dq845i6ttuavs" path="res://MysticForest/scenes/Characters/SeedsItem.tscn" id="14_c8emg"]
+[ext_resource type="PackedScene" uid="uid://b0sdf42vhyuev" path="res://MysticForest/scenes/TechnicalElements/screen_fader.tscn" id="15_c8emg"]
+[ext_resource type="Script" uid="uid://6r6q8l7rsh37" path="res://MysticForest/scenes/world/wilted_flower.gd" id="18_3w7kj"]
+[ext_resource type="Texture2D" uid="uid://80fh2ex24vj" path="res://MysticForest/assets/objects/Flowerpot in the cabin/Flowerpot cabin2.png" id="18_bvi8i"]
+[ext_resource type="Texture2D" uid="uid://b1iutvkl6l0dr" path="res://MysticForest/assets/objects/Flowerpot in the cabin/Flowerpot cabin1.png" id="19_3w7kj"]
+[ext_resource type="PackedScene" uid="uid://caaaytigj6ebi" path="res://MysticForest/scenes/TechnicalElements/Main_DialogueUI.tscn" id="19_bvi8i"]
+[ext_resource type="Texture2D" uid="uid://d1c2vpnqgkon8" path="res://MysticForest/assets/tilesets/Parquet tiles.png" id="19_uavd7"]
+[ext_resource type="Texture2D" uid="uid://hjbx231b057a" path="res://MysticForest/assets/tilesets/Borders.png" id="20_03bj2"]
+[ext_resource type="PackedScene" uid="uid://rmsdsqu5wi5d" path="res://MysticForest/scenes/TechnicalElements/EndOfActScreen.tscn" id="20_3w7kj"]
+[ext_resource type="PackedScene" uid="uid://cr5qpx7gj2fb" path="res://MysticForest/scenes/Portals/Portalback.tscn" id="20_6oqv6"]
+[ext_resource type="Texture2D" uid="uid://vvgxc13bbylh" path="res://MysticForest/assets/tilesets/Walls.png" id="21_8vag4"]
+[ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="21_ofce7"]
+[ext_resource type="Texture2D" uid="uid://dd0r2ddaeu51m" path="res://MysticForest/assets/tilesets/Carpet.png" id="22_fkg3t"]
+[ext_resource type="Texture2D" uid="uid://bup7k53ch6noh" path="res://MysticForest/assets/tilesets/Long furniture.png" id="22_jo66d"]
+[ext_resource type="Texture2D" uid="uid://bnw08rfquxbia" path="res://MysticForest/assets/tilesets/Pot flowers.png" id="24_u1byo"]
+[ext_resource type="PackedScene" uid="uid://b8lv8ffiv7ogy" path="res://MysticForest/scenes/world/mirror_shard.tscn" id="26_114il"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3w7kj"]
+texture = ExtResource("19_uavd7")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ofce7"]
+texture = ExtResource("20_03bj2")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_niyxy"]
+texture = ExtResource("21_8vag4")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_gxmlt"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_3w7kj")
+sources/3 = SubResource("TileSetAtlasSource_ofce7")
+sources/4 = SubResource("TileSetAtlasSource_niyxy")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jo66d"]
+texture = ExtResource("22_jo66d")
+texture_region_size = Vector2i(410, 750)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_u1byo"]
+tile_size = Vector2i(410, 750)
+sources/0 = SubResource("TileSetAtlasSource_jo66d")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fkg3t"]
+texture = ExtResource("24_u1byo")
+texture_region_size = Vector2i(320, 640)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_dtswt"]
+tile_size = Vector2i(320, 640)
+sources/0 = SubResource("TileSetAtlasSource_fkg3t")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u1byo"]
+texture = ExtResource("22_fkg3t")
+texture_region_size = Vector2i(800, 700)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_114il"]
+tile_size = Vector2i(800, 700)
+sources/0 = SubResource("TileSetAtlasSource_u1byo")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wdca"]
+size = Vector2(300, 589)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah4mp"]
+size = Vector2(406, 710)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0oeu1"]
+size = Vector2(777, 353)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pnkdd"]
+size = Vector2(416, 702.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ofce7"]
+size = Vector2(397, 565)
+
+[node name="CabinInside" type="Node2D"]
+position = Vector2(0, -3)
+script = ExtResource("1_ht5dj")
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(5, 2)
+tile_set = SubResource("TileSet_gxmlt")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 65536, 0, 0, 131072, 0, 0, 2, 0, 0, 3, 0, 0, 65538, 0, 0, 65537, 0, 0, 131073, 0, 0, 196610, 0, 0, 131074, 0, 0, 131075, 0, 0, 196611, 0, 0, 196612, 0, 0, 131077, 0, 0, 131076, 0, 0, 65540, 0, 0, 65539, 0, 0, 65541, 0, 0, 4, 0, 0, 5, 0, 0, 131078, 0, 0, 6, 0, 0, 262148, 0, 0, 262147, 0, 0, 262146, 0, 0, 65542, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -131072, 4, 0, -131071, 0, 0, -131070, 0, 0, -131069, 0, 0, -131068, 0, 0, -131067, 0, 0, -131066, 0, 0, -262143, 65540, 0, -262142, 65540, 0, -262141, 65540, 0, -262140, 65540, 0, -262139, 65540, 0, 196609, 589827, 0, 196613, 655363, 0, 196614, 262147, 0, 327682, 262147, 0, 327684, 262147, 0, 262149, 65539, 0, 327685, 393219, 0, 327681, 327683, 0, 262145, 131075, 0, -196608, 4, 0, -196607, 65540, 0, -196606, 65540, 0, -196605, 65540, 0, -196604, 65540, 0, -196603, 4, 0, -196602, 65540, 0, -131073, 131075, 0, -65537, 131075, 0, -1, 131075, 0, 65535, 131075, 0, 131071, 131075, 0, 196607, 131075, 0, -262144, 786435, 0, -196609, 524291, 0, -327679, 196611, 0, -327678, 196611, 0, -327677, 196611, 0, -327676, 196611, 0, -327675, 196611, 0, -327674, 196611, 0, -327680, 524291, 0, -262138, 65540, 0, -262137, 65539, 0, -196601, 65539, 0, -131065, 65539, 0, -65529, 65539, 0, 7, 65539, 0, 65543, 65539, 0, 131079, 65539, 0, 196608, 262147, 0, 196615, 393219, 0, 262143, 327683, 0, -327673, 458755, 0)
+
+[node name="TileMap" type="TileMap" parent="TileMap"]
+z_index = 1
+position = Vector2(0, 220)
+tile_set = SubResource("TileSet_u1byo")
+format = 2
+layer_0/tile_data = PackedInt32Array(-131071, 196608, 0, -131069, 327680, 0, -131070, 327680, 0, -65535, 0, 0, -65536, 262144, 0, -131068, 327680, 0, 0, 65536, 0)
+
+[node name="TileMap3" type="TileMap" parent="TileMap"]
+z_index = 2
+position = Vector2(0, 320)
+tile_set = SubResource("TileSet_dtswt")
+format = 2
+layer_0/tile_data = PackedInt32Array(65538, 65536, 0)
+
+[node name="TileMap2" type="TileMap" parent="TileMap"]
+position = Vector2(100, 200)
+tile_set = SubResource("TileSet_114il")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65535, 0, 0)
+
+[node name="Player1" parent="." instance=ExtResource("7_5wj76")]
+z_index = 2
+position = Vector2(604, 674)
+collision_layer = 3
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2(921, -312)
+offset = Vector2(5, 5)
+zoom = Vector2(0.25, 0.25)
+limit_left = 100
+limit_top = -1400
+limit_right = 3500
+limit_bottom = 1600
+limit_smoothed = true
+rotation_smoothing_enabled = true
+
+[node name="PortalBack" parent="." instance=ExtResource("20_6oqv6")]
+position = Vector2(949, 1547)
+
+[node name="Mirror" parent="." groups=["attunement_listeners"] instance=ExtResource("26_114il")]
+position = Vector2(1973, 394)
+collision_layer = 2
+collision_mask = 3
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Mirror"]
+position = Vector2(30, 8)
+shape = SubResource("RectangleShape2D_6wdca")
+
+[node name="CutscenePosition" type="Marker2D" parent="Mirror"]
+position = Vector2(-1032, -218)
+
+[node name="SpawnPoint_CabinExit" type="Marker2D" parent="."]
+position = Vector2(763, 740)
+
+[node name="Bed" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed"]
+position = Vector2(199, 574)
+shape = SubResource("RectangleShape2D_ah4mp")
+
+[node name="Door" type="Area2D" parent="."]
+script = ExtResource("12_kf78y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2(1223, 1647)
+shape = SubResource("RectangleShape2D_0oeu1")
+
+[node name="Toadling" parent="." instance=ExtResource("12_0oeu1")]
+visible = false
+position = Vector2(1249, -217)
+
+[node name="Cabinet" type="Area2D" parent="."]
+position = Vector2(1148, 1522)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cabinet"]
+position = Vector2(312, -2372)
+shape = SubResource("RectangleShape2D_pnkdd")
+
+[node name="SeedItem" parent="." instance=ExtResource("14_c8emg")]
+z_index = 1
+position = Vector2(967, -577)
+
+[node name="ScreenFader" parent="." instance=ExtResource("15_c8emg")]
+
+[node name="WiltedFlower" type="Area2D" parent="."]
+script = ExtResource("18_3w7kj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WiltedFlower"]
+position = Vector2(2049.5, -462.5)
+shape = SubResource("RectangleShape2D_ofce7")
+
+[node name="WiltedSprite" type="Sprite2D" parent="WiltedFlower"]
+z_index = 1
+position = Vector2(2060, -688)
+texture = ExtResource("18_bvi8i")
+
+[node name="PromptLabel" type="Label" parent="WiltedFlower"]
+z_index = 1
+offset_left = 1840.0
+offset_top = -1089.0
+offset_right = 2214.0
+offset_bottom = -803.0
+theme_override_fonts/font = ExtResource("12_6c8vx")
+theme_override_font_sizes/font_size = 100
+
+[node name="BloomedSprite" type="Sprite2D" parent="WiltedFlower"]
+visible = false
+z_index = 1
+position = Vector2(2060, -688)
+texture = ExtResource("19_3w7kj")
+
+[node name="DialogueUI" parent="." instance=ExtResource("19_bvi8i")]
+layer = 10
+
+[node name="EndOfActScreen" parent="." instance=ExtResource("20_3w7kj")]
+layer = 9
+visible = false
+
+[node name="UI" parent="." instance=ExtResource("21_ofce7")]
+
+[node name="SpawnPoint_Bed" type="Marker2D" parent="."]
+position = Vector2(193, 60)
+
+[connection signal="body_exited" from="Mirror" to="." method="_on_mirror_body_exited"]

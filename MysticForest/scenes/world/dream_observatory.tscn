@@ -1,0 +1,220 @@
+[gd_scene load_steps=22 format=3 uid="uid://beqbv6ukjx6j1"]
+
+[ext_resource type="Script" uid="uid://b6qtpw3dysdvm" path="res://MysticForest/scripts/background_layer.gd" id="1_eh4bl"]
+[ext_resource type="Texture2D" uid="uid://dwkfpoura7d30" path="res://MysticForest/assets/tilesets/Library/Library floor and walls.png" id="1_gpgvi"]
+[ext_resource type="Texture2D" uid="uid://hjbx231b057a" path="res://MysticForest/assets/tilesets/Borders.png" id="2_1vhr1"]
+[ext_resource type="Texture2D" uid="uid://c2wl76wdlfq50" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background1.png" id="2_bnfm0"]
+[ext_resource type="Texture2D" uid="uid://eos6bohw15yb" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background2.png" id="3_5a5j1"]
+[ext_resource type="Texture2D" uid="uid://b2goqf4pmpte5" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background3.png" id="4_64lmy"]
+[ext_resource type="Texture2D" uid="uid://2871dkone6s2" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background4.png" id="5_lr7im"]
+[ext_resource type="Texture2D" uid="uid://mvgfow4siv7a" path="res://MysticForest/assets/tilesets/Library/Endofthewalllibrary.png" id="8_bog8q"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="9_0iah4"]
+[ext_resource type="Texture2D" uid="uid://syv18856wsht" path="res://MysticForest/assets/tilesets/Library/Observatory.png" id="10_htoxv"]
+[ext_resource type="Script" uid="uid://chnliea8qmiuk" path="res://MysticForest/scripts/Telescope.gd" id="11_64lmy"]
+[ext_resource type="Texture2D" uid="uid://drykrmy78rajl" path="res://MysticForest/assets/tilesets/Library/stairs and window for librairy.png" id="11_bnfm0"]
+[ext_resource type="PackedScene" uid="uid://dp8ag7cqqs7dh" path="res://MysticForest/scenes/TechnicalElements/telescope_ui.tscn" id="13_lr7im"]
+[ext_resource type="Script" uid="uid://dsei2cs6tudpo" path="res://MysticForest/scripts/portaltothefungalreach.gd" id="14_lr7im"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u12xq"]
+texture = ExtResource("1_gpgvi")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4fc68"]
+texture = ExtResource("2_1vhr1")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lwxa3"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_u12xq")
+sources/1 = SubResource("TileSetAtlasSource_4fc68")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64lmy"]
+size = Vector2(497, 735.5)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5a5j1"]
+texture = ExtResource("11_bnfm0")
+texture_region_size = Vector2i(640, 960)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_64lmy"]
+tile_size = Vector2i(640, 960)
+sources/0 = SubResource("TileSetAtlasSource_5a5j1")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bog8q"]
+size = Vector2(798.5, 481)
+
+[node name="DreamObservatory" type="Node2D"]
+position = Vector2(0, -1)
+
+[node name="BackgroundLayer2" type="CanvasLayer" parent="."]
+layer = -1
+script = ExtResource("1_eh4bl")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="BackgroundLayer2" groups=["main_parallax_bg"]]
+layer = -128
+offset = Vector2(500, 100)
+transform = Transform2D(1, 0, 0, 1, 500, 100)
+scroll_base_offset = Vector2(0.5, 0.1)
+scroll_base_scale = Vector2(0.5, 0.2)
+
+[node name="ParallaxSky" type="ParallaxLayer" parent="BackgroundLayer2/ParallaxBackground"]
+position = Vector2(1346, -139)
+motion_scale = Vector2(0, 0)
+motion_offset = Vector2(0, 200)
+
+[node name="Blue sky" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxSky"]
+position = Vector2(101.5, 595.5)
+scale = Vector2(2.96391, 3.39)
+texture = ExtResource("2_bnfm0")
+
+[node name="Galaxies" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxSky"]
+position = Vector2(0, 100)
+texture = ExtResource("3_5a5j1")
+
+[node name="MoonLakeBackground3" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxSky/Galaxies"]
+position = Vector2(-2133, 0)
+scale = Vector2(1.03478, 1)
+texture = ExtResource("3_5a5j1")
+
+[node name="MoonLakeBackground2" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxSky/Galaxies"]
+position = Vector2(2418.5, 0)
+scale = Vector2(1.01, 1)
+texture = ExtResource("3_5a5j1")
+
+[node name="ParallaxStars" type="ParallaxLayer" parent="BackgroundLayer2/ParallaxBackground"]
+position = Vector2(917, -50)
+motion_scale = Vector2(0.001, 0.1)
+motion_mirroring = Vector2(2000, 500)
+
+[node name="Whitestars" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxStars"]
+texture = ExtResource("4_64lmy")
+
+[node name="Whitestars3" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxStars"]
+position = Vector2(-1500, 0)
+texture = ExtResource("4_64lmy")
+
+[node name="Whitestars2" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxStars"]
+position = Vector2(1600, 0)
+texture = ExtResource("4_64lmy")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BackgroundLayer2/ParallaxBackground"]
+position = Vector2(1428, -590)
+motion_scale = Vector2(0.1, 0.1)
+motion_offset = Vector2(200, 0)
+
+[node name="MoonSprite" type="Sprite2D" parent="BackgroundLayer2/ParallaxBackground/ParallaxLayer" groups=["moon_sprite_group"]]
+position = Vector2(-1000, 1000)
+texture = ExtResource("5_lr7im")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_lwxa3")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65541, 0, 0, 65540, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, -65536, 65536, 0, -65535, 131072, 0, -65534, 131072, 0, -131071, 131072, 0, -131072, 131072, 268435456, -196608, 131072, 0, -131070, 131072, 268435456, -196606, 131072, 0, -196607, 131072, 0, -1, 131073, 0, -65537, 131073, 0, -196609, 524289, 0, -131073, 131073, 0, -262144, 196609, 0, -262143, 196609, 0, -262142, 196609, 0, -262141, 196609, 0, -262140, 196609, 0, -262139, 196609, 0, 6, 0, 0, 65542, 0, 0, 131078, 0, 0, 196614, 0, 0, 7, 0, 0, 65543, 0, 0, 131079, 0, 0, 196615, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262143, 131073, 0, 327679, 131073, 0, 8, 0, 0, 65544, 0, 0, 131080, 0, 0, 196616, 0, 0, 262152, 0, 0, 9, 0, 0, 65545, 0, 0, 131081, 0, 0, 196617, 0, 0, 262153, 0, 0, -65528, 131072, 0, -196600, 131072, 0, -131064, 131072, 0, 10, 0, 0, 65546, 0, 0, 131082, 0, 0, 196618, 0, 0, 262154, 0, 0, 262155, 65537, 0, 196619, 65537, 0, 131083, 65537, 0, 65547, 65537, 0, 11, 65537, 0, -196597, 65537, 0, -131061, 65537, 0, -65525, 65537, 0, -262133, 458753, 0, -262138, 196609, 0, -262137, 196609, 0, -262136, 196609, 0, -262135, 196609, 0, -262134, 196609, 0, 196607, 131073, 0, 131071, 131073, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327689, 0, 0, 327690, 0, 0, 327688, 0, 0, 327687, 0, 0, 327686, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393215, 131073, 0, 458751, 131073, 0, 327691, 65537, 0, 393227, 65537, 0, -196599, 131072, 0, -131063, 131072, 0, -65527, 65536, 0, -196598, 131072, 0, -131062, 65536, 0, -65526, 65536, 0, 458752, 262145, 0, 458753, 262145, 0, 458754, 262145, 0, 458755, 262145, 0, 458756, 262145, 0, 458757, 262145, 0, 458758, 262145, 0, 458759, 262145, 0, 458760, 262145, 0, 458761, 262145, 0, 458762, 262145, 0, 458763, 393217, 0, 524287, 327681, 0, 65535, 131073, 0)
+
+[node name="Endofthewalllibrary" type="Sprite2D" parent="."]
+position = Vector2(1112, -481)
+texture = ExtResource("8_bog8q")
+
+[node name="Endofthewalllibrary2" type="Sprite2D" parent="."]
+position = Vector2(2420, -479)
+scale = Vector2(-1, 1)
+texture = ExtResource("8_bog8q")
+
+[node name="Player1" parent="." instance=ExtResource("9_0iah4")]
+z_index = 2
+position = Vector2(1246, 1437)
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2(620, 184)
+zoom = Vector2(0.3, 0.3)
+
+[node name="Telescope" type="Sprite2D" parent="."]
+position = Vector2(1758, -313)
+texture = ExtResource("10_htoxv")
+
+[node name="Area2D" type="Area2D" parent="Telescope" node_paths=PackedStringArray("telescope_ui")]
+script = ExtResource("11_64lmy")
+telescope_ui = NodePath("../../Telescope_UI")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Telescope/Area2D"]
+position = Vector2(17.5, 378.25)
+shape = SubResource("RectangleShape2D_64lmy")
+
+[node name="TileMap4" type="TileMap" parent="."]
+position = Vector2(160, 100)
+tile_set = SubResource("TileSet_64lmy")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 131072, 0, -65532, 131072, 0)
+
+[node name="TileMap5" type="TileMap" parent="."]
+position = Vector2(160, 500)
+tile_set = SubResource("TileSet_64lmy")
+format = 2
+layer_0/tile_data = PackedInt32Array(65540, 0, 1879048192)
+
+[node name="TileMap3" type="TileMap" parent="."]
+position = Vector2(160, 600)
+tile_set = SubResource("TileSet_64lmy")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 131072, 0, 1, 131072, 268435456, 3, 131072, 268435456, 4, 131072, 0)
+
+[node name="Telescope_UI" parent="." instance=ExtResource("13_lr7im")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -1673.0
+offset_top = -1630.0
+offset_right = -80.0
+offset_bottom = 3040.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = -1800.0
+offset_top = -4860.0
+offset_right = 5430.0
+offset_bottom = -1049.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = -1645.0
+offset_top = 2331.0
+offset_right = 5585.0
+offset_bottom = 6274.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 3602.0
+offset_top = -1820.0
+offset_right = 5815.0
+offset_bottom = 2850.0
+color = Color(0, 0, 0, 1)
+
+[node name="Library Spawn from the 1stfloor" type="Marker2D" parent="."]
+position = Vector2(845, 2006)
+
+[node name="Portal to the 1stfloor" type="Area2D" parent="."]
+position = Vector2(2629, 1775)
+script = ExtResource("14_lr7im")
+target_scene_path = "uid://d2i6hgwq4pwnk"
+target_spawn_point_name = "Spewn from observatory"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal to the 1stfloor"]
+position = Vector2(332, 159)
+shape = SubResource("RectangleShape2D_bog8q")

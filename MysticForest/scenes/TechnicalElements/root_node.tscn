@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://b7fbmh6hrg81n"]
+
+[ext_resource type="Script" uid="uid://buppofv5dp4qi" path="res://MysticForest/scripts/root_node.gd" id="1_huf3c"]
+[ext_resource type="Texture2D" uid="uid://dbcta3vjrv5ty" path="res://MysticForest/assets/objects/Root Crystal/Root crystal2.png" id="2_huf3c"]
+[ext_resource type="Texture2D" uid="uid://bsq14fbyc74c5" path="res://MysticForest/assets/objects/Root Crystal/Root crystal1.png" id="3_jyeib"]
+[ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="4_fffs5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vn7sb"]
+size = Vector2(2293, 1685.12)
+
+[sub_resource type="Gradient" id="Gradient_huf3c"]
+colors = PackedColorArray(0, 1, 1, 0.635294, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nrxqr"]
+gradient = SubResource("Gradient_huf3c")
+fill = 1
+fill_from = Vector2(0.525641, 0.474359)
+
+[node name="RootNode" type="Area2D"]
+script = ExtResource("1_huf3c")
+
+[node name="WebSprite" type="Sprite2D" parent="."]
+position = Vector2(-24, -119)
+texture = ExtResource("2_huf3c")
+
+[node name="CrystalSprite" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-24, -119)
+texture = ExtResource("3_jyeib")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-136.5, 85.5624)
+rotation = -3.14159
+scale = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_vn7sb")
+
+[node name="PromptLabel" type="Label" parent="."]
+visible = false
+offset_left = -212.0
+offset_top = -731.0
+offset_right = 302.0
+offset_bottom = -328.0
+theme_override_fonts/font = ExtResource("4_fffs5")
+theme_override_font_sizes/font_size = 100
+text = "PRESS E"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(7.49982, -114.75)
+scale = Vector2(39.8906, 28.3672)
+color = Color(0.720025, 0.995433, 0.727592, 1)
+energy = 1.5
+blend_mode = 2
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_nrxqr")

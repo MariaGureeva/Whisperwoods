@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://dp8ag7cqqs7dh"]
+
+[ext_resource type="Texture2D" uid="uid://cg2nh3dgna3ty" path="res://MysticForest/assets/UI/Whitehole.png" id="1_otfv5"]
+[ext_resource type="Script" uid="uid://b0lbx7iqftm6v" path="res://MysticForest/scripts/telescope_ui.gd" id="1_y2pgs"]
+[ext_resource type="PackedScene" uid="uid://dhesfc85r20xh" path="res://MysticForest/scenes/TechnicalElements/star.tscn" id="3_x3yn4"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qglkx"]
+blend_mode = 2
+
+[node name="Telescope_UI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_y2pgs")
+
+[node name="BackgroundMask" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00855474, 0, 0.148578, 1)
+
+[node name="Eyepiece" type="TextureRect" parent="."]
+process_mode = 3
+material = SubResource("CanvasItemMaterial_qglkx")
+custom_minimum_size = Vector2(600, 600)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_otfv5")
+
+[node name="Constellations" type="Node2D" parent="Eyepiece"]
+process_mode = 3
+
+[node name="Star1" parent="Eyepiece/Constellations" instance=ExtResource("3_x3yn4")]
+position = Vector2(151, 269)
+
+[node name="Star2" parent="Eyepiece/Constellations" instance=ExtResource("3_x3yn4")]
+position = Vector2(333, 148)
+
+[node name="Star3" parent="Eyepiece/Constellations" instance=ExtResource("3_x3yn4")]
+position = Vector2(401, 444)
+
+[node name="LineContainer" type="Line2D" parent="Eyepiece"]
+process_mode = 3
+points = PackedVector2Array(-25, -51)

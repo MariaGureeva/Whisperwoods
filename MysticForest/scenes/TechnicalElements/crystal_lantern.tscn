@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwa74h7cc5n0s"]
+
+[ext_resource type="Script" uid="uid://f7nkf3b3ceje" path="res://MysticForest/scripts/crystal_lantern.gd" id="1_n838b"]
+[ext_resource type="Texture2D" uid="uid://x8uh2amsvhov" path="res://MysticForest/assets/tilesets/Caves/Crystal1.png" id="2_srdak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kiyb4"]
+size = Vector2(582, 734)
+
+[sub_resource type="Gradient" id="Gradient_n838b"]
+colors = PackedColorArray(0, 1, 1, 0.635294, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_srdak"]
+gradient = SubResource("Gradient_n838b")
+fill = 1
+fill_from = Vector2(0.525641, 0.474359)
+
+[node name="CrystalLantern" type="Area2D"]
+script = ExtResource("1_n838b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, 15)
+shape = SubResource("RectangleShape2D_kiyb4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 4)
+texture = ExtResource("2_srdak")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(9.99998, 26)
+scale = Vector2(12.0937, 12.6406)
+color = Color(0.556488, 1, 0.996581, 1)
+energy = 1.5
+blend_mode = 2
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_srdak")
+
+[node name="Timer" type="Timer" parent="."]

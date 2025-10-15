@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://caaaytigj6ebi"]
+
+[ext_resource type="Script" uid="uid://d0vck44vt6oy3" path="res://MysticForest/ui/dialogue_ui.gd" id="1_e3mjw"]
+[ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="2_jfn2a"]
+[ext_resource type="FontFile" uid="uid://c307wrx23n856" path="res://MysticForest/Fonts/Pixeloid/PixeloidSansBold-PKnYd.ttf" id="3_oedhu"]
+
+[sub_resource type="GDScript" id="GDScript_et3w5"]
+script/source = "extends Panel
+"
+
+[node name="DialogueUI" type="CanvasLayer" groups=["dialogue_ui"]]
+process_mode = 3
+layer = 2
+script = ExtResource("1_e3mjw")
+
+[node name="Panel" type="Panel" parent="."]
+process_mode = 3
+offset_left = -1.0
+offset_top = 528.0
+offset_right = 2594.0
+offset_bottom = 1212.0
+mouse_filter = 2
+script = SubResource("GDScript_et3w5")
+
+[node name="text_box" type="RichTextLabel" parent="Panel"]
+process_mode = 3
+layout_mode = 0
+offset_left = 11.0
+offset_top = 22.0
+offset_right = 1136.0
+offset_bottom = 368.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("2_jfn2a")
+theme_override_fonts/mono_font = ExtResource("3_oedhu")
+theme_override_fonts/bold_italics_font = ExtResource("3_oedhu")
+theme_override_fonts/bold_font = ExtResource("3_oedhu")
+scroll_active = false
+
+[node name="choice_box" type="VBoxContainer" parent="Panel"]
+process_mode = 3
+z_index = 2
+layout_mode = 0
+offset_left = 372.0
+offset_top = 23.0
+offset_right = 1317.0
+offset_bottom = 340.0
+
+[node name="choice_1" type="Button" parent="Panel/choice_box"]
+process_mode = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jfn2a")
+
+[node name="choice_2" type="Button" parent="Panel/choice_box"]
+process_mode = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jfn2a")
+
+[node name="choice_3" type="Button" parent="Panel/choice_box"]
+process_mode = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jfn2a")
+
+[connection signal="pressed" from="Panel/choice_box/choice_1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/choice_box/choice_2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Panel/choice_box/choice_3" to="." method="_on_button_3_pressed"]

@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dq845i6ttuavs"]
+
+[ext_resource type="Script" uid="uid://cxhheiohe80ug" path="res://MysticForest/scripts/pickups.gd" id="1_ld5pw"]
+[ext_resource type="Texture2D" uid="uid://bap405uk2cc36" path="res://MysticForest/assets/objects/Seed.png" id="2_a4j7e"]
+[ext_resource type="FontFile" uid="uid://ffnxym4flggi" path="res://MysticForest/Fonts/Pixeloid/PixeloidMono-d94EV.ttf" id="3_vb3ol"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8dxwe"]
+size = Vector2(395, 438)
+
+[sub_resource type="LabelSettings" id="LabelSettings_v77rf"]
+font = ExtResource("3_vb3ol")
+font_size = 100
+
+[node name="Seeds" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_ld5pw")
+
+[node name="Seed" type="Sprite2D" parent="."]
+position = Vector2(49, 32)
+texture = ExtResource("2_a4j7e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(119.5, 139)
+shape = SubResource("RectangleShape2D_8dxwe")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -61.0
+offset_top = -314.0
+offset_right = 170.0
+offset_bottom = -191.0
+label_settings = SubResource("LabelSettings_v77rf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
