@@ -1,0 +1,70 @@
+[gd_resource type="SpriteFrames" load_steps=14 format=3 uid="uid://e7ugbhrp5ayk"]
+
+[ext_resource type="Texture2D" uid="uid://cdov7k32lfvgf" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking1.png" id="1_212el"]
+[ext_resource type="Texture2D" uid="uid://b07sc6u5jbxv5" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking2.png" id="2_xdusp"]
+[ext_resource type="Texture2D" uid="uid://brbwe1x7of3lj" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking3.png" id="3_rprs3"]
+[ext_resource type="Texture2D" uid="uid://dhca1qcm2b1vv" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking4.png" id="4_dpiuj"]
+[ext_resource type="Texture2D" uid="uid://x78vexfmf521" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking5.png" id="5_37028"]
+[ext_resource type="Texture2D" uid="uid://raqjdxy7a3r8" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking6.png" id="6_yvt40"]
+[ext_resource type="Texture2D" uid="uid://hgqpty75x0tp" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking7.png" id="7_b82jc"]
+[ext_resource type="Texture2D" uid="uid://icyidg1mbgpk" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking8.png" id="8_pb7yi"]
+[ext_resource type="Texture2D" uid="uid://bm8ndgjjicxkh" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking9.png" id="9_ys62i"]
+[ext_resource type="Texture2D" uid="uid://dsybuxkgcvge" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking10.png" id="10_dv14o"]
+[ext_resource type="Texture2D" uid="uid://b1xr4wa0ca73o" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking11.png" id="11_fphd3"]
+[ext_resource type="Texture2D" uid="uid://y35iw5j8ir10" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking12.png" id="12_7ffgn"]
+[ext_resource type="Texture2D" uid="uid://cyjlivddusbq7" path="res://MysticForest/assets/UI/Maestro talking/Maestro talking13.png" id="13_2bxr0"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_212el")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_212el")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xdusp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rprs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dpiuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_37028")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yvt40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b82jc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pb7yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ys62i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dv14o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fphd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7ffgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2bxr0")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 12.0
+}]

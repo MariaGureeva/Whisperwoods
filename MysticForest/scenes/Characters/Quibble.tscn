@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd36jwiaqp1km"]
+
+[ext_resource type="Script" uid="uid://y67vugs06wpk" path="res://MysticForest/scripts/quibble.gd" id="1_ujewx"]
+[ext_resource type="Texture2D" uid="uid://cehmc05juip21" path="res://MysticForest/assets/characters/School kids/Schoolkid1.png" id="2_np642"]
+[ext_resource type="Texture2D" uid="uid://bslrn3o73s1xk" path="res://MysticForest/assets/characters/School kids/Schoolkid2.png" id="3_opfqu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iexyq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_np642")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_opfqu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="Quibble" type="CharacterBody2D"]
+script = ExtResource("1_ujewx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iexyq")
+animation = &"idle"
+frame = 1
+frame_progress = 0.767803

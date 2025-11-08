@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://lq45l5gih2lr"]
+
+[ext_resource type="Script" uid="uid://blfljjn2fb8jj" path="res://MysticForest/scripts/bloop.gd" id="1_x1nqn"]
+[ext_resource type="Texture2D" uid="uid://3uq84mmagobm" path="res://MysticForest/assets/characters/School kids/Schoolkid4.1.png" id="2_ury7q"]
+[ext_resource type="Texture2D" uid="uid://7uvnqx12ker7" path="res://MysticForest/assets/characters/School kids/Schoolkid4.2.png" id="3_ofeke"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pspnr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ury7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ofeke")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="Bloop" type="CharacterBody2D"]
+script = ExtResource("1_x1nqn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pspnr")
+animation = &"idle"

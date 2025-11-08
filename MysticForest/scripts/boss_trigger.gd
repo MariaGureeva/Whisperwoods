@@ -9,18 +9,22 @@ extends Area2D
 var has_triggered := false
 var hits_needed = 3
 var current_hits = 0
-
-# --- НОВАЯ ПЕРЕМЕННАЯ ---
-# Мы сохраним ссылку на игрока здесь, чтобы не искать его каждый раз
 var player_node: CharacterBody2D = null
 
 func _ready():
-	if GameState.act_3_intro_played:
+	if GameState.fungal_reach_quest_completed or GameState.act_3_intro_played:
 		# Просто выключаем себя и прекращаем работу.
 		self.monitoring = false
 		set_process(false)
 		set_physics_process(false)
 		set_process_unhandled_input(false)
+		
+		if is_instance_valid(spider): spider.hide()
+		if is_instance_valid(boss_crystal) and boss_crystal.has_method("force_cleanse"):
+			boss_crystal.force_cleanse()
+		if is_instance_valid(tether1): tether1.hide()
+		if is_instance_valid(tether2): tether2.hide()
+		if is_instance_valid(tether3): tether3.hide()
 		return # Выходим из _ready()
 
 	body_entered.connect(_on_body_entered)
@@ -28,19 +32,13 @@ func _ready():
 	if is_instance_valid(tether2): tether2.hide()
 	if is_instance_valid(tether3): tether3.hide()
 
-	if GameState.fungal_reach_quest_completed:
-		if is_instance_valid(spider): spider.hide()
-		if boss_crystal.has_method("force_cleanse"):
-			boss_crystal.force_cleanse()
 
 func _on_body_entered(body):
-	if GameState.act_3_intro_played: return
+	if GameState.fungal_reach_quest_completed or GameState.act_3_intro_played: return
 	if not has_triggered and body.name == "Player1":
 		has_triggered = true
 		set_deferred("monitoring", false)
 		
-		# --- ИЗМЕНЕНИЕ ---
-		# Сохраняем игрока, который вошел в триггер
 		player_node = body
 		start_rescue_cutscene()
 

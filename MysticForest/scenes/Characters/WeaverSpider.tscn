@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bffmhyiq18uw"]
+[gd_scene load_steps=135 format=3 uid="uid://bffmhyiq18uw"]
 
 [ext_resource type="Script" uid="uid://cui2mplu13qh6" path="res://MysticForest/scripts/weaver_spider.gd" id="1_xjory"]
 [ext_resource type="Texture2D" uid="uid://ccb8c73wxneo8" path="res://MysticForest/assets/characters/Spiders/Cross Spider/Cross spider animation1.png" id="2_ekdoo"]
@@ -24,6 +24,114 @@
 [ext_resource type="Texture2D" uid="uid://chhaolb2syehd" path="res://MysticForest/assets/characters/Spiders/Cross Spider/3 act animations/Cross spider sprites2.png" id="20_yvrpw"]
 [ext_resource type="Texture2D" uid="uid://kdifx0s1silf" path="res://MysticForest/assets/characters/Spiders/Cross Spider/3 act animations/Cross spider sprites3.png" id="23_jhx7h"]
 [ext_resource type="Texture2D" uid="uid://7ery23lseyu0" path="res://MysticForest/assets/characters/Spiders/Cross Spider/3 act animations/Cross spider sprites4.png" id="24_83011"]
+[ext_resource type="Texture2D" uid="uid://kl5thl7tc6pu" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk1.png" id="25_e8mp2"]
+[ext_resource type="Texture2D" uid="uid://dw55mf07e8ixq" path="res://MysticForest/assets/characters/Spiders/Cross Spider/standing/Waver spider standing 1.png" id="25_m6uo4"]
+[ext_resource type="Texture2D" uid="uid://c4lmqvf77dkim" path="res://MysticForest/assets/characters/Spiders/Cross Spider/standing/Waver spider standing 2.png" id="26_53550"]
+[ext_resource type="Texture2D" uid="uid://d27klanox0bnr" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk2.png" id="26_jxisa"]
+[ext_resource type="Texture2D" uid="uid://cispmj6qmh5fs" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk3.png" id="27_m6uo4"]
+[ext_resource type="Texture2D" uid="uid://cqmwp1n7737b" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk4.png" id="28_53550"]
+[ext_resource type="Texture2D" uid="uid://btr4tmmslf0kq" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk5.png" id="29_lkhya"]
+[ext_resource type="Texture2D" uid="uid://bcvm5b3xi4dga" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk6.png" id="30_3vjpg"]
+[ext_resource type="Texture2D" uid="uid://bn11xnrjd3p6q" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk7.png" id="31_lkqbo"]
+[ext_resource type="Texture2D" uid="uid://bcvk3dxlix0qo" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk8.png" id="32_cds8d"]
+[ext_resource type="Texture2D" uid="uid://dybd04w2xm05f" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk9.png" id="33_fkn06"]
+[ext_resource type="Texture2D" uid="uid://b3w1lvgk5yhq8" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk10.png" id="34_2khuw"]
+[ext_resource type="Texture2D" uid="uid://1e1ggfwsctr5" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk11.png" id="35_x1hqb"]
+[ext_resource type="Texture2D" uid="uid://ng0rytdar8a0" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk12.png" id="36_oemcn"]
+[ext_resource type="Texture2D" uid="uid://b1lkacjlsdkct" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk13.png" id="37_55lv2"]
+[ext_resource type="Texture2D" uid="uid://db0adl2dwl807" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk14.png" id="38_bcfxb"]
+[ext_resource type="Texture2D" uid="uid://s15wudhfe21w" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk15.png" id="39_yxtjd"]
+[ext_resource type="Texture2D" uid="uid://umao0fvfss6o" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk16.png" id="40_86jwq"]
+[ext_resource type="Texture2D" uid="uid://10fkbjtvuyog" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk17.png" id="41_q7bua"]
+[ext_resource type="Texture2D" uid="uid://b2tbur0fan4pp" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk18.png" id="42_snpqm"]
+[ext_resource type="Texture2D" uid="uid://b58wy00gp3sij" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk19.png" id="43_1wvic"]
+[ext_resource type="Texture2D" uid="uid://ddbpv7v7anody" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk20.png" id="44_gkdgi"]
+[ext_resource type="Texture2D" uid="uid://pftkk6ob2l4r" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk21.png" id="45_nk520"]
+[ext_resource type="Texture2D" uid="uid://c221uqnxnpap0" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk22.png" id="46_c0cca"]
+[ext_resource type="Texture2D" uid="uid://btc2yjmu6wwq8" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk23.png" id="47_2j0hg"]
+[ext_resource type="Texture2D" uid="uid://cn8bovgmhgsf1" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk24.png" id="48_nh3l1"]
+[ext_resource type="Texture2D" uid="uid://cgic3a51m1y17" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk25.png" id="49_equcd"]
+[ext_resource type="Texture2D" uid="uid://dc486l8tttu3y" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk26.png" id="50_a7qc7"]
+[ext_resource type="Texture2D" uid="uid://csqlweyxo4m20" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk27.png" id="51_75b02"]
+[ext_resource type="Texture2D" uid="uid://cotj0tnu5cpj7" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk28.png" id="52_8klnt"]
+[ext_resource type="Texture2D" uid="uid://b7eq55vtn4cfb" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk29.png" id="53_mglhm"]
+[ext_resource type="Texture2D" uid="uid://lyege2la37ck" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk30.png" id="54_vivn2"]
+[ext_resource type="Texture2D" uid="uid://bg0bkgfdaqqtk" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk31.png" id="55_s15y2"]
+[ext_resource type="Texture2D" uid="uid://daubks3h5j53b" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk32.png" id="56_ed5gp"]
+[ext_resource type="Texture2D" uid="uid://cnntcsi8qdewq" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk33.png" id="57_tjfym"]
+[ext_resource type="Texture2D" uid="uid://bntrglbv1dsqu" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk34.png" id="58_ckvn7"]
+[ext_resource type="Texture2D" uid="uid://di4tb7wt3onkc" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk35.png" id="59_5vdyq"]
+[ext_resource type="Texture2D" uid="uid://ejna74erbct0" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk36.png" id="60_1ggln"]
+[ext_resource type="Texture2D" uid="uid://dqj16c0x03dyx" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk37.png" id="61_anfel"]
+[ext_resource type="Texture2D" uid="uid://olpsngtehewq" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk38.png" id="62_no1xx"]
+[ext_resource type="Texture2D" uid="uid://osy4acx7ll3u" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk39.png" id="63_y52mt"]
+[ext_resource type="Texture2D" uid="uid://l7ig1bt6ybkh" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk40.png" id="64_khd1f"]
+[ext_resource type="Texture2D" uid="uid://dg0qhu0a0lf6q" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk41.png" id="65_355nw"]
+[ext_resource type="Texture2D" uid="uid://ccco8ggo3l5cb" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk42.png" id="66_sieft"]
+[ext_resource type="Texture2D" uid="uid://bdqq5dw10i0nj" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk43.png" id="67_6w62s"]
+[ext_resource type="Texture2D" uid="uid://dwgi08bjiqbgn" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk44.png" id="68_iv7xb"]
+[ext_resource type="Texture2D" uid="uid://bdfqgo21khsyn" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk45.png" id="69_73yxx"]
+[ext_resource type="Texture2D" uid="uid://5mkqi24v16kk" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk46.png" id="70_8ewmb"]
+[ext_resource type="Texture2D" uid="uid://d1fxd5fiyd4dh" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk47.png" id="71_cxphw"]
+[ext_resource type="Texture2D" uid="uid://bho423qca1pva" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk48.png" id="72_dcvh2"]
+[ext_resource type="Texture2D" uid="uid://wyfpjoxh1b1w" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk49.png" id="73_0sng4"]
+[ext_resource type="Texture2D" uid="uid://cxuvagunl3eui" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk50.png" id="74_bg5wx"]
+[ext_resource type="Texture2D" uid="uid://crnwxlto7lo1o" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk51.png" id="75_7837r"]
+[ext_resource type="Texture2D" uid="uid://c5e8ryl4btv1r" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk52.png" id="76_jug24"]
+[ext_resource type="Texture2D" uid="uid://bd4t3567ub2ys" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk left 2/SpiderWalk53.png" id="77_1y0m8"]
+[ext_resource type="Texture2D" uid="uid://calglwgk5jqvx" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright1.png" id="78_1ihiq"]
+[ext_resource type="Texture2D" uid="uid://c76nbp13evsgt" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright2.png" id="79_xungq"]
+[ext_resource type="Texture2D" uid="uid://bq2tmj8k3icux" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright3.png" id="80_eo1wj"]
+[ext_resource type="Texture2D" uid="uid://dfit0wbqgr0il" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright4.png" id="81_psjdr"]
+[ext_resource type="Texture2D" uid="uid://22cweyylw2vw" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright5.png" id="82_6s8nw"]
+[ext_resource type="Texture2D" uid="uid://dtv8mwrkwkpsa" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright6.png" id="83_3d2ln"]
+[ext_resource type="Texture2D" uid="uid://b3s3l3bi4jgfv" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright7.png" id="84_l472t"]
+[ext_resource type="Texture2D" uid="uid://cv6yqgrqyo65d" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright8.png" id="85_mqomx"]
+[ext_resource type="Texture2D" uid="uid://bvipaxs47xi6x" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright9.png" id="86_obdwx"]
+[ext_resource type="Texture2D" uid="uid://6oweohjuqo3e" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright10.png" id="87_fgdjr"]
+[ext_resource type="Texture2D" uid="uid://dk4ublufifktc" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright11.png" id="88_fdntl"]
+[ext_resource type="Texture2D" uid="uid://bbt8noji16fsb" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright12.png" id="89_vyh2h"]
+[ext_resource type="Texture2D" uid="uid://c71arevkuprc2" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright13.png" id="90_ergve"]
+[ext_resource type="Texture2D" uid="uid://ctwy0ibeknqoc" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright14.png" id="91_o40wm"]
+[ext_resource type="Texture2D" uid="uid://dpqtv0v3iegqk" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright15.png" id="92_p2pfh"]
+[ext_resource type="Texture2D" uid="uid://cq8eg4j1rbohd" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright16.png" id="93_knwx7"]
+[ext_resource type="Texture2D" uid="uid://dynl25cp1gxat" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright17.png" id="94_silq1"]
+[ext_resource type="Texture2D" uid="uid://u16c6iij7uw8" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright18.png" id="95_of61u"]
+[ext_resource type="Texture2D" uid="uid://3sj0k7dkmlns" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright19.png" id="96_ua8u4"]
+[ext_resource type="Texture2D" uid="uid://55mwqc5oly1t" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright20.png" id="97_g8xdw"]
+[ext_resource type="Texture2D" uid="uid://d1323ro0yrx35" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright21.png" id="98_2mdys"]
+[ext_resource type="Texture2D" uid="uid://cy6ftg1jph70q" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright22.png" id="99_otoqf"]
+[ext_resource type="Texture2D" uid="uid://1xn6nycdanln" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright23.png" id="100_q7m8v"]
+[ext_resource type="Texture2D" uid="uid://2fq8nsuj2hxd" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright24.png" id="101_50eia"]
+[ext_resource type="Texture2D" uid="uid://bhr85gyo1jgwg" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright25.png" id="102_m4x7k"]
+[ext_resource type="Texture2D" uid="uid://d4gi58i1bwr8m" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright26.png" id="103_ad1g7"]
+[ext_resource type="Texture2D" uid="uid://daiaohlo0rt5b" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright27.png" id="104_yya1m"]
+[ext_resource type="Texture2D" uid="uid://c1orejvujs7pc" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright28.png" id="105_rxw8w"]
+[ext_resource type="Texture2D" uid="uid://bcx1utvxwlb7p" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright29.png" id="106_ov87s"]
+[ext_resource type="Texture2D" uid="uid://bgcdtq554iou5" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright30.png" id="107_icc0e"]
+[ext_resource type="Texture2D" uid="uid://c2vyhtl3pisof" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright31.png" id="108_2r3x3"]
+[ext_resource type="Texture2D" uid="uid://xss7aqwu7lx6" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright32.png" id="109_4wy5n"]
+[ext_resource type="Texture2D" uid="uid://d3m0f1jnys3wg" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright33.png" id="110_07ny5"]
+[ext_resource type="Texture2D" uid="uid://6e5ro0l86lvo" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright34.png" id="111_q88e2"]
+[ext_resource type="Texture2D" uid="uid://dn6xvfg5sj7xi" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright35.png" id="112_bw231"]
+[ext_resource type="Texture2D" uid="uid://ouea5dw37mwn" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright36.png" id="113_5an5r"]
+[ext_resource type="Texture2D" uid="uid://b0dakrg442jh1" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright37.png" id="114_4o03l"]
+[ext_resource type="Texture2D" uid="uid://dtbripb6o5wkq" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright38.png" id="115_pd51t"]
+[ext_resource type="Texture2D" uid="uid://iu27just2jc7" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright39.png" id="116_qwl1j"]
+[ext_resource type="Texture2D" uid="uid://csps5ilmlxelf" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright40.png" id="117_0uhc7"]
+[ext_resource type="Texture2D" uid="uid://db5110s5dy1oq" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright41.png" id="118_etubb"]
+[ext_resource type="Texture2D" uid="uid://b0mt3udwyi3se" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright42.png" id="119_ka3p2"]
+[ext_resource type="Texture2D" uid="uid://baj08v2syf18t" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright43.png" id="120_ixbvk"]
+[ext_resource type="Texture2D" uid="uid://cqgeisxjvvswk" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright44.png" id="121_nahbq"]
+[ext_resource type="Texture2D" uid="uid://cdkbbojwqkprm" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright45.png" id="122_nkxvm"]
+[ext_resource type="Texture2D" uid="uid://bpefbug83pgry" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright46.png" id="123_nodot"]
+[ext_resource type="Texture2D" uid="uid://dkqi0ot2uuva4" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright47.png" id="124_ihybu"]
+[ext_resource type="Texture2D" uid="uid://pu1vc8vyirkl" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright48.png" id="125_mucbx"]
+[ext_resource type="Texture2D" uid="uid://ga3ovg1josfy" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright49.png" id="126_13kf7"]
+[ext_resource type="Texture2D" uid="uid://cidklfpdvdd8g" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright50.png" id="127_exfso"]
+[ext_resource type="Texture2D" uid="uid://cg2vcw047tdo7" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright51.png" id="128_v3icd"]
+[ext_resource type="Texture2D" uid="uid://emx2uuuogv0k" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright52.png" id="129_xhksh"]
+[ext_resource type="Texture2D" uid="uid://crakfc01twx6x" path="res://MysticForest/assets/characters/Spiders/Cross Spider/walk right 2/SpiderWalkright53.png" id="130_tl17w"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lw7tg"]
 animations = [{
@@ -171,13 +279,357 @@ animations = [{
 "loop": true,
 "name": &"sorrow",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_m6uo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_53550")
+}],
+"loop": true,
+"name": &"standing",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_e8mp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_jxisa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_m6uo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_53550")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_lkhya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3vjpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_lkqbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_cds8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_fkn06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2khuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_x1hqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_oemcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_55lv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_bcfxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_yxtjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_86jwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_q7bua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_snpqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_1wvic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_gkdgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_nk520")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_c0cca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_2j0hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_nh3l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_equcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_a7qc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_75b02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_8klnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_mglhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_vivn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_s15y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_ed5gp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_tjfym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ckvn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_5vdyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_1ggln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_anfel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_no1xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_y52mt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_khd1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_355nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_sieft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_6w62s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_iv7xb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_73yxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_8ewmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_cxphw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_dcvh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_0sng4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_bg5wx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_7837r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_jug24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_1y0m8")
+}],
+"loop": true,
+"name": &"walking left",
+"speed": 35.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_1ihiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_xungq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_eo1wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_psjdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_6s8nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_3d2ln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_l472t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_mqomx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_obdwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_fgdjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_fdntl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_vyh2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_ergve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_o40wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_p2pfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_knwx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_silq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_of61u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_ua8u4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_g8xdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_2mdys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_otoqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_q7m8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_50eia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_m4x7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_ad1g7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_yya1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_rxw8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_ov87s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_icc0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_2r3x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_4wy5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_07ny5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_q88e2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_bw231")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_5an5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_4o03l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_pd51t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_qwl1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_0uhc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_etubb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_ka3p2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_ixbvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_nahbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_nkxvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_nodot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_ihybu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_mucbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_13kf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_exfso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_v3icd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_xhksh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_tl17w")
+}],
+"loop": true,
+"name": &"walking right",
+"speed": 35.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6uo4"]
+size = Vector2(594, 120)
 
 [node name="WeaverSpider" type="CharacterBody2D"]
 script = ExtResource("1_xjory")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lw7tg")
-animation = &"escape"
-frame = 16
-frame_progress = 1.0
+animation = &"standing"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(23, 177)
+shape = SubResource("RectangleShape2D_m6uo4")

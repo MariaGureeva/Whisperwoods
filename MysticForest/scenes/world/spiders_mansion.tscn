@@ -1,0 +1,190 @@
+[gd_scene load_steps=28 format=4 uid="uid://cbcjbvct6di3i"]
+
+[ext_resource type="Texture2D" uid="uid://rj01rxk7p3h7" path="res://MysticForest/assets/tilesets/Spiders houses/Walls for spiders-Sheet.png" id="1_on0xo"]
+[ext_resource type="Texture2D" uid="uid://csmefck3cu0k7" path="res://MysticForest/assets/tilesets/Spiders houses/Floor tiles for spiders-Sheet.png" id="2_dtl0f"]
+[ext_resource type="PackedScene" uid="uid://b6yqyqn8jbfp0" path="res://MysticForest/scenes/Characters/spider_queen.tscn" id="3_ey7ba"]
+[ext_resource type="Texture2D" uid="uid://c7skn4yh88m77" path="res://MysticForest/assets/tilesets/Spiders houses/rug.png" id="3_li1pk"]
+[ext_resource type="PackedScene" uid="uid://75r2opiseqxg" path="res://MysticForest/scenes/Characters/spider_king.tscn" id="4_d74pq"]
+[ext_resource type="Texture2D" uid="uid://budoxw7spfbla" path="res://MysticForest/assets/tilesets/Spiders houses/lader.png" id="4_okxt5"]
+[ext_resource type="Texture2D" uid="uid://n82tfix6lb4l" path="res://MysticForest/assets/tilesets/Spiders houses/Armor.png" id="5_kl6mo"]
+[ext_resource type="Texture2D" uid="uid://bc882u5gfknsd" path="res://MysticForest/assets/tilesets/Spiders houses/chair1.png" id="6_er0np"]
+[ext_resource type="Texture2D" uid="uid://w5x4j42p780x" path="res://MysticForest/assets/tilesets/Spiders houses/chair2.png" id="7_yp034"]
+[ext_resource type="Texture2D" uid="uid://cb8fa3tyydet8" path="res://MysticForest/assets/tilesets/Spiders houses/windows spiders.png" id="8_kl6mo"]
+[ext_resource type="PackedScene" uid="uid://byfkyn2ctk5hx" path="res://MysticForest/scenes/Characters/nyxen_spider.tscn" id="8_orgdu"]
+[ext_resource type="PackedScene" uid="uid://b0smkfon0d5lw" path="res://MysticForest/scenes/Characters/thornveil-spider.tscn" id="9_fnyhp"]
+[ext_resource type="PackedScene" uid="uid://b0b4qsbuwrlpa" path="res://MysticForest/scenes/Characters/silra_spider.tscn" id="10_y5v8o"]
+[ext_resource type="PackedScene" uid="uid://bja4kv3hba8v5" path="res://MysticForest/scenes/Characters/maelor_spider.tscn" id="11_ukld3"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="14_lik1a"]
+[ext_resource type="Texture2D" uid="uid://dtt4sxtyi281w" path="res://MysticForest/assets/tilesets/Spiders houses/torch.png" id="16_er0np"]
+[ext_resource type="PackedScene" uid="uid://caaaytigj6ebi" path="res://MysticForest/scenes/TechnicalElements/Main_DialogueUI.tscn" id="17_yp034"]
+[ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="18_orgdu"]
+[ext_resource type="PackedScene" uid="uid://58goqqrxli5g" path="res://MysticForest/scenes/Characters/ShadowSpider.tscn" id="19_orgdu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5fg5x"]
+texture = ExtResource("1_on0xo")
+texture_region_size = Vector2i(320, 640)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_x5mdx"]
+tile_size = Vector2i(320, 640)
+sources/0 = SubResource("TileSetAtlasSource_5fg5x")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hla5q"]
+texture = ExtResource("2_dtl0f")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_dxwgv"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_hla5q")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_alnh4"]
+texture = ExtResource("3_li1pk")
+texture_region_size = Vector2i(960, 640)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bul52"]
+tile_size = Vector2i(960, 640)
+sources/0 = SubResource("TileSetAtlasSource_alnh4")
+
+[sub_resource type="Gradient" id="Gradient_n838b"]
+colors = PackedColorArray(0.995099, 0.984099, 0.933447, 0.635294, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_yp034"]
+gradient = SubResource("Gradient_n838b")
+fill = 1
+fill_from = Vector2(0.5, 0.530488)
+
+[node name="Spiders mansion" type="Node2D"]
+modulate = Color(0.408015, 0.413525, 0.520625, 1)
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Walls" type="TileMapLayer" parent="TileMap"]
+tile_map_data = PackedByteArray("AAAAAP7/AAAAAAAAAAAAAP//AAAAAAAAAAABAP7/AAAAAAAAAAABAP//AAAAAAAAAAACAP7/AAACAAAAAAACAP//AAABAAAAAAADAP7/AAAAAAAAAAADAP//AAAAAAAAAAAEAP7/AAACAAAAAAAEAP//AAABAAAAAAAFAP7/AAAAAAAAAAAFAP//AAAAAAAAAAAGAP7/AAAAAAAAAAAGAP//AAAAAAAAAAAHAP7/AAAAAAAAAAAHAP//AAAAAAAAAAAIAP7/AAAAAAAAAAAIAP//AAAAAAAAAAAJAP7/AAAAAAAAAAAJAP//AAAAAAAAAAAKAP7/AAACAAAAAAAKAP//AAABAAAAAAALAP7/AAAAAAAAAAALAP//AAAAAAAAAAAMAP7/AAACAAAAAAAMAP//AAABAAAAAAANAP7/AAAAAAAAAAANAP//AAAAAAAAAAAOAP7/AAAAAAAAAAAOAP//AAAAAAAAAAAAAP3/AAAAAAAAAAABAP3/AAAAAAAAAAACAP3/AAADAAAAAAADAP3/AAAAAAAAAAAEAP3/AAADAAAAAAAFAP3/AAAAAAAAAAAGAP3/AAAAAAAAAAAHAP3/AAAAAAAAAAAIAP3/AAAAAAAAAAAJAP3/AAAAAAAAAAAKAP3/AAADAAAAAAALAP3/AAAAAAAAAAAMAP3/AAADAAAAAAANAP3/AAAAAAAAAAAOAP3/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_x5mdx")
+
+[node name="Floor" type="TileMapLayer" parent="TileMap"]
+tile_map_data = PackedByteArray("AAAAAAAAAAADAAAAABAAAAEAAAACAAAAABAAAAIAAAACAAAAABAAAAMAAAACAAAAABAAAAQAAAACAAAAABAAAAUAAAACAAAAABABAAYAAAAAAAAAAAAAAAYAAAACAAAAABAAAAcAAAACAAAAABAAAAgAAAACAAAAABAAAAkAAAACAAAAABAAAAoAAAACAAAAABAAAAsAAAACAAAAABAAAAwAAAACAAAAABAAAA0AAAACAAAAABAAAA4AAAACAAAAABAAAA8AAAACAAAAABAOAAAAAAADAAAAAAAOAAEAAAACAAAAAAAOAAIAAAACAAAAAAAOAAMAAAACAAAAAAAOAAQAAAACAAAAAAAOAAUAAAACAAAAAAAOAAYAAAACAAAAAAAOAAcAAAACAAAAAAAOAAgAAAACAAAAAAAOAAkAAAACAAAAAAAOAAoAAAACAAAAAAAOAAsAAAACAAAAAAAOAAwAAAACAAAAAAAOAA0AAAACAAAAAAAOAA4AAAACAAAAAAAOAA8AAAACAAAAAAABAAAAAAACAAAAAGABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAAAAAABAAUAAAAAAAAAAAABAAcAAAAAAAAAAAABAAgAAAAAAAAAAAABAAkAAAAAAAAAAAABAAoAAAAAAAAAAAABAAsAAAAAAAAAAAABAAwAAAAAAAAAAAABAA0AAAAAAAAAAAABAA4AAAAAAAAAAAABAA8AAAABAAAAAAACAAAAAAACAAAAAGACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAACAAYAAAAAAAAAAAACAAcAAAAAAAAAAAACAAgAAAAAAAAAAAACAAkAAAAAAAAAAAACAAoAAAAAAAAAAAACAAsAAAAAAAAAAAACAAwAAAAAAAAAAAACAA0AAAAAAAAAAAACAA4AAAAAAAAAAAACAA8AAAABAAAAAAADAAAAAAACAAAAAGADAAEAAAAAAAAAAAADAAIAAAAAAAAAAAADAAMAAAAAAAAAAAADAAQAAAAAAAAAAAADAAUAAAAAAAAAAAADAAYAAAAAAAAAAAADAAcAAAAAAAAAAAADAAgAAAAAAAAAAAADAAkAAAAAAAAAAAADAAoAAAAAAAAAAAADAAsAAAAAAAAAAAADAAwAAAAAAAAAAAADAA0AAAAAAAAAAAADAA4AAAAAAAAAAAADAA8AAAABAAAAAAAEAAAAAAACAAAAAGAEAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAAEAAYAAAAAAAAAAAAEAAcAAAAAAAAAAAAEAAgAAAAAAAAAAAAEAAkAAAAAAAAAAAAEAAoAAAAAAAAAAAAEAAsAAAAAAAAAAAAEAAwAAAAAAAAAAAAEAA0AAAAAAAAAAAAEAA4AAAAAAAAAAAAEAA8AAAABAAAAAAAFAAAAAAACAAAAAGAFAAEAAAAAAAAAAAAFAAIAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAFAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAFAAgAAAAAAAAAAAAFAAkAAAAAAAAAAAAFAAoAAAAAAAAAAAAFAAsAAAAAAAAAAAAFAAwAAAAAAAAAAAAFAA0AAAAAAAAAAAAFAA4AAAAAAAAAAAAFAA8AAAABAAAAAAAGAAAAAAACAAAAAGAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAGAAMAAAAAAAAAAAAGAAQAAAAAAAAAAAAGAAUAAAAAAAAAAAAGAAYAAAAAAAAAAAAGAAcAAAAAAAAAAAAGAAgAAAAAAAAAAAAGAAkAAAAAAAAAAAAGAAoAAAAAAAAAAAAGAAsAAAAAAAAAAAAGAAwAAAAAAAAAAAAGAA0AAAAAAAAAAAAGAA4AAAAAAAAAAAAGAA8AAAABAAAAAAAHAAAAAAACAAAAAGAHAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAHAAMAAAAAAAAAAAAHAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAHAAYAAAAAAAAAAAAHAAcAAAAAAAAAAAAHAAgAAAAAAAAAAAAHAAkAAAAAAAAAAAAHAAoAAAAAAAAAAAAHAAsAAAAAAAAAAAAHAAwAAAAAAAAAAAAHAA0AAAAAAAAAAAAHAA4AAAAAAAAAAAAHAA8AAAABAAAAAAAIAAAAAAACAAAAAGAIAAEAAAAAAAAAAAAIAAIAAAAAAAAAAAAIAAMAAAAAAAAAAAAIAAQAAAAAAAAAAAAIAAUAAAAAAAAAAAAIAAYAAAAAAAAAAAAIAAcAAAAAAAAAAAAIAAgAAAAAAAAAAAAIAAkAAAAAAAAAAAAIAAoAAAAAAAAAAAAIAAsAAAAAAAAAAAAIAAwAAAAAAAAAAAAIAA0AAAAAAAAAAAAIAA4AAAAAAAAAAAAIAA8AAAABAAAAAAAJAAAAAAACAAAAAGAJAAEAAAAAAAAAAAAJAAIAAAAAAAAAAAAJAAMAAAAAAAAAAAAJAAQAAAAAAAAAAAAJAAUAAAAAAAAAAAAJAAYAAAAAAAAAAAAJAAcAAAAAAAAAAAAJAAgAAAAAAAAAAAAJAAkAAAAAAAAAAAAJAAoAAAAAAAAAAAAJAAsAAAAAAAAAAAAJAAwAAAAAAAAAAAAJAA0AAAAAAAAAAAAJAA4AAAAAAAAAAAAJAA8AAAABAAAAAAAKAAAAAAACAAAAAGAKAAEAAAAAAAAAAAAKAAIAAAAAAAAAAAAKAAMAAAAAAAAAAAAKAAQAAAAAAAAAAAAKAAUAAAAAAAAAAAAKAAYAAAAAAAAAAAAKAAcAAAAAAAAAAAAKAAgAAAAAAAAAAAAKAAkAAAAAAAAAAAAKAAoAAAAAAAAAAAAKAAsAAAAAAAAAAAAKAAwAAAAAAAAAAAAKAA0AAAAAAAAAAAAKAA4AAAAAAAAAAAAKAA8AAAABAAAAAAALAAAAAAACAAAAAGALAAEAAAAAAAAAAAALAAIAAAAAAAAAAAALAAMAAAAAAAAAAAALAAQAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAALAAgAAAAAAAAAAAALAAkAAAAAAAAAAAALAAoAAAAAAAAAAAALAAsAAAAAAAAAAAALAAwAAAAAAAAAAAALAA0AAAAAAAAAAAALAA4AAAAAAAAAAAALAA8AAAABAAAAAAAMAAAAAAACAAAAAGAMAAEAAAAAAAAAAAAMAAIAAAAAAAAAAAAMAAMAAAAAAAAAAAAMAAQAAAAAAAAAAAAMAAUAAAAAAAAAAAAMAAYAAAAAAAAAAAAMAAcAAAAAAAAAAAAMAAgAAAAAAAAAAAAMAAkAAAAAAAAAAAAMAAoAAAAAAAAAAAAMAAsAAAAAAAAAAAAMAAwAAAAAAAAAAAAMAA0AAAAAAAAAAAAMAA4AAAAAAAAAAAAMAA8AAAABAAAAAAANAAAAAAACAAAAAGANAAEAAAAAAAAAAAANAAIAAAAAAAAAAAANAAMAAAAAAAAAAAANAAQAAAAAAAAAAAANAAUAAAAAAAAAAAANAAYAAAAAAAAAAAANAAcAAAAAAAAAAAANAAgAAAAAAAAAAAANAAkAAAAAAAAAAAANAAoAAAAAAAAAAAANAAsAAAAAAAAAAAANAAwAAAAAAAAAAAANAA0AAAAAAAAAAAANAA4AAAAAAAAAAAANAA8AAAABAAAAAAAAAP//AAACAAAAABAAAP7/AAACAAAAABAAAP3/AAACAAAAABAAAPv/AAACAAAAABAAAPz/AAACAAAAABAOAPv/AAACAAAAAAAOAPz/AAACAAAAAAAOAP3/AAACAAAAAAAOAP7/AAACAAAAAAAOAP//AAACAAAAAAAOAPr/AAACAAAAAAAAAPr/AAACAAAAABA=")
+tile_set = SubResource("TileSet_dxwgv")
+
+[node name="carpet" type="TileMapLayer" parent="TileMap"]
+tile_map_data = PackedByteArray("AAACAAAAAAAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAACAAYAAAAAAAAAAAACAAcAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_bul52")
+
+[node name="Lader" type="Sprite2D" parent="TileMap/carpet"]
+position = Vector2(2400, -478)
+scale = Vector2(1, 0.765625)
+texture = ExtResource("4_okxt5")
+
+[node name="Armor" type="Sprite2D" parent="TileMap"]
+position = Vector2(1131, -334)
+texture = ExtResource("5_kl6mo")
+
+[node name="Armor2" type="Sprite2D" parent="TileMap"]
+position = Vector2(3674, -334)
+texture = ExtResource("5_kl6mo")
+
+[node name="Chair1" type="Sprite2D" parent="TileMap"]
+position = Vector2(1134, 75)
+scale = Vector2(0.63125, 0.63125)
+texture = ExtResource("6_er0np")
+
+[node name="Chair2" type="Sprite2D" parent="TileMap"]
+position = Vector2(3669, 74)
+scale = Vector2(0.63125, 0.63125)
+texture = ExtResource("6_er0np")
+
+[node name="Chair3" type="Sprite2D" parent="TileMap"]
+position = Vector2(427, 72)
+scale = Vector2(0.647656, 0.647656)
+texture = ExtResource("7_yp034")
+
+[node name="Chair4" type="Sprite2D" parent="TileMap"]
+position = Vector2(4317, 72)
+scale = Vector2(0.647656, 0.647656)
+texture = ExtResource("7_yp034")
+
+[node name="WindowsSpiders" type="Sprite2D" parent="TileMap"]
+position = Vector2(378, -926)
+texture = ExtResource("8_kl6mo")
+
+[node name="WindowsSpiders2" type="Sprite2D" parent="TileMap"]
+position = Vector2(4347, -919)
+texture = ExtResource("8_kl6mo")
+
+[node name="Nyxen" parent="." instance=ExtResource("8_orgdu")]
+position = Vector2(1362, 1198)
+
+[node name="Thornveil" parent="." instance=ExtResource("9_fnyhp")]
+position = Vector2(968, 1405)
+
+[node name="Silra spider" parent="." instance=ExtResource("10_y5v8o")]
+position = Vector2(407, 932)
+
+[node name="Maelor spider" parent="." instance=ExtResource("11_ukld3")]
+position = Vector2(870, 784)
+
+[node name="Spider Queen" parent="." instance=ExtResource("3_ey7ba")]
+position = Vector2(2042, -22)
+
+[node name="Spider King" parent="." instance=ExtResource("4_d74pq")]
+position = Vector2(2822, -38)
+
+[node name="Player1" parent="." instance=ExtResource("14_lik1a")]
+position = Vector2(1801, 4035)
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2(921, -312)
+offset = Vector2(5, 5)
+zoom = Vector2(0.25, 0.25)
+limit_left = 0
+limit_top = -1800
+limit_right = 4800
+limit_bottom = 5000
+limit_smoothed = true
+rotation_smoothing_enabled = true
+
+[node name="Torch" type="Sprite2D" parent="."]
+position = Vector2(1130, -1030)
+texture = ExtResource("16_er0np")
+
+[node name="PointLight2D" type="PointLight2D" parent="Torch"]
+position = Vector2(5.99994, -25.9999)
+scale = Vector2(29.3281, 30.2148)
+color = Color(1, 1, 0.807843, 1)
+energy = 2.83
+blend_mode = 2
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_yp034")
+
+[node name="Torch2" type="Sprite2D" parent="."]
+position = Vector2(3674, -1055)
+texture = ExtResource("16_er0np")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Torch2"]
+position = Vector2(15, -31)
+scale = Vector2(29.3281, 30.2148)
+color = Color(1, 1, 0.807843, 1)
+energy = 2.94
+blend_mode = 2
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_yp034")
+
+[node name="DialogueUI" parent="." instance=ExtResource("17_yp034")]
+visible = false
+
+[node name="UI" parent="." instance=ExtResource("18_orgdu")]
+
+[node name="ShadowSpider" parent="." instance=ExtResource("19_orgdu")]
+position = Vector2(1482, 4439)
+
+[node name="ShadowSpider2" parent="." instance=ExtResource("19_orgdu")]
+position = Vector2(3300, 4442)

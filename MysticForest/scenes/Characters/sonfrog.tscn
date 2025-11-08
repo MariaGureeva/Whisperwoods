@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://chujv13sxmmus"]
+
+[ext_resource type="Script" uid="uid://ej1uibfb3mfj" path="res://MysticForest/scripts/sonfrog.gd" id="1_ud0af"]
+[ext_resource type="Texture2D" uid="uid://couqlgpe5n1fs" path="res://MysticForest/assets/characters/Dad and son frogs/Frog boy and dad1.png" id="2_t04xx"]
+[ext_resource type="Texture2D" uid="uid://byj2pspq4prir" path="res://MysticForest/assets/characters/Dad and son frogs/Frog boy and dad2.png" id="3_g81wn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wh6bt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_t04xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g81wn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="Sonfrog" type="CharacterBody2D"]
+script = ExtResource("1_ud0af")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wh6bt")
+animation = &"idle"

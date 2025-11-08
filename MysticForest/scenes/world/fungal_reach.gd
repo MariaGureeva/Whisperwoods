@@ -13,32 +13,72 @@ extends Node2D
 @onready var after_collapse_layer = $AfterCollapse
 
 var webs_cleared_count := 0
+const WeaverSpiderScene = preload("res://MysticForest/scenes/Characters/WeaverSpider.tscn")
 
 func _ready():
+	# --- 1. Установка позиции игрока (как было) ---
 	var spawn_point = get_node_or_null(GameState.entrance_name)
-	if spawn_point and has_node("Player1"):
-		$Player1.global_position = spawn_point.global_position
-	
-	# --- НОВАЯ, БОЛЕЕ ПРОСТАЯ ЛОГИКА ---
-	# Скрипт самого Дедушки решит, когда ему быть видимым
-	
-	# Логика для пути в деревню
+	if spawn_point:
+		player.global_position = spawn_point.global_position
+
+	# --- 2. ВОЗВРАЩАЕМ ВАШУ ИЗНАЧАЛЬНУЮ РАБОЧУЮ ЛОГИКУ ---
+	# Этот блок отвечает за квест 2-го акта с паутиной.
 	if GameState.fungal_reach_path_unlocked:
+		# Если путь уже открыт, просто прячем все препятствия.
 		if is_instance_valid(portal_to_village): portal_to_village.monitoring = true
 		if is_instance_valid(portal_web_barrier): portal_web_barrier.hide()
 		if is_instance_valid(spiderweb_1): spiderweb_1.hide()
 		if is_instance_valid(spiderweb_2): spiderweb_2.hide()
 		if is_instance_valid(spiderweb_3): spiderweb_3.hide()
 	else:
+		# Если путь еще не открыт, включаем квест с паутиной.
 		spiderweb_1.web_cleared.connect(_on_web_cleared)
 		spiderweb_2.web_cleared.connect(_on_web_cleared)
 		spiderweb_3.web_cleared.connect(_on_web_cleared)
 		if is_instance_valid(portal_to_village): portal_to_village.monitoring = false
 		if is_instance_valid(portal_web_barrier): portal_web_barrier.show()
 
-	# Логика для пути в Библиотеку
+	# Этот блок отвечает за визуал после землетрясения в Акте 3.
 	if is_instance_valid(after_collapse_layer):
 		after_collapse_layer.visible = GameState.act_3_intro_played
+	
+	# --- 3. НОВЫЙ ИЗОЛИРОВАННЫЙ БЛОК ДЛЯ ПАУКА ---
+	# Этот код выполняется ПОСЛЕ всей основной логики и не мешает ей.
+	if GameState.spider_is_leading_to_den:
+		var path_node = get_node_or_null("SpiderPath")
+		if path_node:
+			var local_points = path_node.get_children()
+			local_points.sort_custom(func(a, b): return a.name < b.name)
+			
+			var start_index = GameState.spider_leading_path_index
+			
+			if start_index < local_points.size():
+				var spider = spawn_spider_follower()
+				spider.start_leading_path(local_points, start_index)
+
+
+# --- Новые функции для спавна и пути ---
+func spawn_spider_follower() -> CharacterBody2D:
+	# Паук всегда спавнится рядом с точкой входа игрока.
+	var spawn_point = get_node_or_null(GameState.entrance_name)
+	if not spawn_point:
+		push_warning("Точка входа игрока для спавна паука не найдена!")
+		return null
+		
+	var instance = WeaverSpiderScene.instantiate()
+	add_child(instance)
+	# Ставим паука немного позади игрока, чтобы они не застряли друг в друге
+	instance.global_position = spawn_point.global_position - Vector2(80, 0)
+	
+	if instance.has_method("enable_collision"): 
+		instance.enable_collision()
+		
+	return instance
+
+
+func get_path_start_index_for_this_scene() -> int:
+	# Пещеры - первая локация, путь всегда начинается с глобального индекса 0.
+	return 2
 
 func _on_web_cleared():
 	webs_cleared_count += 1

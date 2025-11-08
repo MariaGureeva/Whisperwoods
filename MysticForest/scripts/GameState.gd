@@ -47,6 +47,13 @@ var owl_puzzle_solved: bool = false
 var owl_quest_completed: bool = false
 var spider_quest_started: bool = false
 var spider_quest_completed: bool = false
+var spider_is_following: bool = false
+var mycelian_reconciliation_played: bool = false
+var spider_is_leading_to_den: bool = false
+var spider_leading_path_index: int = 0
+var spider_passage_cutscene_played: bool = false
+
+
 
 func reset_for_new_game():
 	print("--- GAMESTATE RESET FOR NEW GAME ---")
@@ -90,6 +97,10 @@ func reset_for_new_game():
 	owl_quest_completed = false
 	spider_quest_started = false
 	spider_quest_completed = false
+	spider_is_following = false
+	mycelian_reconciliation_played = false
+	spider_passage_cutscene_played = false
+
 	
 	emit_signal("inventory_changed")
 

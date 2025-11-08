@@ -99,14 +99,16 @@ func start_post_spring_cutscene():
 	toadling.show()
 	player.set_physics_process(false)
 	
-	await dialogue_ui.start_dialogue(post_spring_dialogue)
+	dialogue_ui.start_dialogue(post_spring_dialogue)
+	await dialogue_ui.dialogue_finished
 	
 	var tutorial_dialogue = [
 		{ "speaker": "Toadling", "text": "Ok, now, look at that poor flower. It's fading, just like the rest of the forest." },
 		{ "speaker": "Toadling", "text": "But you can help it. Stand near the mirror... the heart of this cabin. Try to 'listen' to its energy." },
 		{ "speaker": "Toadling", "text": "(Hint: Stand still and hold Q)" }
 	]
-	await dialogue_ui.start_dialogue(tutorial_dialogue)
+	dialogue_ui.start_dialogue(tutorial_dialogue)
+	await dialogue_ui.dialogue_finished
 	
 	mirror.monitoring = true 
 	GameState.attunement_unlocked = true
@@ -120,7 +122,8 @@ func start_post_spring_cutscene():
 		{ "speaker": "Toadling", "text": "You see? This is your gift. You gather the Resonance of the world and share it where it's needed." },
 		{ "speaker": "Toadling", "text": "There are many things in this forest that need your help. I will help you to explore it." }
 	]
-	await dialogue_ui.start_dialogue(final_dialogue)
+	dialogue_ui.start_dialogue(final_dialogue)
+	await dialogue_ui.dialogue_finished
 	
 	var act_2_intro_dialogue = [
 		{ "speaker": "Toadling", "text": "So... the path forward is not simple. The way to Echo's Grove is overgrown and forgotten." },
@@ -137,7 +140,8 @@ func start_post_spring_cutscene():
 		{ "speaker": "Toadling", "text": "Be careful. Not all creatures in the deep woods are as friendly as I am. But don't lose heart. You are the Listener. You belong here now." }
 	]
 	
-	await dialogue_ui.start_dialogue(act_2_intro_dialogue)
+	dialogue_ui.start_dialogue(act_2_intro_dialogue)
+	await dialogue_ui.dialogue_finished
 	
 	GameState.post_spring_dialogue_played = true
 	

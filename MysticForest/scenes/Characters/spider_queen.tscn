@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6yqyqn8jbfp0"]
+
+[ext_resource type="Script" uid="uid://dai3bg23jgm1t" path="res://MysticForest/scripts/spiderqueen.gd" id="1_mgaac"]
+[ext_resource type="Texture2D" uid="uid://mrwuoqkijt3r" path="res://MysticForest/assets/characters/Spiders/Queen spider/Queen spider1.png" id="2_mhmdd"]
+[ext_resource type="Texture2D" uid="uid://c6af5cdjf2mt4" path="res://MysticForest/assets/characters/Spiders/Queen spider/Queen spider2.png" id="3_6vj1k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cy6ta"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mhmdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6vj1k")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="Spider Queen" type="CharacterBody2D"]
+script = ExtResource("1_mgaac")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cy6ta")
+animation = &"idle"
+frame_progress = 0.88967

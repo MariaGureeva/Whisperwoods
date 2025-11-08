@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://c8sukgtkvussk"]
+[gd_scene load_steps=80 format=3 uid="uid://c8sukgtkvussk"]
 
 [ext_resource type="Script" uid="uid://cvhejpotejlnp" path="res://MysticForest/scripts/ForestHub_Controller.gd" id="1_hb02w"]
 [ext_resource type="Texture2D" uid="uid://bs8s74ky1a13i" path="res://MysticForest/assets/tilesets/Minimalistic grass tiles.png" id="2_s5kgl"]
@@ -39,6 +39,7 @@
 [ext_resource type="Script" uid="uid://bleussma4idtv" path="res://MysticForest/scenes/world/portal_to_the_mistmarsh.gd" id="33_t4e22"]
 [ext_resource type="PackedScene" uid="uid://cys528mqr2k0w" path="res://MysticForest/scenes/Portals/moon_lake_gate.tscn" id="38_5psdu"]
 [ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="38_ac8su"]
+[ext_resource type="PackedScene" uid="uid://bffmhyiq18uw" path="res://MysticForest/scenes/Characters/WeaverSpider.tscn" id="40_yio2f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5psdu"]
 texture = ExtResource("2_s5kgl")
@@ -627,7 +628,7 @@ libraries = {
 [node name="DialogueUI" parent="." instance=ExtResource("29_hb02w")]
 layer = 10
 
-[node name="Player1" parent="." instance=ExtResource("30_et3w5")]
+[node name="Player1" parent="." groups=["player"] instance=ExtResource("30_et3w5")]
 z_index = 4
 position = Vector2(1673, 272)
 collision_mask = 3
@@ -720,5 +721,24 @@ color = Color(0.980864, 0.710483, 0.863248, 1)
 
 [node name="Spawnfrommoonlake" type="Marker2D" parent="."]
 position = Vector2(-1168, -61)
+
+[node name="SpiderPath" type="Node2D" parent="."]
+
+[node name="Point0" type="Marker2D" parent="SpiderPath"]
+position = Vector2(-4119, 481)
+
+[node name="Point1" type="Marker2D" parent="SpiderPath"]
+position = Vector2(-1578, 374)
+
+[node name="Point2" type="Marker2D" parent="SpiderPath"]
+position = Vector2(-745, -1767)
+
+[node name="SpiderSpawnPoint" type="Marker2D" parent="."]
+position = Vector2(-3700, 209)
+
+[node name="WeaverSpider" parent="." instance=ExtResource("40_yio2f")]
+visible = false
+z_index = 1
+position = Vector2(-4506, 384)
 
 [connection signal="body_entered" from="Toadling/Area2D" to="Toadling/Area2D" method="_on_body_entered"]

@@ -1,0 +1,70 @@
+[gd_resource type="SpriteFrames" load_steps=14 format=3 uid="uid://ccmh32la0e7qg"]
+
+[ext_resource type="Texture2D" uid="uid://c3ycjf5s7g3ge" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking1.png" id="1_tfgq5"]
+[ext_resource type="Texture2D" uid="uid://uyaa8iqhrbfw" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking2.png" id="2_jyviu"]
+[ext_resource type="Texture2D" uid="uid://dth71ox7ui0ex" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking3.png" id="3_6m5ek"]
+[ext_resource type="Texture2D" uid="uid://c8sppsmejjaas" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking4.png" id="4_k2s3h"]
+[ext_resource type="Texture2D" uid="uid://bk5p5u6qwn1op" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking5.png" id="5_1afnt"]
+[ext_resource type="Texture2D" uid="uid://8o3s75bcucaf" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking6.png" id="6_qxi8a"]
+[ext_resource type="Texture2D" uid="uid://cguwvq6kcvm22" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking7.png" id="7_kx8mj"]
+[ext_resource type="Texture2D" uid="uid://bxkse3e12svai" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking8.png" id="8_xv1x1"]
+[ext_resource type="Texture2D" uid="uid://cug7xt1raxaju" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking9.png" id="9_4qkf0"]
+[ext_resource type="Texture2D" uid="uid://cmuiifbjlrcow" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking10.png" id="10_o6w7c"]
+[ext_resource type="Texture2D" uid="uid://dbhvai353a4bx" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking11.png" id="11_sscb7"]
+[ext_resource type="Texture2D" uid="uid://d6mgytspeg0o" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking12.png" id="12_2n2x0"]
+[ext_resource type="Texture2D" uid="uid://6xxiinicoyf5" path="res://MysticForest/assets/UI/Toadling Talking/Toadling talking13.png" id="13_6eby8"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tfgq5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tfgq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jyviu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6m5ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_k2s3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1afnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qxi8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kx8mj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xv1x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4qkf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_o6w7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sscb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2n2x0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6eby8")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 10.0
+}]

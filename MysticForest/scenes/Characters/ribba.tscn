@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://crwvr4ba6ffwr"]
+
+[ext_resource type="Script" uid="uid://bmyxcfa3djpf1" path="res://MysticForest/scripts/ribba.gd" id="1_wwtl2"]
+[ext_resource type="Texture2D" uid="uid://7hfbak2sxpuv" path="res://MysticForest/assets/characters/School kids/Schoolkid3.1.png" id="2_8j4jx"]
+[ext_resource type="Texture2D" uid="uid://dwtrochsh4nex" path="res://MysticForest/assets/characters/School kids/Schoolkid3.2.png" id="3_wml1m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g8dfr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8j4jx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wml1m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="Ribba" type="CharacterBody2D"]
+script = ExtResource("1_wwtl2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_g8dfr")
+animation = &"idle"

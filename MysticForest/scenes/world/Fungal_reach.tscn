@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=3 uid="uid://d0vn1h0y35wl"]
+[gd_scene load_steps=83 format=3 uid="uid://d0vn1h0y35wl"]
 
 [ext_resource type="Texture2D" uid="uid://kddlt5vv5avd" path="res://MysticForest/assets/tilesets/Caves/Cave Floor.png" id="1_57oor"]
 [ext_resource type="Script" uid="uid://g46c4f02nrol" path="res://MysticForest/scenes/world/fungal_reach.gd" id="1_g0hv7"]
@@ -38,6 +38,7 @@
 [ext_resource type="PackedScene" uid="uid://2eabtav8nl14" path="res://MysticForest/scenes/TechnicalElements/ResonanceSource.tscn" id="36_uio25"]
 [ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="37_018qp"]
 [ext_resource type="Script" uid="uid://cpw84cppjwf16" path="res://MysticForest/scripts/portal_to_library.gd" id="38_myncj"]
+[ext_resource type="PackedScene" uid="uid://bffmhyiq18uw" path="res://MysticForest/scenes/Characters/WeaverSpider.tscn" id="39_eev6k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dw4bo"]
 texture = ExtResource("1_57oor")
@@ -517,10 +518,28 @@ offset_bottom = 8393.0
 [node name="Panel2" type="Panel" parent="."]
 texture_repeat = 3
 material = SubResource("CanvasItemMaterial_o06pp")
-offset_left = -12886.0
-offset_top = -1157.0
-offset_right = 699.0
-offset_bottom = 8666.0
+offset_left = -12758.0
+offset_top = -1089.0
+offset_right = 827.0
+offset_bottom = 8734.0
 
 [node name="spawnfromlibrary" type="Marker2D" parent="."]
 position = Vector2(-5563, 4750)
+
+[node name="SpiderPath" type="Node2D" parent="."]
+
+[node name="Point0" type="Marker2D" parent="SpiderPath"]
+position = Vector2(-6899, 1648)
+
+[node name="Point1" type="Marker2D" parent="SpiderPath"]
+position = Vector2(-2700, 846)
+
+[node name="Point2" type="Marker2D" parent="SpiderPath"]
+position = Vector2(26, 484)
+
+[node name="WeaverSpider" parent="." instance=ExtResource("39_eev6k")]
+visible = false
+position = Vector2(-8411, 1152)
+
+[node name="SpiderSpawnPoint" type="Marker2D" parent="."]
+position = Vector2(-7918, 1323)

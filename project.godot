@@ -15,7 +15,7 @@ config_version=5
 [application]
 
 config/name="MysticForest"
-run/main_scene="uid://d2i6hgwq4pwnk"
+run/main_scene="uid://c8sukgtkvussk"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -48,6 +48,7 @@ enabled=PackedStringArray("res://addons/codebot/plugin.cfg")
 attunement_listeners=""
 dialogue_ui=""
 echo_objects=""
+player=""
 
 [input]
 

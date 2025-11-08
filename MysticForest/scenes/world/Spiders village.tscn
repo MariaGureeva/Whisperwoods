@@ -1,0 +1,263 @@
+[gd_scene load_steps=23 format=3 uid="uid://b5ktxvem6wok5"]
+
+[ext_resource type="Shader" uid="uid://doux7gr2mblda" path="res://MysticForest/assets/shaders/Fog.gdshader" id="1_f7ahx"]
+[ext_resource type="Texture2D" uid="uid://m67pnjbmybq0" path="res://MysticForest/assets/Textures/Smoke.png" id="2_wlxnt"]
+[ext_resource type="Texture2D" uid="uid://cjs4668a131xn" path="res://MysticForest/assets/tilesets/Spiders location/Floor tiles spiders-Sheet.png" id="3_jixnr"]
+[ext_resource type="Texture2D" uid="uid://dkfukxfojrrkj" path="res://MysticForest/assets/tilesets/Spiders location/Burnt tree4.png" id="4_i71pq"]
+[ext_resource type="Texture2D" uid="uid://y7v01pii7vyp" path="res://MysticForest/assets/tilesets/Spiders location/Burnt tree3.png" id="5_uxysm"]
+[ext_resource type="Texture2D" uid="uid://dq4a6oxcat61u" path="res://MysticForest/assets/tilesets/Spiders location/Burnt tree1.png" id="6_ho0wt"]
+[ext_resource type="Texture2D" uid="uid://3akwbw5fn41u" path="res://MysticForest/assets/tilesets/Spiders location/Burnt tree2.png" id="7_a6h5m"]
+[ext_resource type="Texture2D" uid="uid://dw8loihbapulb" path="res://MysticForest/assets/objects/Spiders home/Spiders house1.png" id="8_kxrs3"]
+[ext_resource type="Texture2D" uid="uid://b2mb1b2m3xn8w" path="res://MysticForest/assets/objects/Spiders home/Spiders house2.png" id="9_77o3h"]
+[ext_resource type="Texture2D" uid="uid://dyviaee4fanmv" path="res://MysticForest/assets/objects/Spiders home/Spiders house3.png" id="10_fspmc"]
+[ext_resource type="Texture2D" uid="uid://d30802tun2n6b" path="res://MysticForest/assets/objects/Spiders home/Spiders house4.png" id="11_3nh2b"]
+[ext_resource type="Texture2D" uid="uid://2rwwhfrgxuit" path="res://MysticForest/assets/Textures/Newfog.png" id="12_b75q8"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="13_c1rue"]
+[ext_resource type="PackedScene" uid="uid://caaaytigj6ebi" path="res://MysticForest/scenes/TechnicalElements/Main_DialogueUI.tscn" id="14_nv1qi"]
+[ext_resource type="PackedScene" uid="uid://b6s3076j1f4vn" path="res://MysticForest/scenes/TechnicalElements/UI.tscn" id="15_ybeue"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4qi0u"]
+shader = ExtResource("1_f7ahx")
+shader_parameter/scroll_speed = Vector2(0.01, 0)
+shader_parameter/fog_opacity = 1.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fv6y3"]
+texture = ExtResource("3_jixnr")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_e76fc"]
+tile_size = Vector2i(320, 320)
+sources/1 = SubResource("TileSetAtlasSource_fv6y3")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f7ahx"]
+texture = ExtResource("7_a6h5m")
+texture_region_size = Vector2i(640, 1640)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wlxnt"]
+texture = ExtResource("5_uxysm")
+texture_region_size = Vector2i(640, 1640)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jixnr"]
+texture = ExtResource("4_i71pq")
+texture_region_size = Vector2i(640, 1640)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xwhd8"]
+tile_size = Vector2i(640, 1640)
+sources/0 = SubResource("TileSetAtlasSource_f7ahx")
+sources/1 = SubResource("TileSetAtlasSource_wlxnt")
+sources/2 = SubResource("TileSetAtlasSource_jixnr")
+
+[node name="Node2D" type="Node2D"]
+modulate = Color(0.779291, 0.779291, 0.779291, 1)
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+z_index = 4
+texture_repeat = 2
+material = SubResource("ShaderMaterial_4qi0u")
+offset_left = -788.0
+offset_top = -3398.0
+offset_right = 10880.0
+offset_bottom = 1009.0
+texture = ExtResource("2_wlxnt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -3066.0
+offset_top = -3010.0
+offset_right = 14133.0
+offset_bottom = 7916.0
+color = Color(0.244776, 0.244776, 0.244776, 1)
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+z_index = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_4qi0u")
+offset_left = -1569.0
+offset_top = -3588.0
+offset_right = 10099.0
+offset_bottom = 819.0
+texture = ExtResource("2_wlxnt")
+
+[node name="Floor" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_e76fc")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 196609, 0, 65536, 65537, 0, 131072, 196609, 0, 196608, 131073, 0, 262144, 196609, 0, 327680, 131073, 0, 393216, 196609, 0, 458752, 196609, 0, 524288, 196609, 0, 589824, 196609, 0, 655360, 196609, 0, 720896, 196609, 0, 786432, 65537, 0, 851968, 131073, 0, 1, 196609, 0, 65537, 65537, 0, 131073, 196609, 0, 196609, 131073, 1610612736, 262145, 196609, 0, 327681, 196609, 0, 393217, 196609, 0, 458753, 131073, 0, 524289, 196609, 0, 589825, 131073, 0, 655361, 131073, 0, 720897, 196609, 0, 786433, 196609, 0, 851969, 131073, 0, 2, 65537, 0, 65538, 196609, 0, 131074, 65537, 0, 196610, 196609, 0, 262146, 65537, 0, 327682, 196609, 0, 393218, 196609, 0, 458754, 131073, 0, 524290, 131073, 0, 589826, 196609, 0, 655362, 131073, 0, 720898, 196609, 0, 786434, 65537, 0, 851970, 65537, 0, 3, 196609, 0, 65539, 196609, 0, 131075, 65537, 0, 196611, 196609, 0, 262147, 196609, 0, 327683, 196609, 0, 393219, 196609, 0, 458755, 65537, 0, 524291, 131073, 0, 589827, 131073, 0, 655363, 131073, 0, 720899, 131073, 0, 786435, 196609, 0, 851971, 65537, 0, 4, 65537, 0, 65540, 196609, 0, 131076, 196609, 0, 196612, 196609, 0, 262148, 65537, 0, 327684, 196609, 0, 393220, 196609, 0, 458756, 196609, 0, 524292, 196609, 0, 589828, 196609, 0, 655364, 196609, 0, 720900, 196609, 0, 786436, 196609, 0, 851972, 196609, 0, 5, 196609, 0, 65541, 196609, 0, 131077, 65537, 1610612736, 196613, 196609, 0, 262149, 196609, 0, 327685, 196609, 0, 393221, 196609, 0, 458757, 131073, 0, 524293, 131073, 0, 589829, 131073, 0, 655365, 196609, 0, 720901, 131073, 0, 786437, 65537, 0, 851973, 196609, 0, 6, 196609, 0, 65542, 196609, 0, 131078, 196609, 0, 196614, 196609, 0, 262150, 196609, 0, 327686, 196609, 0, 393222, 196609, 0, 458758, 196609, 0, 524294, 196609, 0, 589830, 131073, 0, 655366, 196609, 0, 720902, 65537, 0, 786438, 131073, 0, 851974, 65537, 0, 7, 196609, 0, 65543, 196609, 0, 131079, 196609, 0, 196615, 196609, 0, 262151, 196609, 0, 327687, 196609, 0, 393223, 196609, 0, 458759, 196609, 0, 524295, 65537, 0, 589831, 196609, 0, 655367, 196609, 0, 720903, 196609, 0, 786439, 131073, 0, 851975, 65537, 0, 8, 196609, 0, 65544, 196609, 0, 131080, 131073, 0, 196616, 65537, 0, 262152, 196609, 0, 327688, 196609, 0, 393224, 196609, 0, 458760, 196609, 0, 524296, 131073, 0, 589832, 196609, 0, 655368, 65537, 0, 720904, 196609, 0, 786440, 131073, 0, 851976, 131073, 0, 9, 65537, 0, 65545, 196609, 0, 131081, 196609, 0, 196617, 196609, 0, 262153, 196609, 0, 327689, 131073, 0, 393225, 131073, 0, 458761, 196609, 0, 524297, 131073, 0, 589833, 131073, 0, 655369, 131073, 268435456, 720905, 196609, 0, 786441, 131073, 0, 851977, 65537, 0, 10, 1, 0, 65546, 131073, 0, 131082, 131073, 0, 196618, 196609, 0, 262154, 131073, 0, 327690, 196609, 0, 393226, 131073, 0, 458762, 131073, 0, 524298, 65537, 0, 589834, 65537, 0, 655370, 65537, 0, 720906, 196609, 0, 786442, 196609, 0, 851978, 196609, 0, 11, 1, 0, 65547, 1, 0, 131083, 65537, 0, 196619, 196609, 0, 262155, 196609, 0, 327691, 65537, 1073741824, 393227, 131073, 0, 458763, 131073, 0, 524299, 196609, 0, 589835, 1, 0, 655371, 196609, 0, 720907, 65537, 0, 786443, 65537, 0, 851979, 196609, 0, 12, 131073, 0, 65548, 1, 0, 131084, 196609, 0, 196620, 131073, 0, 262156, 196609, 0, 327692, 65537, 0, 393228, 1, 0, 458764, 196609, 0, 524300, 65537, 0, 589836, 65537, 0, 655372, 1, 0, 720908, 196609, 0, 786444, 1, 0, 851980, 196609, 0, 13, 131073, 0, 65549, 196609, 0, 131085, 65537, 0, 196621, 1, 0, 262157, 1, 0, 327693, 196609, 0, 393229, 196609, 0, 458765, 196609, 0, 524301, 196609, 0, 589837, 196609, 0, 655373, 1, 0, 720909, 65537, 0, 786445, 196609, 0, 851981, 131073, 0, 14, 1, 0, 65550, 1, 0, 131086, 1, 0, 196622, 65537, 0, 262158, 196609, 0, 327694, 196609, 0, 393230, 196609, 0, 458766, 196609, 0, 524302, 196609, 0, 589838, 196609, 0, 655374, 131073, 0, 720910, 1, 0, 786446, 1, 0, 851982, 1, 0, 15, 65537, 0, 65551, 65537, 0, 131087, 65537, 0, 196623, 196609, 0, 262159, 65537, 0, 327695, 196609, 0, 393231, 196609, 0, 458767, 196609, 0, 524303, 196609, 0, 589839, 196609, 0, 655375, 196609, 0, 720911, 65537, 0, 786447, 131073, 0, 851983, 131073, 0, 16, 131073, 0, 65552, 196609, 0, 131088, 196609, 0, 196624, 196609, 0, 262160, 196609, 0, 327696, 196609, 0, 393232, 196609, 0, 458768, 196609, 0, 524304, 196609, 0, 589840, 196609, 0, 655376, 1, 0, 720912, 196609, 0, 786448, 196609, 0, 851984, 65537, 0, 17, 131073, 0, 65553, 65537, 0, 131089, 196609, 0, 196625, 131073, 0, 262161, 196609, 0, 327697, 131073, 0, 393233, 196609, 0, 458769, 196609, 0, 524305, 196609, 0, 589841, 131073, 268435456, 655377, 65537, 0, 720913, 196609, 0, 786449, 131073, 0, 851985, 65537, 0, 18, 131073, 0, 65554, 1, 0, 131090, 1, 0, 196626, 1, 0, 262162, 65537, 0, 327698, 1, 0, 393234, 196609, 0, 458770, 196609, 0, 524306, 196609, 0, 589842, 196609, 0, 655378, 196609, 0, 720914, 65537, 0, 786450, 65537, 0, 851986, 1, 0, 19, 65537, 0, 65555, 131073, 0, 131091, 131073, 0, 196627, 1, 0, 262163, 131073, 0, 327699, 1, 0, 393235, 196609, 0, 458771, 196609, 0, 524307, 196609, 0, 589843, 196609, 0, 655379, 196609, 0, 720915, 1, 0, 786451, 196609, 0, 851987, 1, 0, 20, 65537, 0, 65556, 131073, 0, 131092, 131073, 0, 196628, 131073, 0, 262164, 131073, 0, 327700, 196609, 0, 393236, 196609, 0, 458772, 196609, 0, 524308, 196609, 0, 589844, 196609, 0, 655380, 196609, 0, 720916, 65537, 0, 786452, 1, 0, 851988, 196609, 0, 21, 196609, 0, 65557, 196609, 0, 131093, 1, 0, 196629, 131073, 0, 262165, 196609, 0, 327701, 131073, 0, 393237, 196609, 0, 458773, 196609, 0, 524309, 196609, 0, 589845, 196609, 0, 655381, 196609, 0, 720917, 1, 0, 786453, 196609, 0, 851989, 131073, 0, 22, 131073, 0, 65558, 65537, 0, 131094, 1, 0, 196630, 196609, 0, 262166, 65537, 0, 327702, 196609, 0, 393238, 196609, 0, 458774, 196609, 0, 524310, 196609, 0, 589846, 196609, 0, 655382, 196609, 0, 720918, 131073, 0, 786454, 65537, 0, 851990, 131073, 0, 23, 131073, 0, 65559, 1, 0, 131095, 131073, 0, 196631, 1, 0, 262167, 1, 0, 327703, 65537, 0, 393239, 196609, 0, 458775, 196609, 0, 524311, 196609, 0, 589847, 196609, 0, 655383, 196609, 0, 720919, 1, 0, 786455, 65537, 0, 851991, 65537, 0, 24, 131073, 0, 65560, 196609, 0, 131096, 196609, 0, 196632, 196609, 0, 262168, 1, 0, 327704, 65537, 0, 393240, 196609, 0, 458776, 196609, 0, 524312, 196609, 0, 589848, 196609, 0, 655384, 196609, 0, 720920, 131073, 0, 786456, 65537, 0, 851992, 131073, 0, 25, 131073, 0, 65561, 1, 0, 131097, 65537, 0, 196633, 196609, 0, 262169, 65537, 0, 327705, 65537, 0, 393241, 196609, 0, 458777, 196609, 0, 524313, 196609, 0, 589849, 196609, 0, 655385, 196609, 0, 720921, 131073, 0, 786457, 1, 0, 851993, 65537, 0, 26, 65537, 0, 65562, 65537, 0, 131098, 196609, 0, 196634, 196609, 0, 262170, 196609, 0, 327706, 65537, 0, 393242, 196609, 0, 458778, 196609, 0, 524314, 196609, 0, 589850, 196609, 0, 655386, 196609, 0, 720922, 196609, 0, 786458, 131073, 0, 851994, 196609, 0, 27, 196609, 0, 65563, 196609, 0, 131099, 196609, 0, 196635, 65537, 0, 262171, 196609, 0, 327707, 65537, 0, 393243, 65537, 0, 458779, 65537, 0, 524315, 1, 0, 589851, 131073, 0, 655387, 65537, 0, 720923, 131073, 0, 786459, 131073, 0, 851995, 196609, 0, 28, 131073, 0, 65564, 131073, 0, 131100, 131073, 0, 196636, 1, 0, 262172, 1, 0, 327708, 65537, 0, 393244, 131073, 0, 458780, 196609, 0, 524316, 196609, 0, 589852, 1, 0, 655388, 196609, 0, 720924, 131073, 0, 786460, 1, 0, 851996, 131073, 0, 29, 196609, 0, 65565, 1, 0, 131101, 196609, 0, 196637, 131073, 0, 262173, 131073, 0, 327709, 131073, 0, 393245, 131073, 0, 458781, 196609, 0, 524317, 196609, 0, 589853, 65537, 0, 655389, 131073, 0, 720925, 1, 0, 786461, 196609, 0, 851997, 131073, 0, 30, 131073, 0, 65566, 196609, 0, 131102, 196609, 0, 196638, 65537, 0, 262174, 131073, 0, 327710, 196609, 0, 393246, 196609, 0, 458782, 65537, 0, 524318, 1, 0, 589854, 65537, 0, 655390, 65537, 0, 720926, 131073, 0, 786462, 65537, 0, 851998, 1, 0, 917505, 65537, 0, 917506, 1, 0, 917507, 131073, 0, 917508, 131073, 0, 917509, 1, 0, 917510, 131073, 0, 917511, 196609, 0, 917512, 65537, 0, 917513, 1, 0, 917514, 196609, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 65537, 0, -65532, 131073, 0, -65531, 1, 0, -65530, 1, 0, -65529, 196609, 0, -65528, 131073, 0, -65527, 65537, 0, -65526, 196609, 0, -65525, 131073, 0, -65524, 1, 0, -65523, 131073, 0, -65522, 65537, 0, -65521, 131073, 0, -65520, 1, 0, -65519, 1, 0, -65518, 65537, 0, -65517, 196609, 0, -65516, 196609, 0, -65515, 1, 0, -65514, 196609, 0, -65513, 131073, 0, -65512, 131073, 0, -65511, 131073, 0, -65510, 131073, 0, -65509, 65537, 0, -65508, 1, 0, -65507, 196609, 0, -65506, 65537, 0, 917504, 1, 0, 983040, 65537, 0, 1048576, 65537, 0, 983041, 1, 0, 1048577, 131073, 0, 983042, 1, 0, 1048578, 131073, 0, 983043, 131073, 0, 1048579, 1, 0, 983044, 131073, 0, 1048580, 65537, 0, 983045, 196609, 0, 1048581, 196609, 0, 983046, 196609, 0, 1048582, 131073, 0, 983047, 196609, 0, 1048583, 196609, 0, 983048, 131073, 0, 1048584, 1, 0, 983049, 196609, 0, 1048585, 1, 0, 983050, 65537, 0, 1048586, 65537, 0, 917515, 65537, 0, 983051, 65537, 0, 1048587, 65537, 0, 917516, 196609, 0, 983052, 65537, 0, 1048588, 131073, 0, 917517, 1, 0, 983053, 131073, 0, 1048589, 65537, 0, 917518, 1, 0, 983054, 65537, 0, 1048590, 196609, 0, 917519, 65537, 0, 983055, 131073, 0, 1048591, 131073, 0, 917520, 65537, 0, 983056, 1, 0, 1048592, 196609, 0, 917521, 131073, 0, 983057, 131073, 0, 1048593, 131073, 0, 917522, 196609, 0, 983058, 196609, 0, 1048594, 1, 0, 917523, 65537, 0, 983059, 196609, 0, 1048595, 196609, 0, 917524, 65537, 0, 983060, 131073, 0, 1048596, 196609, 0, 917525, 1, 0, 983061, 1, 0, 1048597, 131073, 0, 917526, 65537, 0, 983062, 131073, 0, 1048598, 131073, 0, 917527, 196609, 0, 983063, 1, 0, 1048599, 131073, 0, 917528, 196609, 0, 983064, 1, 0, 1048600, 65537, 0, 917529, 1, 0, 983065, 131073, 0, 1048601, 131073, 0, 917530, 196609, 0, 983066, 131073, 0, 1048602, 196609, 0, 917531, 196609, 0, 983067, 1, 0, 1048603, 131073, 0, 917532, 65537, 0, 983068, 196609, 0, 1048604, 1, 0, 917533, 1, 0, 983069, 1, 0, 1048605, 131073, 0, 917534, 196609, 0, 983070, 65537, 0, 1048606, 196609, 0)
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+z_index = 4
+texture_repeat = 2
+material = SubResource("ShaderMaterial_4qi0u")
+offset_left = -860.0
+offset_top = 1810.0
+offset_right = 10808.0
+offset_bottom = 6217.0
+texture = ExtResource("2_wlxnt")
+
+[node name="Trees" type="Node2D" parent="."]
+
+[node name="BurntTree9" type="Sprite2D" parent="Trees"]
+position = Vector2(5046, -830)
+texture = ExtResource("4_i71pq")
+
+[node name="BurntTree8" type="Sprite2D" parent="Trees"]
+position = Vector2(7614, -916)
+texture = ExtResource("5_uxysm")
+
+[node name="BurntTree1" type="Sprite2D" parent="Trees"]
+position = Vector2(1403, 600)
+texture = ExtResource("6_ho0wt")
+
+[node name="BurntTree4" type="Sprite2D" parent="Trees"]
+position = Vector2(1156, -513)
+texture = ExtResource("4_i71pq")
+
+[node name="BurntTree5" type="Sprite2D" parent="Trees"]
+position = Vector2(1537, -502)
+texture = ExtResource("4_i71pq")
+
+[node name="TileMap" type="TileMap" parent="Trees"]
+tile_set = SubResource("TileSet_xwhd8")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 1, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 1, 268435456, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0)
+
+[node name="TileMap3" type="TileMap" parent="Trees"]
+position = Vector2(0, 5000)
+tile_set = SubResource("TileSet_xwhd8")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 1, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 1, 268435456, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0)
+
+[node name="TileMap2" type="TileMap" parent="Trees"]
+position = Vector2(300, 300)
+tile_set = SubResource("TileSet_xwhd8")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 1, 0, -65535, 0, 0, -65534, 0, 0, -65533, 1, 268435456, -65532, 1, 0, -65531, 0, 0, -65530, 1, 268435456, -65529, 0, 0, -65528, 1, 268435456, -65527, 0, 0, -65526, 1, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0)
+
+[node name="TileMap4" type="TileMap" parent="Trees"]
+position = Vector2(300, 5300)
+tile_set = SubResource("TileSet_xwhd8")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 1, 0, -65535, 0, 0, -65534, 0, 0, -65533, 1, 268435456, -65532, 1, 0, -65531, 0, 0, -65530, 1, 268435456, -65529, 0, 0, -65528, 1, 268435456, -65527, 0, 0, -65526, 1, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0)
+
+[node name="BurntTree2" type="Sprite2D" parent="Trees"]
+position = Vector2(2154, -131)
+texture = ExtResource("7_a6h5m")
+
+[node name="BurntTree3" type="Sprite2D" parent="Trees"]
+position = Vector2(3379, -246)
+texture = ExtResource("5_uxysm")
+
+[node name="BurntTree6" type="Sprite2D" parent="Trees"]
+position = Vector2(1700, 3024)
+texture = ExtResource("4_i71pq")
+
+[node name="BurntTree7" type="Sprite2D" parent="Trees"]
+position = Vector2(2216, 2522)
+rotation = 3.14159
+scale = Vector2(1, -1)
+texture = ExtResource("6_ho0wt")
+
+[node name="BurntTree10" type="Sprite2D" parent="Trees"]
+position = Vector2(8546, 977)
+scale = Vector2(-1, 1)
+texture = ExtResource("7_a6h5m")
+
+[node name="BurntTree11" type="Sprite2D" parent="Trees"]
+position = Vector2(7430, 694)
+texture = ExtResource("7_a6h5m")
+
+[node name="BurntTree12" type="Sprite2D" parent="Trees"]
+position = Vector2(8936, 2839)
+texture = ExtResource("4_i71pq")
+
+[node name="BurntTree13" type="Sprite2D" parent="Trees"]
+position = Vector2(9715, -238)
+rotation = 3.14159
+scale = Vector2(1, -1)
+texture = ExtResource("7_a6h5m")
+
+[node name="BurntTree14" type="Sprite2D" parent="Trees"]
+position = Vector2(9391, 933)
+texture = ExtResource("4_i71pq")
+
+[node name="BurntTree15" type="Sprite2D" parent="Trees"]
+position = Vector2(9694, 1648)
+texture = ExtResource("5_uxysm")
+
+[node name="SpidersHouse1" type="Sprite2D" parent="."]
+position = Vector2(3895, 2518)
+texture = ExtResource("8_kxrs3")
+
+[node name="SpidersHouse2" type="Sprite2D" parent="."]
+position = Vector2(5369, 301)
+texture = ExtResource("9_77o3h")
+
+[node name="SpidersHouse3" type="Sprite2D" parent="."]
+position = Vector2(3057, -222)
+texture = ExtResource("10_fspmc")
+
+[node name="SpidersHouse4" type="Sprite2D" parent="."]
+position = Vector2(7856, 1802)
+texture = ExtResource("11_3nh2b")
+
+[node name="BurntTree4" type="Sprite2D" parent="."]
+position = Vector2(9412, 2352)
+scale = Vector2(-1, 1)
+texture = ExtResource("4_i71pq")
+
+[node name="BurntTree1" type="Sprite2D" parent="."]
+position = Vector2(9618, 2991)
+texture = ExtResource("6_ho0wt")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 4
+texture_repeat = 2
+material = SubResource("ShaderMaterial_4qi0u")
+offset_left = -588.0
+offset_top = 2963.0
+offset_right = 10138.0
+offset_bottom = 7453.0
+texture = ExtResource("12_b75q8")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_4qi0u")
+offset_left = -233.0
+offset_top = -4673.0
+offset_right = 10493.0
+offset_bottom = -183.0
+texture = ExtResource("12_b75q8")
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.2)
+z_index = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_4qi0u")
+offset_left = -871.0
+offset_top = -622.0
+offset_right = 10797.0
+offset_bottom = 3785.0
+texture = ExtResource("2_wlxnt")
+
+[node name="DialogueUI" parent="." instance=ExtResource("14_nv1qi")]
+layer = 10
+
+[node name="UI" parent="." instance=ExtResource("15_ybeue")]
+
+[node name="Player1" parent="." instance=ExtResource("13_c1rue")]
+position = Vector2(60, 1239)
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2(921, -312)
+offset = Vector2(5, 5)
+zoom = Vector2(0.25, 0.25)
+limit_smoothed = true
+rotation_smoothing_enabled = true
+
+[node name="spawnfromthemoonlake" type="Marker2D" parent="."]
+position = Vector2(529, 1034)

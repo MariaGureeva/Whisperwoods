@@ -239,21 +239,27 @@ position = Vector2(6154, 1827)
 position = Vector2(6593, 1835)
 
 [node name="CrystalLantern" parent="." instance=ExtResource("4_0q5ra")]
+z_index = 2
 position = Vector2(397, -2035)
 
 [node name="CrystalLantern2" parent="." instance=ExtResource("4_0q5ra")]
+z_index = 2
 position = Vector2(5069, -4388)
 
 [node name="CrystalLantern3" parent="." instance=ExtResource("4_0q5ra")]
+z_index = 2
 position = Vector2(5071, -1498)
 
 [node name="CrystalLantern5" parent="." instance=ExtResource("4_0q5ra")]
+z_index = 2
 position = Vector2(3990, -484)
 
 [node name="CrystalLantern7" parent="." instance=ExtResource("4_0q5ra")]
+z_index = 2
 position = Vector2(9111, 1684)
 
 [node name="CrystalLantern4" parent="." instance=ExtResource("4_0q5ra")]
+z_index = 2
 position = Vector2(5488, -6830)
 
 [node name="SpawnPoint_FromVillage" type="Marker2D" parent="."]
@@ -287,7 +293,7 @@ visible = false
 [node name="WeaverSpider" parent="Act2_Objects" instance=ExtResource("9_0cado")]
 position = Vector2(7928, -441)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Act2_Objects/WeaverSpider"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Act2_Objects/WeaverSpider"]
 position = Vector2(-230.5, 476)
 shape = SubResource("RectangleShape2D_n31n7")
 
@@ -325,6 +331,7 @@ position = Vector2(8472, 1461)
 shape = SubResource("RectangleShape2D_0cado")
 
 [node name="BossCrystal" parent="Act2_Objects" instance=ExtResource("8_ot4hk")]
+z_index = 3
 position = Vector2(7715, 866)
 
 [node name="Act3_Objects" type="Node2D" parent="."]
@@ -343,6 +350,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-655337, 327680, 0, -589801, 262144, 0, -524265, 393216, 0, -458729, 393216, 0, -393193, 262144, 0, -327657, 327680, 0, -262121, 393216, 0, -720873, 262144, 0, -720872, 327680, 0, -720871, 262144, 0, -720870, 262144, 0, -720869, 262144, 0, -720868, 327680, 0, -720867, 393216, 0, -720866, 262144, 0, -720865, 327680, 0, -720864, 327680, 0, -720863, 327680, 0, -720862, 262144, 0, -655326, 327680, 0, -589790, 393216, 0, -524254, 327680, 0, -458718, 327680, 0, -393182, 393216, 0, -327646, 393216, 0, -327652, 327680, 0, -262116, 327680, 0, -327651, 393216, 0, -327650, 327680, 0, -327649, 393216, 0, -327648, 327680, 0, -327647, 327680, 0)
 
 [node name="RootCrystal1" type="Sprite2D" parent="Act3_Objects/AfterCollapse"]
+z_index = 3
 position = Vector2(7679, 755)
 texture = ExtResource("28_0l4lq")
 

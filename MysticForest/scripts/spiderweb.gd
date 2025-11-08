@@ -20,7 +20,8 @@ func _on_body_entered(body):
 		body.attunement_target = self
 
 func _on_body_exited(body):
-	# Убираем цель, когда игрок отходит
+	if body.name != "Player1":
+		return
 	if body.attunement_target == self:
 		body.attunement_target = null
 

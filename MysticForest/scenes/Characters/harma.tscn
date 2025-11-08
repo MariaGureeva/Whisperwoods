@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv7ihdxdreqig"]
+
+[ext_resource type="Script" uid="uid://dm0qxyseudclf" path="res://MysticForest/scripts/harma.gd" id="1_uthmw"]
+[ext_resource type="Texture2D" uid="uid://dop7617ovgw3x" path="res://MysticForest/assets/characters/School kids/Schoolkid5.1.png" id="2_4w16l"]
+[ext_resource type="Texture2D" uid="uid://biaiu3k632f3i" path="res://MysticForest/assets/characters/School kids/Schoolkid5.2.png" id="3_2ms8r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eswki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4w16l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2ms8r")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="Harma" type="CharacterBody2D"]
+script = ExtResource("1_uthmw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_eswki")
+animation = &"idle"
+frame = 1
+frame_progress = 0.67767

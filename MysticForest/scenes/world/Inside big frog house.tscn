@@ -1,0 +1,204 @@
+[gd_scene load_steps=32 format=3 uid="uid://dnsu25g2kwusv"]
+
+[ext_resource type="Texture2D" uid="uid://c8wfwl3eo7bfj" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Wallpaper and a window1.png" id="1_1dei1"]
+[ext_resource type="Texture2D" uid="uid://cel4fue1kkqlv" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Floor tiles for frog house1.png" id="2_aqd4o"]
+[ext_resource type="Texture2D" uid="uid://bl0k71jysig53" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Floor tiles for frog house2.png" id="3_xw30p"]
+[ext_resource type="Texture2D" uid="uid://dpc6qleq5o1c4" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Floor tiles for frog house3.png" id="4_yhfxg"]
+[ext_resource type="Texture2D" uid="uid://dxvxiyxrb5od4" path="res://MysticForest/assets/objects/Frogs houses interior/Lanterns garland.png" id="5_131we"]
+[ext_resource type="Texture2D" uid="uid://veo5rqsf2w71" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Carpet for frog house.png" id="6_ow4mw"]
+[ext_resource type="Texture2D" uid="uid://jbiqdwvsxrhl" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Table and a chair1.png" id="7_0evvr"]
+[ext_resource type="Texture2D" uid="uid://fvvd43yjk21t" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Table and a chair2.png" id="8_2av2h"]
+[ext_resource type="Texture2D" uid="uid://bt30hmti1eotk" path="res://MysticForest/assets/tilesets/Frogs houses/Big frogs house/Wallpaper and a window2.png" id="9_xnbin"]
+[ext_resource type="Texture2D" uid="uid://behjuka88k2vk" path="res://MysticForest/assets/objects/Frogs houses interior/Bedside table.png" id="10_tm2lm"]
+[ext_resource type="Texture2D" uid="uid://ic6qc3c8s3i" path="res://MysticForest/assets/objects/Frogs houses interior/Vinyl record3.png" id="11_lxtk3"]
+[ext_resource type="Texture2D" uid="uid://ubwqen4pdnui" path="res://MysticForest/assets/objects/Frogs houses interior/Vinyl record4.png" id="12_u824f"]
+[ext_resource type="Texture2D" uid="uid://d4kvplprvbdra" path="res://MysticForest/assets/objects/Frogs houses interior/Vinyl record5.png" id="13_7ho1b"]
+[ext_resource type="Texture2D" uid="uid://dmwxqnnfq4txi" path="res://MysticForest/assets/objects/Frogs houses interior/Plant.png" id="14_5uvrj"]
+[ext_resource type="Texture2D" uid="uid://bnw08rfquxbia" path="res://MysticForest/assets/tilesets/Pot flowers.png" id="15_jip0i"]
+[ext_resource type="PackedScene" uid="uid://cu6eqo8nwkggc" path="res://MysticForest/scenes/Characters/Maestro Croaker.tscn" id="16_pqx4s"]
+[ext_resource type="PackedScene" uid="uid://baravb86tegir" path="res://MysticForest/scenes/Characters/Grumble.tscn" id="17_hkdkq"]
+[ext_resource type="PackedScene" uid="uid://yqdtpf6d1d5x" path="res://MysticForest/scenes/Characters/lily_frog.tscn" id="18_l2b8d"]
+[ext_resource type="PackedScene" uid="uid://b3pu4icu7br3c" path="res://MysticForest/scenes/Characters/la_frog.tscn" id="19_l7k58"]
+[ext_resource type="PackedScene" uid="uid://sy3cg4ma50xm" path="res://MysticForest/scenes/Characters/sol_frog.tscn" id="20_50i28"]
+[ext_resource type="PackedScene" uid="uid://c2d8jrlbngkjd" path="res://MysticForest/scenes/Characters/Toadling.tscn" id="21_hoq51"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="22_7twih"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twvb0"]
+texture = ExtResource("1_1dei1")
+texture_region_size = Vector2i(320, 960)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_wajnv"]
+tile_size = Vector2i(320, 960)
+sources/0 = SubResource("TileSetAtlasSource_twvb0")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nuxby"]
+texture = ExtResource("2_aqd4o")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q8o6h"]
+texture = ExtResource("3_xw30p")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d1uqu"]
+texture = ExtResource("4_yhfxg")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8qev"]
+texture = ExtResource("5_131we")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_oqsif"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_nuxby")
+sources/1 = SubResource("TileSetAtlasSource_q8o6h")
+sources/2 = SubResource("TileSetAtlasSource_d1uqu")
+sources/3 = SubResource("TileSetAtlasSource_d8qev")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bmyki"]
+texture = ExtResource("15_jip0i")
+texture_region_size = Vector2i(320, 640)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_eyr5p"]
+tile_size = Vector2i(320, 640)
+sources/0 = SubResource("TileSetAtlasSource_bmyki")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="Walls" type="TileMap" parent="TileMapLayer"]
+tile_set = SubResource("TileSet_wajnv")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0)
+
+[node name="Floor" type="TileMap" parent="TileMapLayer"]
+tile_set = SubResource("TileSet_oqsif")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 1, 0, 65536, 1, 0, 131072, 1, 0, 196608, 1, 0, 262144, 1, 0, 327680, 1, 0, 393216, 1, 0, 458752, 1, 0, 524288, 1, 0, 589824, 1, 0, 655360, 1, 0, 720896, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 65549, 1, 0, 131085, 1, 0, 196621, 1, 0, 262157, 1, 0, 327693, 1, 0, 393229, 1, 0, 458765, 1, 0, 524301, 1, 0, 589837, 1, 0, 655373, 1, 0, 720909, 1, 0, 720897, 1, 0, 720898, 1, 0, 720899, 1, 0, 720900, 1, 0, 720901, 1, 0, 720902, 1, 0, 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720908, 1, 0, 65537, 0, 0, 131073, 0, 0, 196609, 0, 0, 262145, 0, 0, 327681, 0, 0, 393217, 0, 0, 458753, 0, 0, 524289, 0, 0, 589825, 0, 0, 655361, 0, 0, 65538, 0, 0, 131074, 0, 0, 196610, 0, 0, 262146, 0, 0, 327682, 0, 0, 393218, 0, 0, 458754, 0, 0, 524290, 0, 0, 589826, 0, 0, 655362, 0, 0, 65539, 0, 0, 131075, 0, 0, 196611, 0, 0, 262147, 0, 0, 327683, 0, 0, 393219, 0, 0, 458755, 0, 0, 524291, 0, 0, 589827, 0, 0, 655363, 0, 0, 65540, 0, 0, 131076, 0, 0, 196612, 0, 0, 262148, 0, 0, 327684, 0, 0, 393220, 0, 0, 458756, 0, 0, 524292, 0, 0, 589828, 0, 0, 655364, 0, 0, 65541, 0, 0, 131077, 0, 0, 196613, 0, 0, 262149, 0, 0, 327685, 0, 0, 393221, 0, 0, 458757, 0, 0, 524293, 0, 0, 589829, 0, 0, 655365, 0, 0, 65542, 0, 0, 131078, 0, 0, 196614, 0, 0, 262150, 0, 0, 327686, 0, 0, 393222, 0, 0, 458758, 0, 0, 524294, 0, 0, 589830, 0, 0, 655366, 0, 0, 65543, 0, 0, 131079, 0, 0, 196615, 0, 0, 262151, 0, 0, 327687, 0, 0, 393223, 0, 0, 458759, 0, 0, 524295, 0, 0, 589831, 0, 0, 655367, 0, 0, 65544, 0, 0, 131080, 0, 0, 196616, 0, 0, 262152, 0, 0, 327688, 0, 0, 393224, 0, 0, 458760, 0, 0, 524296, 0, 0, 589832, 0, 0, 655368, 0, 0, 65545, 0, 0, 131081, 0, 0, 196617, 0, 0, 262153, 0, 0, 327689, 0, 0, 393225, 0, 0, 458761, 0, 0, 524297, 0, 0, 589833, 0, 0, 655369, 0, 0, 65546, 0, 0, 131082, 0, 0, 196618, 0, 0, 262154, 0, 0, 327690, 0, 0, 393226, 0, 0, 458762, 0, 0, 524298, 0, 0, 589834, 0, 0, 655370, 0, 0, 65547, 0, 0, 131083, 0, 0, 196619, 0, 0, 262155, 0, 0, 327691, 0, 0, 393227, 0, 0, 458763, 0, 0, 524299, 0, 0, 589835, 0, 0, 655371, 0, 0, 65548, 0, 0, 131084, 0, 0, 196620, 0, 0, 262156, 0, 0, 327692, 0, 0, 393228, 0, 0, 458764, 0, 0, 524300, 0, 0, 589836, 0, 0, 655372, 0, 0)
+
+[node name="CarpetForFrogHouse" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(2214, 664.75)
+scale = Vector2(1.50521, 1.36094)
+texture = ExtResource("6_ow4mw")
+
+[node name="TableAndAChair1" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(2216, 112)
+texture = ExtResource("7_0evvr")
+
+[node name="TableAndAChair2" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(2698, 104)
+texture = ExtResource("8_2av2h")
+
+[node name="TableAndAChair3" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(1730, 104)
+rotation = 3.14159
+scale = Vector2(1, -1)
+texture = ExtResource("8_2av2h")
+
+[node name="WallpaperAndAWindow2" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(1919, -484)
+texture = ExtResource("9_xnbin")
+
+[node name="WallpaperAndAWindow3" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(2547, -481)
+rotation = 3.14159
+scale = Vector2(1, -1)
+texture = ExtResource("9_xnbin")
+
+[node name="WallpaperAndAWindow2" type="Sprite2D" parent="TileMapLayer/WallpaperAndAWindow3"]
+position = Vector2(1391, -2)
+texture = ExtResource("9_xnbin")
+
+[node name="WallpaperAndAWindow3" type="Sprite2D" parent="TileMapLayer/WallpaperAndAWindow3"]
+position = Vector2(2019, 1)
+scale = Vector2(-1, 1)
+texture = ExtResource("9_xnbin")
+
+[node name="WallpaperAndAWindow2" type="Sprite2D" parent="TileMapLayer/WallpaperAndAWindow3/WallpaperAndAWindow3"]
+position = Vector2(2781, -2)
+texture = ExtResource("9_xnbin")
+
+[node name="WallpaperAndAWindow3" type="Sprite2D" parent="TileMapLayer/WallpaperAndAWindow3/WallpaperAndAWindow3"]
+position = Vector2(3409, 1)
+scale = Vector2(-1, 1)
+texture = ExtResource("9_xnbin")
+
+[node name="BedsideTable" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(833, -123)
+texture = ExtResource("10_tm2lm")
+
+[node name="BedsideTable2" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(3629, -133)
+texture = ExtResource("10_tm2lm")
+
+[node name="VinylRecord3" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(1536, -722)
+texture = ExtResource("11_lxtk3")
+
+[node name="VinylRecord4" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(2237, -705)
+texture = ExtResource("12_u824f")
+
+[node name="VinylRecord5" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(2914, -705)
+texture = ExtResource("13_7ho1b")
+
+[node name="Floor2" type="TileMap" parent="TileMapLayer"]
+tile_set = SubResource("TileSet_oqsif")
+format = 2
+layer_0/tile_data = PackedInt32Array(-196608, 3, 0, -196607, 3, 0, -196606, 3, 0, -196605, 3, 0, -196604, 3, 0, -196603, 3, 0, -196602, 3, 0, -196601, 3, 0, -196600, 3, 0, -196599, 3, 0, -196598, 3, 0, -196597, 3, 0, -196596, 3, 0, -196595, 3, 0)
+
+[node name="Plant" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(222, -251)
+texture = ExtResource("14_5uvrj")
+
+[node name="Plant2" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(4251, -224)
+rotation = 3.14159
+scale = Vector2(1, -1)
+texture = ExtResource("14_5uvrj")
+
+[node name="Flowers" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_eyr5p")
+format = 2
+layer_0/tile_data = PackedInt32Array(13, 131072, 0, 1, 0, 0)
+
+[node name="Maestro Croaker" parent="." instance=ExtResource("16_pqx4s")]
+position = Vector2(1306, 789)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("17_hkdkq")]
+position = Vector2(2541, 886)
+
+[node name="Lily frog" parent="." instance=ExtResource("18_l2b8d")]
+position = Vector2(3140, 948)
+
+[node name="La frog" parent="." instance=ExtResource("19_l7k58")]
+position = Vector2(3636, 1443)
+
+[node name="Sol frog" parent="." instance=ExtResource("20_50i28")]
+position = Vector2(4033, 1504)
+
+[node name="Toadling" parent="." instance=ExtResource("21_hoq51")]
+position = Vector2(767, 1345)
+
+[node name="Player1" parent="." instance=ExtResource("22_7twih")]
+position = Vector2(1630, 2886)
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2(921, -312)
+offset = Vector2(5, 5)
+zoom = Vector2(0.25, 0.25)
+rotation_smoothing_enabled = true
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0

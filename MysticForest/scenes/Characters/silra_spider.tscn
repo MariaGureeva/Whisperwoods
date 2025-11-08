@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0b4qsbuwrlpa"]
+
+[ext_resource type="Script" uid="uid://cp3foc0den4mb" path="res://MysticForest/scripts/silra_spider.gd" id="1_cvvfe"]
+[ext_resource type="Texture2D" uid="uid://bvi6lpbcrpiyo" path="res://MysticForest/assets/characters/Spiders/silra/spidersNPCs1.png" id="2_7yrgd"]
+[ext_resource type="Texture2D" uid="uid://ca7yc7qksycci" path="res://MysticForest/assets/characters/Spiders/silra/spidersNPCs2.png" id="3_xdn86"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_udnup"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7yrgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xdn86")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="Silra spider" type="CharacterBody2D"]
+script = ExtResource("1_cvvfe")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_udnup")
+animation = &"idle"
+frame_progress = 0.958946

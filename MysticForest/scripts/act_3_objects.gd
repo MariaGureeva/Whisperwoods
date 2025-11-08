@@ -279,7 +279,8 @@ func play_final_cutscene():
 
 	var final_dialogue = [
 		{ "speaker": "The Weaver", "text": "The echoes are quiet. My mind is... still. You listened." },
-		{ "speaker": "The Weaver", "text": "The wound of the past remains, but it no longer screams. For your empathy, take this. It remembers the mountains before the fear came." }
+		{ "speaker": "The Weaver", "text": "Thank you for helping me face my own pain. I now see how much harm I have caused the Mycelians." },
+		{ "speaker": "The Weaver", "text": "I wish to apologize to them. Please... will you help me?" }
 	]
 
 	dialogue_ui.start_dialogue(final_dialogue)
@@ -290,6 +291,10 @@ func play_final_cutscene():
 	GameState.spider_quest_completed = true
 	GameState.add_item("mirror_shard")
 	print("Player received the mirror shard")
+
+	if is_instance_valid(spider) and spider.has_method("start_following"):
+		spider.start_following(player)
+		GameState.spider_is_following = true
 
 	if is_instance_valid(player):
 		player.set_process_input(true)

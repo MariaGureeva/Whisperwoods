@@ -5,9 +5,10 @@ extends Node2D
 @onready var ritual_trigger = $RitualTrigger
 @onready var moon_reflection = $MoonReflection
 @onready var echo_sprite = $EchoSprite
+const WeaverSpiderScene = preload("res://MysticForest/scenes/Characters/WeaverSpider.tscn")
+@onready var portal_to_weavers_passage = $"Portal to the path to spiders"
+@onready var portal_barrier = $Barrier
 
-# --- МЫ БОЛЬШЕ НЕ ИСПОЛЬЗУЕМ @ONREADY ЗДЕСЬ ---
-# @onready var end_of_act_screen = $EndOfActScreen
 
 func _ready():
 	var spawn_point = get_node_or_null(GameState.entrance_name)
@@ -16,11 +17,49 @@ func _ready():
 	
 	ritual_trigger.body_entered.connect(_on_ritual_trigger_entered)
 	echo_sprite.hide()
+	
+	if GameState.spider_quest_completed:
+		print("Квест паука завершен. Путь к Тропе Пауков открыт.")
+		portal_to_weavers_passage.monitoring = true
+		portal_barrier.get_node("CollisionShape2D").disabled = true
+		portal_barrier.hide()
+	else:
+		print("Квест паука еще не завершен. Путь к Тропе Пауков закрыт.")
+		portal_to_weavers_passage.monitoring = false
+		portal_barrier.get_node("CollisionShape2D").disabled = false
+		portal_barrier.show() 
+
+	
+	if GameState.spider_is_leading_to_den:
+		var path_node = get_node_or_null("SpiderPath")
+		if path_node:
+			var local_points = path_node.get_children()
+			local_points.sort_custom(func(a, b): return a.name < b.name)
+			
+			var global_index = GameState.spider_leading_path_index
+			var start_index_in_this_scene = global_index - get_path_start_index_for_this_scene()
+			
+			if start_index_in_this_scene >= 0 and start_index_in_this_scene < local_points.size():
+				var spider = spawn_spider_follower()
+				spider.start_leading_path(local_points, start_index_in_this_scene)
+
+
+func spawn_spider_follower() -> CharacterBody2D:
+	var instance = WeaverSpiderScene.instantiate()
+	add_child(instance)
+	instance.global_position = player.global_position - Vector2(80, 0)
+	if instance.has_method("enable_collision"): instance.enable_collision()
+	return instance
+
+func get_path_start_index_for_this_scene() -> int:
+	return 4
 
 func _on_ritual_trigger_entered(body):
 	if body.name == "Player1" and not GameState.act_2_completed:
 		ritual_trigger.set_deferred("monitoring", false)
 		play_final_act2_cutscene()
+
+
 
 func play_final_act2_cutscene():
 	GameState.act_2_completed = true

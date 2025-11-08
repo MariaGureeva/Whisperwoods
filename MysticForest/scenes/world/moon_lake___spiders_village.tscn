@@ -1,0 +1,790 @@
+[gd_scene load_steps=96 format=3 uid="uid://cuhspf0gh4h7q"]
+
+[ext_resource type="Script" uid="uid://b6qtpw3dysdvm" path="res://MysticForest/scripts/background_layer.gd" id="1_c6u15"]
+[ext_resource type="Script" uid="uid://b0qp6co1d33nv" path="res://MysticForest/scripts/moon_lake___spiders_village.gd" id="1_ncdqf"]
+[ext_resource type="Texture2D" uid="uid://c2wl76wdlfq50" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background1.png" id="2_01jix"]
+[ext_resource type="Texture2D" uid="uid://eos6bohw15yb" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background2.png" id="3_ncdqf"]
+[ext_resource type="Texture2D" uid="uid://b2goqf4pmpte5" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background3.png" id="4_xvapg"]
+[ext_resource type="Texture2D" uid="uid://2871dkone6s2" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background4.png" id="5_gln80"]
+[ext_resource type="Texture2D" uid="uid://bs8s74ky1a13i" path="res://MysticForest/assets/tilesets/Minimalistic grass tiles.png" id="6_i0bkl"]
+[ext_resource type="Texture2D" uid="uid://cjd8d1ei8oona" path="res://MysticForest/assets/tilesets/Grass1/Min grass 4.png" id="7_kjk38"]
+[ext_resource type="Texture2D" uid="uid://bb8qnbh7115ju" path="res://MysticForest/assets/tilesets/Grass1/Grass test.png" id="8_7w61x"]
+[ext_resource type="Texture2D" uid="uid://dltrvb331qilh" path="res://MysticForest/assets/tilesets/Grass1/Flowers sprite.png" id="9_r1ob0"]
+[ext_resource type="Texture2D" uid="uid://dptkhr6fcdbob" path="res://MysticForest/assets/tilesets/Grass1/Min grass 1.png" id="10_4jpd1"]
+[ext_resource type="Texture2D" uid="uid://br557dren3mfq" path="res://MysticForest/assets/tilesets/Grass1/Min grass 2.png" id="11_jxs2t"]
+[ext_resource type="Texture2D" uid="uid://7xrq5to58vtg" path="res://MysticForest/assets/tilesets/Grass1/Min grass 3.png" id="12_svuxt"]
+[ext_resource type="Texture2D" uid="uid://hgvwx71y2n23" path="res://MysticForest/assets/tilesets/Grass 3/Grass redesign.png" id="13_hq1rr"]
+[ext_resource type="Texture2D" uid="uid://dmoh0ced3rruc" path="res://MysticForest/assets/tilesets/Mushrooms/Mushrooms for swamps.png" id="14_01tbr"]
+[ext_resource type="Texture2D" uid="uid://ooueb37whdms" path="res://MysticForest/assets/tilesets/Stones.png" id="15_qsiy1"]
+[ext_resource type="Texture2D" uid="uid://dmb4xneio17i1" path="res://MysticForest/assets/tilesets/Caves/WallsinCave.png" id="16_kjr7b"]
+[ext_resource type="Shader" uid="uid://ct1dp3b3ros7x" path="res://MysticForest/assets/shaders/water.gdshader" id="17_qvl1i"]
+[ext_resource type="Texture2D" uid="uid://bqw21y3uug3we" path="res://MysticForest/assets/tilesets/Water/tile0.png" id="18_s384w"]
+[ext_resource type="Texture2D" uid="uid://b47ly3i6a4ca" path="res://MysticForest/assets/tilesets/Water/tile9.png" id="19_k78is"]
+[ext_resource type="Texture2D" uid="uid://cuuidg0sb5ohd" path="res://MysticForest/assets/tilesets/Water/tile10.png" id="20_q4p4l"]
+[ext_resource type="Texture2D" uid="uid://dhynv4geaeu2n" path="res://MysticForest/assets/tilesets/Water/tile11.png" id="21_mxpo3"]
+[ext_resource type="Texture2D" uid="uid://c2pv7ek8mnmto" path="res://MysticForest/assets/tilesets/Water/tile12.png" id="22_x7k36"]
+[ext_resource type="Texture2D" uid="uid://yx1syjeob8v0" path="res://MysticForest/assets/tilesets/Water/tile13.png" id="23_u4tej"]
+[ext_resource type="Texture2D" uid="uid://bgfbm17thjpw6" path="res://MysticForest/assets/tilesets/Water/tile14.png" id="24_llnsp"]
+[ext_resource type="Texture2D" uid="uid://5isdycy1nto" path="res://MysticForest/assets/tilesets/Water/tile1.png" id="25_812lq"]
+[ext_resource type="Texture2D" uid="uid://dfl5et4ypksrm" path="res://MysticForest/assets/tilesets/Water/tile2.png" id="26_u3ugm"]
+[ext_resource type="Texture2D" uid="uid://nn23tcd08pur" path="res://MysticForest/assets/tilesets/Water/tile3.png" id="27_jyoev"]
+[ext_resource type="Texture2D" uid="uid://cefyo2hicw2bi" path="res://MysticForest/assets/tilesets/Water/tile4.png" id="28_6lbdq"]
+[ext_resource type="Texture2D" uid="uid://d4hqhwa3hn0xt" path="res://MysticForest/assets/tilesets/Water/tile5.png" id="29_new6b"]
+[ext_resource type="Texture2D" uid="uid://cxx6ec1y7mv56" path="res://MysticForest/assets/tilesets/Water/tile6.png" id="30_61ixb"]
+[ext_resource type="Texture2D" uid="uid://cltseej4y83ik" path="res://MysticForest/assets/tilesets/Water/tile7.png" id="31_furul"]
+[ext_resource type="Texture2D" uid="uid://c7ym100667t5v" path="res://MysticForest/assets/tilesets/Water/tile8.png" id="32_cwum5"]
+[ext_resource type="Texture2D" uid="uid://dnxp375g171mc" path="res://MysticForest/assets/tilesets/MoonLake/MoonLake background5.png" id="33_apc3j"]
+[ext_resource type="Texture2D" uid="uid://dhrlhkp2hhqym" path="res://MysticForest/assets/tilesets/Trees_individual/tree004.png" id="34_t4c2d"]
+[ext_resource type="Texture2D" uid="uid://b14m5ov0ja6s2" path="res://MysticForest/assets/tilesets/Trees_individual/tree002.png" id="35_15kcp"]
+[ext_resource type="Texture2D" uid="uid://cr56d8ccycxm5" path="res://MysticForest/assets/tilesets/Trees_individual/tree001.png" id="36_pdlin"]
+[ext_resource type="Texture2D" uid="uid://dqymy71lvidbf" path="res://MysticForest/assets/tilesets/Trees_individual/tree000.png" id="37_vcea0"]
+[ext_resource type="Texture2D" uid="uid://cysghp4usld83" path="res://MysticForest/assets/tilesets/Trees_individual/Swamptree000.png" id="38_1i2ch"]
+[ext_resource type="Texture2D" uid="uid://c72blvbpax6x8" path="res://MysticForest/assets/tilesets/Trees_individual/tree003.png" id="39_p23d0"]
+[ext_resource type="Texture2D" uid="uid://be8ispfmcrshe" path="res://MysticForest/assets/tilesets/Trees_individual/tree005.png" id="40_1qsh1"]
+[ext_resource type="Texture2D" uid="uid://dld0gsd4t4m51" path="res://MysticForest/assets/tilesets/Trees_individual/Swamptree001.png" id="41_sfyms"]
+[ext_resource type="Texture2D" uid="uid://dkfukxfojrrkj" path="res://MysticForest/assets/tilesets/Spiders location/Burnt tree4.png" id="42_ieska"]
+[ext_resource type="Texture2D" uid="uid://dq4a6oxcat61u" path="res://MysticForest/assets/tilesets/Spiders location/Burnt tree1.png" id="43_fajhj"]
+[ext_resource type="Texture2D" uid="uid://y7v01pii7vyp" path="res://MysticForest/assets/tilesets/Spiders location/Burnt tree3.png" id="44_omnxy"]
+[ext_resource type="PackedScene" uid="uid://5nsifwmqpylr" path="res://MysticForest/scenes/Characters/Player1.tscn" id="45_bunbf"]
+[ext_resource type="Script" uid="uid://daixjhad5xrss" path="res://MysticForest/scripts/portaltothemoonlake.gd" id="46_01jix"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7dxq"]
+texture = ExtResource("6_i0bkl")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vh7mw"]
+texture = ExtResource("7_kjk38")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oiqgs"]
+texture = ExtResource("8_7w61x")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_folhj"]
+tile_size = Vector2i(320, 320)
+sources/2 = SubResource("TileSetAtlasSource_oiqgs")
+sources/0 = SubResource("TileSetAtlasSource_o7dxq")
+sources/1 = SubResource("TileSetAtlasSource_vh7mw")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f0n3h"]
+texture = ExtResource("9_r1ob0")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tfim8"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_f0n3h")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f6lsv"]
+texture = ExtResource("10_4jpd1")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_f1d1y"]
+tile_size = Vector2i(320, 320)
+sources/2 = SubResource("TileSetAtlasSource_f6lsv")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j44fv"]
+texture = ExtResource("11_jxs2t")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_do6ph"]
+tile_size = Vector2i(320, 320)
+sources/1 = SubResource("TileSetAtlasSource_j44fv")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q3jls"]
+texture = ExtResource("12_svuxt")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jk6p0"]
+tile_size = Vector2i(320, 320)
+sources/1 = SubResource("TileSetAtlasSource_q3jls")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cusik"]
+texture = ExtResource("7_kjk38")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_buc1j"]
+tile_size = Vector2i(320, 320)
+sources/1 = SubResource("TileSetAtlasSource_cusik")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_laods"]
+texture = ExtResource("13_hq1rr")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hdsfc"]
+texture = ExtResource("7_kjk38")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cibpu"]
+texture = ExtResource("11_jxs2t")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_mrqji"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_laods")
+sources/1 = SubResource("TileSetAtlasSource_hdsfc")
+sources/2 = SubResource("TileSetAtlasSource_cibpu")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ir3dq"]
+texture = ExtResource("6_i0bkl")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_us84b"]
+texture = ExtResource("7_kjk38")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j45be"]
+texture = ExtResource("8_7w61x")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_dyfj8"]
+tile_size = Vector2i(320, 320)
+sources/2 = SubResource("TileSetAtlasSource_j45be")
+sources/0 = SubResource("TileSetAtlasSource_ir3dq")
+sources/1 = SubResource("TileSetAtlasSource_us84b")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ksj3x"]
+texture = ExtResource("14_01tbr")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hu86i"]
+texture = ExtResource("15_qsiy1")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hfrme"]
+texture = ExtResource("9_r1ob0")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xlhkl"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_ksj3x")
+sources/1 = SubResource("TileSetAtlasSource_hu86i")
+sources/2 = SubResource("TileSetAtlasSource_hfrme")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ogaiy"]
+texture = ExtResource("16_kjr7b")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_surju"]
+tile_size = Vector2i(320, 320)
+sources/0 = SubResource("TileSetAtlasSource_ogaiy")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_xjrkn"]
+frequency = 0.001
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_vi5qo"]
+seamless = true
+seamless_blend_skirt = 1.0
+noise = SubResource("FastNoiseLite_xjrkn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0ohdr"]
+shader = ExtResource("17_qvl1i")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_vi5qo")
+shader_parameter/speed = Vector2(0.5, 0.2)
+shader_parameter/distortion = 0.01
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ms036"]
+texture = ExtResource("18_s384w")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2v36d"]
+texture = ExtResource("19_k78is")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fhmbe"]
+texture = ExtResource("20_q4p4l")
+texture_region_size = Vector2i(320, 320)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yp656"]
+texture = ExtResource("21_mxpo3")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_unwto"]
+texture = ExtResource("22_x7k36")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jnfxs"]
+texture = ExtResource("23_u4tej")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mtp2r"]
+texture = ExtResource("24_llnsp")
+texture_region_size = Vector2i(320, 320)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_otthw"]
+texture = ExtResource("25_812lq")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kamx2"]
+texture = ExtResource("26_u3ugm")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mb6bi"]
+texture = ExtResource("27_jyoev")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w230v"]
+texture = ExtResource("28_6lbdq")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0m61"]
+texture = ExtResource("29_new6b")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rtsry"]
+texture = ExtResource("30_61ixb")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7c15f"]
+texture = ExtResource("31_furul")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6k1mi"]
+texture = ExtResource("32_cwum5")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_eix4b"]
+tile_size = Vector2i(320, 320)
+sources/1 = SubResource("TileSetAtlasSource_ms036")
+sources/2 = SubResource("TileSetAtlasSource_otthw")
+sources/3 = SubResource("TileSetAtlasSource_kamx2")
+sources/4 = SubResource("TileSetAtlasSource_mb6bi")
+sources/5 = SubResource("TileSetAtlasSource_w230v")
+sources/6 = SubResource("TileSetAtlasSource_x0m61")
+sources/7 = SubResource("TileSetAtlasSource_rtsry")
+sources/8 = SubResource("TileSetAtlasSource_7c15f")
+sources/9 = SubResource("TileSetAtlasSource_6k1mi")
+sources/10 = SubResource("TileSetAtlasSource_2v36d")
+sources/11 = SubResource("TileSetAtlasSource_fhmbe")
+sources/12 = SubResource("TileSetAtlasSource_yp656")
+sources/13 = SubResource("TileSetAtlasSource_unwto")
+sources/14 = SubResource("TileSetAtlasSource_jnfxs")
+sources/15 = SubResource("TileSetAtlasSource_mtp2r")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncdqf"]
+size = Vector2(892, 1058)
+
+[node name="MoonLake - Spiders village" type="Node2D"]
+script = ExtResource("1_ncdqf")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+script = ExtResource("1_c6u15")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="BackgroundLayer" groups=["main_parallax_bg"]]
+layer = -128
+offset = Vector2(500, 100)
+transform = Transform2D(1, 0, 0, 1, 500, 100)
+scroll_base_offset = Vector2(0.5, 0.1)
+scroll_base_scale = Vector2(0.5, 0.2)
+
+[node name="ParallaxSky" type="ParallaxLayer" parent="BackgroundLayer/ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+motion_offset = Vector2(0, 200)
+
+[node name="Blue sky" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxSky"]
+position = Vector2(101.5, -18)
+scale = Vector2(2.96391, 1.64769)
+texture = ExtResource("2_01jix")
+
+[node name="Galaxies" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxSky"]
+texture = ExtResource("3_ncdqf")
+
+[node name="MoonLakeBackground3" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxSky/Galaxies"]
+position = Vector2(-2133, 0)
+scale = Vector2(1.03478, 1)
+texture = ExtResource("3_ncdqf")
+
+[node name="MoonLakeBackground2" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxSky/Galaxies"]
+position = Vector2(2418.5, 0)
+scale = Vector2(1.01, 1)
+texture = ExtResource("3_ncdqf")
+
+[node name="ParallaxStars" type="ParallaxLayer" parent="BackgroundLayer/ParallaxBackground"]
+position = Vector2(0, 0.25)
+motion_scale = Vector2(0.001, 0.1)
+motion_mirroring = Vector2(2000, 500)
+
+[node name="Whitestars" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxStars"]
+texture = ExtResource("4_xvapg")
+
+[node name="Whitestars3" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxStars"]
+position = Vector2(-1500, 0)
+texture = ExtResource("4_xvapg")
+
+[node name="Whitestars2" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxStars"]
+position = Vector2(1600, 0)
+texture = ExtResource("4_xvapg")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BackgroundLayer/ParallaxBackground"]
+position = Vector2(-1, -1)
+motion_scale = Vector2(0.1, 0.1)
+motion_offset = Vector2(200, 0)
+
+[node name="MoonSprite" type="Sprite2D" parent="BackgroundLayer/ParallaxBackground/ParallaxLayer" groups=["moon_sprite_group"]]
+position = Vector2(-100, 0)
+texture = ExtResource("5_gln80")
+
+[node name="Firstplan" type="Node2D" parent="."]
+modulate = Color(0.536604, 0.558927, 0.876102, 1)
+self_modulate = Color(0.686275, 0.709804, 0.929412, 1)
+position = Vector2(0, 1)
+
+[node name="Grass" type="TileMapLayer" parent="Firstplan"]
+
+[node name="Base floor" type="TileMap" parent="Firstplan/Grass"]
+position = Vector2(5, 2)
+tile_set = SubResource("TileSet_folhj")
+format = 2
+layer_0/tile_data = PackedInt32Array(131072, 65538, 0, 196608, 65538, 0, 262144, 65538, 0, 131073, 65538, 0, 196609, 65538, 0, 196610, 65538, 0, 131074, 65538, 0, 131075, 65538, 0, 196611, 65538, 0, 262147, 65538, 0, 262146, 65538, 0, 262145, 65538, 0, 262143, 65538, 0, 196607, 65538, 0, 327679, 65538, 0, 196606, 65538, 0, 262142, 65538, 0, 327678, 65538, 0, 327677, 65538, 0, 262141, 65538, 0, 196605, 65538, 0, 458749, 65538, 0, 458750, 65538, 0, 458751, 65538, 0, 393216, 65538, 0, 393217, 65538, 0, 327681, 65538, 0, 327680, 65538, 0, 393215, 65538, 0, 393214, 65538, 0, 393213, 65538, 0, 327682, 65538, 0, 327683, 65538, 0, 393219, 65538, 0, 393218, 65538, 0, 524285, 65538, 0, 589821, 65538, 0, 524286, 65538, 0, 589822, 65538, 0, 524287, 65538, 0, 589823, 65538, 0, 458752, 65538, 0, 524288, 65538, 0, 458753, 65538, 0, 524289, 65538, 0, 458754, 65538, 0, 524290, 65538, 0, 458755, 65538, 0, 524291, 65538, 0, 196603, 65538, 0, 262139, 65538, 0, 327675, 65538, 0, 393211, 65538, 0, 458747, 65538, 0, 524283, 65538, 0, 589819, 65538, 0, 196604, 65538, 0, 262140, 65538, 0, 327676, 65538, 0, 393212, 65538, 0, 458748, 65538, 0, 524284, 65538, 0, 589820, 65538, 0, 131076, 65538, 0, 196612, 65538, 0, 262148, 65538, 0, 327684, 65538, 0, 393220, 65538, 0, 458756, 65538, 0, 524292, 65538, 0, 196600, 65538, 0, 262136, 65538, 0, 327672, 65538, 0, 393208, 65538, 0, 458744, 65538, 0, 524280, 65538, 0, 589816, 65538, 0, 196601, 65538, 0, 262137, 65538, 0, 327673, 65538, 0, 393209, 65538, 0, 458745, 65538, 0, 524281, 65538, 0, 589817, 65538, 0, 196602, 65538, 0, 262138, 65538, 0, 327674, 65538, 0, 393210, 65538, 0, 458746, 65538, 0, 524282, 65538, 0, 589818, 65538, 0, 131077, 65538, 0, 196613, 65538, 0, 262149, 65538, 0, 327685, 65538, 0, 393221, 65538, 0, 458757, 65538, 0, 524293, 65538, 0, 131078, 65538, 0, 196614, 65538, 0, 262150, 65538, 0, 327686, 65538, 0, 393222, 65538, 0, 458758, 65538, 0, 524294, 65538, 0, 131079, 65538, 0, 196615, 65538, 0, 262151, 65538, 0, 327687, 65538, 0, 393223, 65538, 0, 458759, 65538, 0, 524295, 65538, 0, 131080, 65538, 0, 196616, 65538, 0, 262152, 65538, 0, 327688, 65538, 0, 393224, 65538, 0, 458760, 65538, 0, 524296, 65538, 0, 262153, 65538, 0, 327689, 65538, 0, 393225, 65538, 0, 458761, 65538, 0, 524297, 65538, 0, 262154, 65538, 0, 327690, 65538, 0, 393226, 65538, 0, 458762, 65538, 0, 524298, 65538, 0, 262155, 65538, 0, 327691, 65538, 0, 393227, 65538, 0, 458763, 65538, 0, 524299, 65538, 0, 262156, 65538, 0, 327692, 65538, 0, 393228, 65538, 0, 458764, 65538, 0, 524300, 65538, 0, 655352, 65538, 0, 720888, 65538, 0, 655353, 65538, 0, 720889, 65538, 0, 655354, 65538, 0, 720890, 65538, 0, 655355, 65538, 0, 720891, 65538, 0, 655356, 65538, 0, 720892, 65538, 0, 655357, 65538, 0, 720893, 65538, 0, 655358, 65538, 0, 720894, 65538, 0, 655359, 65538, 0, 720895, 65538, 0, 589824, 65538, 0, 655360, 65538, 0, 589825, 65538, 0, 655361, 65538, 0, 589826, 65538, 0, 655362, 65538, 0, 589827, 65538, 0, 655363, 65538, 0, 589828, 65538, 0, 655364, 65538, 0, 589829, 65538, 0, 655365, 65538, 0, 589830, 65538, 0, 655366, 65538, 0, 589831, 65538, 0, 655367, 65538, 0, 589832, 65538, 0, 655368, 65538, 0, 589833, 65538, 0, 655369, 65538, 0, 589834, 65538, 0, 655370, 65538, 0, 589835, 65538, 0, 655371, 65538, 0, 589836, 65538, 0, 655372, 65538, 0)
+
+[node name="Grass details" type="TileMap" parent="Firstplan/Grass"]
+position = Vector2(0, 40)
+format = 2
+
+[node name="Flowers" type="TileMap" parent="Firstplan/Grass/Grass details"]
+z_index = 2
+position = Vector2(6, 3)
+tile_set = SubResource("TileSet_tfim8")
+format = 2
+
+[node name="Minimal grass details" type="TileMap" parent="Firstplan/Grass/Grass details"]
+z_index = 2
+position = Vector2(5, 30)
+tile_set = SubResource("TileSet_f1d1y")
+format = 2
+
+[node name="Minimal grass details2" type="TileMap" parent="Firstplan/Grass/Grass details"]
+z_index = 2
+position = Vector2(5, 40)
+tile_set = SubResource("TileSet_do6ph")
+format = 2
+
+[node name="Minimal grass details3" type="TileMap" parent="Firstplan/Grass/Grass details"]
+z_index = 2
+position = Vector2(5, 50)
+tile_set = SubResource("TileSet_jk6p0")
+format = 2
+
+[node name="Minimal grass details4" type="TileMap" parent="Firstplan/Grass/Grass details"]
+z_index = 2
+position = Vector2(0, 50)
+tile_set = SubResource("TileSet_buc1j")
+format = 2
+
+[node name="Grass" type="TileMapLayer" parent="Firstplan/Grass"]
+
+[node name="TileMap" type="TileMap" parent="Firstplan/Grass/Grass"]
+tile_set = SubResource("TileSet_mrqji")
+rendering_quadrant_size = 17
+format = 2
+layer_0/tile_data = PackedInt32Array(196603, 917504, 0, 262139, 1114112, 0, 327675, 1114112, 0, 393211, 1245184, 0, 458747, 983040, 0, 524283, 851968, 0, 589819, 917504, 0, 655355, 983040, 0, 720891, 1179648, 0, 786427, 851968, 0, 851963, 851968, 0, 196604, 983040, 0, 262140, 1245184, 0, 327676, 1179648, 0, 393212, 917504, 0, 458748, 1245184, 0, 720892, 1048576, 0, 786428, 917504, 0, 851964, 1114112, 0, 196605, 917504, 0, 262141, 1048576, 0, 327677, 917504, 0, 393213, 983040, 0, 458749, 1179648, 0, 720893, 917504, 0, 786429, 983040, 0, 851965, 1245184, 0, 196606, 1048576, 0, 262142, 851968, 0, 327678, 1179648, 0, 393214, 917504, 0, 458750, 1245184, 0, 720894, 1245184, 0, 786430, 1048576, 0, 851966, 851968, 0, 196607, 1048576, 0, 262143, 851968, 0, 327679, 917504, 0, 393215, 851968, 0, 458751, 917504, 0, 720895, 983040, 0, 786431, 1048576, 0, 851967, 983040, 0, 131072, 983040, 0, 196608, 1114112, 0, 262144, 983040, 0, 327680, 1048576, 0, 393216, 1245184, 0, 655360, 851968, 0, 720896, 851968, 0, 786432, 851968, 0, 131073, 1245184, 0, 196609, 1245184, 0, 262145, 851968, 0, 327681, 917504, 0, 393217, 983040, 0, 655361, 1114112, 0, 720897, 1048576, 0, 786433, 983040, 0, 131074, 983040, 0, 196610, 1245184, 0, 262146, 1048576, 0, 327682, 1048576, 0, 393218, 1245184, 0, 655362, 917504, 0, 720898, 1048576, 0, 786434, 983040, 0, 131075, 1245184, 0, 196611, 983040, 0, 262147, 917504, 0, 327683, 917504, 0, 393219, 851968, 0, 655363, 1114112, 0, 720899, 851968, 0, 786435, 1245184, 0, 131076, 917504, 0, 196612, 1245184, 0, 262148, 1245184, 0, 327684, 851968, 0, 393220, 1048576, 0, 655364, 851968, 0, 720900, 851968, 0, 786436, 1114112, 0, 131077, 851968, 0, 196613, 1179648, 0, 262149, 917504, 0, 327685, 983040, 0, 393221, 983040, 0, 458757, 983040, 0, 524293, 1048576, 0, 589829, 1114112, 0, 655365, 917504, 0, 720901, 1048576, 0, 786437, 983040, 0, 524284, 1245184, 0, 589820, 1114112, 0, 655356, 917504, 0, 524285, 1048576, 0, 589821, 1048576, 0, 655357, 1179648, 0, 524286, 1114112, 0, 589822, 1179648, 0, 655358, 1114112, 0, 524287, 1245184, 0, 589823, 1179648, 0, 655359, 1048576, 0, 458752, 1114112, 0, 524288, 1179648, 0, 589824, 1245184, 0, 458753, 917504, 0, 524289, 983040, 0, 589825, 1245184, 0, 458754, 1245184, 0, 524290, 851968, 0, 589826, 917504, 0, 458755, 1114112, 0, 524291, 1048576, 0, 589827, 1179648, 0, 458756, 917504, 0, 524292, 983040, 0, 589828, 1179648, 0, 327687, 65537, 0, 393223, 65537, 0, 458759, 65537, 0, 524295, 65537, 0, 524296, 131073, 0, 589831, 65537, 0, 589832, 131073, 0, 655367, 65537, 0, 655368, 131073, 0, 655369, 196609, 0, 720903, 65537, 0, 720904, 131073, 0, 720905, 196609, 0, 589836, 196609, 0, 655370, 65537, 0, 655371, 131073, 0, 655372, 196609, 0, 720906, 65537, 0, 720907, 131073, 0, 720908, 196609, 0)
+
+[node name="Base floor2" type="TileMap" parent="Firstplan/Grass/Grass"]
+position = Vector2(5, 2)
+tile_set = SubResource("TileSet_dyfj8")
+format = 2
+layer_0/tile_data = PackedInt32Array(589828, 131073, 0, 655364, 65537, 0, 589829, 196609, 0, 655365, 1, 0, 589827, 196609, 0)
+
+[node name="TileMap5" type="TileMap" parent="Firstplan/Grass/Grass"]
+position = Vector2(0, 200)
+tile_set = SubResource("TileSet_mrqji")
+rendering_quadrant_size = 17
+format = 2
+layer_0/tile_data = PackedInt32Array(196602, 917504, 0, 262138, 1048576, 0, 327674, 1048576, 0, 393210, 917504, 0, 458746, 1048576, 0, 524282, 983040, 0, 589818, 917504, 0, 655354, 1048576, 0, 720890, 1048576, 0, 786426, 851968, 0, 851962, 851968, 0, 196603, 1048576, 0, 262139, 851968, 0, 327675, 1048576, 0, 393211, 1048576, 0, 458747, 851968, 0, 524283, 983040, 0, 589819, 983040, 0, 655355, 1048576, 0, 720891, 851968, 0, 786427, 1048576, 0, 851963, 983040, 0, 196604, 983040, 0, 262140, 851968, 0, 327676, 983040, 0, 393212, 1048576, 0, 458748, 851968, 0, 524284, 983040, 0, 589820, 851968, 0, 655356, 983040, 0, 720892, 983040, 0, 786428, 851968, 0, 851964, 917504, 0, 196605, 1048576, 0, 262141, 917504, 0, 327677, 983040, 0, 393213, 983040, 0, 458749, 851968, 0, 524285, 1048576, 0, 589821, 1048576, 0, 655357, 851968, 0, 720893, 1048576, 0, 786429, 917504, 0, 851965, 917504, 0, 196606, 851968, 0, 262142, 851968, 0, 327678, 917504, 0, 393214, 917504, 0, 458750, 983040, 0, 524286, 917504, 0, 589822, 1048576, 0, 655358, 1048576, 0, 720894, 851968, 0, 786430, 917504, 0, 851966, 1048576, 0, 196607, 1048576, 0, 262143, 917504, 0, 327679, 917504, 0, 393215, 983040, 0, 458751, 1048576, 0, 524287, 917504, 0, 589823, 851968, 0, 655359, 917504, 0, 720895, 983040, 0, 786431, 983040, 0, 851967, 917504, 0, 131072, 983040, 0, 196608, 917504, 0, 262144, 983040, 0, 327680, 917504, 0, 393216, 1048576, 0, 458752, 1048576, 0, 524288, 851968, 0, 589824, 1048576, 0, 655360, 917504, 0, 720896, 917504, 0, 786432, 917504, 0, 131073, 917504, 0, 196609, 917504, 0, 262145, 917504, 0, 327681, 917504, 0, 393217, 1048576, 0, 458753, 1048576, 0, 524289, 1114112, 0, 589825, 917504, 0, 655361, 1048576, 0, 720897, 983040, 0, 786433, 983040, 0, 131074, 983040, 0, 196610, 1048576, 0, 262146, 983040, 0, 327682, 983040, 0, 393218, 917504, 0, 458754, 917504, 0, 524290, 917504, 0, 589826, 917504, 0, 655362, 1048576, 0, 720898, 983040, 0, 786434, 983040, 0, 131075, 917504, 0, 196611, 917504, 0, 262147, 851968, 0, 327683, 917504, 0, 393219, 917504, 0, 458755, 851968, 0, 524291, 1114112, 0, 589827, 917504, 0, 655363, 1048576, 0, 720899, 917504, 0, 786435, 1048576, 0, 131076, 917504, 0, 196612, 1048576, 0, 262148, 983040, 0, 327684, 1048576, 0, 393220, 1048576, 0, 458756, 917504, 0, 524292, 983040, 0, 589828, 917504, 0, 655364, 983040, 0, 720900, 983040, 0, 786436, 851968, 0, 131077, 851968, 0, 196613, 1048576, 0, 262149, 1048576, 0, 327685, 1048576, 0, 393221, 851968, 0, 458757, 1048576, 0, 524293, 1, 0, 589829, 1048576, 0, 655365, 983040, 0, 720901, 917504, 0, 786437, 1048576, 0, 131078, 983040, 0, 196614, 983040, 0, 262150, 983040, 0, 327686, 1179648, 0, 393222, 1179648, 0, 458758, 1245184, 0, 524294, 1048576, 0, 589830, 983040, 0, 655366, 1245184, 0, 720902, 983040, 0, 786438, 851968, 0, 262151, 1179648, 0, 327687, 1179648, 0, 393223, 1114112, 0, 458759, 1179648, 0, 524295, 983040, 0, 589831, 983040, 0, 655367, 1179648, 0, 262152, 1114112, 0, 327688, 851968, 0, 393224, 851968, 0, 458760, 1114112, 0, 524296, 983040, 0, 589832, 917504, 0, 655368, 1245184, 0, 262153, 917504, 0, 327689, 1179648, 0, 393225, 851968, 0, 458761, 851968, 0, 524297, 851968, 0, 589833, 983040, 0, 655369, 1245184, 0, 262154, 1048576, 0, 327690, 1048576, 0, 393226, 1245184, 0, 458762, 1114112, 0, 524298, 917504, 0, 589834, 917504, 0, 655370, 1245184, 0, 262155, 851968, 0, 327691, 851968, 0, 393227, 917504, 0, 458763, 917504, 0, 524299, 1179648, 0, 589835, 1114112, 0, 655371, 851968, 0, 262156, 851968, 0, 327692, 1048576, 0, 393228, 983040, 0, 458764, 917504, 0, 524300, 1048576, 0, 589836, 851968, 0, 655372, 1245184, 0)
+
+[node name="TileMap2" type="TileMap" parent="Firstplan/Grass/Grass"]
+position = Vector2(200, 100)
+tile_set = SubResource("TileSet_mrqji")
+rendering_quadrant_size = 17
+format = 2
+layer_0/tile_data = PackedInt32Array(196602, 589824, 0, 262138, 720896, 0, 327674, 720896, 0, 393210, 786432, 0, 458746, 655360, 0, 524282, 1179648, 0, 589818, 589824, 0, 655354, 589824, 0, 720890, 589824, 0, 786426, 655360, 0, 851962, 720896, 0, 196603, 786432, 0, 262139, 786432, 0, 327675, 786432, 0, 393211, 786432, 0, 458747, 589824, 0, 524283, 917504, 0, 589819, 786432, 0, 655355, 720896, 0, 720891, 720896, 0, 786427, 655360, 0, 851963, 589824, 0, 196604, 720896, 0, 262140, 655360, 0, 327676, 786432, 0, 393212, 589824, 0, 458748, 720896, 0, 524284, 720896, 0, 589820, 786432, 0, 655356, 786432, 0, 720892, 589824, 0, 786428, 786432, 0, 851964, 589824, 0, 196605, 720896, 0, 262141, 786432, 0, 327677, 720896, 0, 393213, 786432, 0, 458749, 655360, 0, 524285, 720896, 0, 589821, 786432, 0, 655357, 655360, 0, 720893, 786432, 0, 786429, 589824, 0, 851965, 655360, 0, 196606, 786432, 0, 262142, 786432, 0, 327678, 589824, 0, 393214, 589824, 0, 458750, 589824, 0, 524286, 655360, 0, 589822, 589824, 0, 655358, 655360, 0, 720894, 589824, 0, 786430, 655360, 0, 851966, 655360, 0, 196607, 786432, 0, 262143, 786432, 0, 327679, 589824, 0, 393215, 720896, 0, 458751, 720896, 0, 524287, 655360, 0, 589823, 786432, 0, 655359, 589824, 0, 720895, 589824, 0, 786431, 589824, 0, 851967, 720896, 0, 131072, 589824, 0, 196608, 655360, 0, 262144, 786432, 0, 327680, 589824, 0, 393216, 786432, 0, 458752, 589824, 0, 524288, 786432, 0, 589824, 589824, 0, 655360, 655360, 0, 720896, 786432, 0, 786432, 655360, 0, 131073, 589824, 0, 196609, 655360, 0, 262145, 786432, 0, 327681, 786432, 0, 393217, 720896, 0, 458753, 589824, 0, 524289, 720896, 0, 589825, 655360, 0, 655361, 589824, 0, 720897, 655360, 0, 786433, 655360, 0, 131074, 589824, 0, 196610, 720896, 0, 262146, 655360, 0, 327682, 589824, 0, 393218, 720896, 0, 458754, 720896, 0, 524290, 786432, 0, 589826, 720896, 0, 655362, 720896, 0, 720898, 786432, 0, 786434, 786432, 0, 131075, 589824, 0, 196611, 720896, 0, 262147, 786432, 0, 327683, 655360, 0, 393219, 655360, 0, 458755, 786432, 0, 524291, 786432, 0, 589827, 786432, 0, 655363, 589824, 0, 720899, 720896, 0, 786435, 589824, 0, 131076, 589824, 0, 196612, 655360, 0, 262148, 786432, 0, 327684, 589824, 0, 393220, 786432, 0, 458756, 589824, 0, 524292, 720896, 0, 589828, 720896, 0, 655364, 589824, 0, 720900, 786432, 0, 786436, 786432, 0, 262149, 1179648, 0, 327685, 1179648, 0, 393221, 1048576, 0, 458757, 1048576, 0, 524293, 1114112, 0, 589829, 983040, 0, 655365, 917504, 0, 262150, 1114112, 0, 327686, 917504, 0, 393222, 1245184, 0, 458758, 1179648, 0, 524294, 1048576, 0, 589830, 917504, 0, 655366, 1245184, 0, 262151, 983040, 0, 327687, 1114112, 0, 393223, 1179648, 0, 458759, 1245184, 0, 524295, 1048576, 0, 589831, 851968, 0, 655367, 1114112, 0, 262152, 1048576, 0, 327688, 983040, 0, 393224, 1179648, 0, 458760, 851968, 0, 524296, 851968, 0, 589832, 1048576, 0, 655368, 917504, 0, 262153, 917504, 0, 327689, 917504, 0, 393225, 1179648, 0, 458761, 1179648, 0, 524297, 983040, 0, 589833, 851968, 0, 655369, 1245184, 0, 262154, 1114112, 0, 327690, 1114112, 0, 393226, 1179648, 0, 458762, 1114112, 0, 524298, 1048576, 0, 589834, 1179648, 0, 655370, 1245184, 0, 262155, 851968, 0, 327691, 1179648, 0, 393227, 851968, 0, 458763, 983040, 0, 524299, 1179648, 0, 589835, 1114112, 0, 655371, 1245184, 0, 262156, 983040, 0, 327692, 1245184, 0, 393228, 851968, 0, 458764, 1245184, 0, 524300, 917504, 0, 589836, 851968, 0, 655372, 1048576, 0)
+
+[node name="TileMap3" type="TileMap" parent="Firstplan/Grass/Grass"]
+position = Vector2(200, 300)
+tile_set = SubResource("TileSet_mrqji")
+rendering_quadrant_size = 17
+format = 2
+layer_0/tile_data = PackedInt32Array(131066, 393216, 0, 196602, 458752, 0, 262138, 524288, 0, 327674, 393216, 0, 393210, 393216, 0, 458746, 524288, 0, 524282, 327680, 0, 589818, 393216, 0, 655354, 393216, 0, 720890, 458752, 0, 786426, 393216, 0, 851962, 458752, 0, 131067, 327680, 0, 196603, 458752, 0, 262139, 458752, 0, 327675, 458752, 0, 393211, 458752, 0, 458747, 327680, 0, 524283, 458752, 0, 589819, 327680, 0, 655355, 524288, 0, 720891, 327680, 0, 786427, 458752, 0, 851963, 458752, 0, 196604, 524288, 0, 262140, 393216, 0, 327676, 524288, 0, 393212, 458752, 0, 458748, 327680, 0, 524284, 458752, 0, 589820, 327680, 0, 655356, 393216, 0, 720892, 327680, 0, 786428, 393216, 0, 851964, 524288, 0, 262141, 393216, 0, 327677, 393216, 0, 393213, 393216, 0, 458749, 458752, 0, 524285, 524288, 0, 589821, 524288, 0, 655357, 327680, 0, 720893, 327680, 0, 786429, 393216, 0, 851965, 327680, 0, 262142, 524288, 0, 327678, 327680, 0, 393214, 327680, 0, 458750, 524288, 0, 524286, 327680, 0, 589822, 458752, 0, 655358, 458752, 0, 720894, 458752, 0, 786430, 393216, 0, 851966, 327680, 0, 262143, 327680, 0, 327679, 458752, 0, 393215, 524288, 0, 458751, 458752, 0, 524287, 524288, 0, 589823, 458752, 0, 655359, 458752, 0, 720895, 327680, 0, 786431, 458752, 0, 851967, 393216, 0, 196608, 524288, 0, 262144, 458752, 0, 327680, 327680, 0, 393216, 458752, 0, 458752, 327680, 0, 524288, 458752, 0, 589824, 393216, 0, 655360, 393216, 0, 720896, 393216, 0, 786432, 524288, 0, 65537, 393216, 0, 131073, 524288, 0, 196609, 327680, 0, 262145, 458752, 0, 327681, 458752, 0, 393217, 524288, 0, 458753, 327680, 0, 524289, 393216, 0, 589825, 327680, 0, 655361, 524288, 0, 720897, 393216, 0, 786433, 327680, 0, 65538, 327680, 0, 131074, 393216, 0, 196610, 524288, 0, 262146, 524288, 0, 327682, 524288, 0, 393218, 458752, 0, 458754, 327680, 0, 524290, 458752, 0, 589826, 327680, 0, 655362, 458752, 0, 720898, 393216, 0, 786434, 458752, 0, 65539, 327680, 0, 131075, 327680, 0, 196611, 524288, 0, 262147, 327680, 0, 327683, 524288, 0, 393219, 393216, 0, 458755, 524288, 0, 524291, 393216, 0, 589827, 393216, 0, 655363, 393216, 0, 720899, 458752, 0, 786435, 524288, 0, 65540, 458752, 0, 131076, 393216, 0, 196612, 458752, 0, 262148, 458752, 0, 327684, 327680, 0, 393220, 393216, 0, 458756, 458752, 0, 524292, 458752, 0, 589828, 458752, 0, 655364, 327680, 0, 720900, 524288, 0, 786436, 393216, 0, 65541, 393216, 0, 131077, 327680, 0, 196613, 327680, 0, 262149, 458752, 0, 327685, 458752, 0, 393221, 393216, 0, 458757, 393216, 0, 524293, 393216, 0, 589829, 458752, 0, 655365, 458752, 0, 720901, 524288, 0, 786437, 524288, 0, 262151, 655360, 0, 327687, 589824, 0, 393223, 589824, 0, 458759, 655360, 0, 524295, 786432, 0, 589831, 786432, 0, 262152, 720896, 0, 327688, 786432, 0, 393224, 589824, 0, 458760, 786432, 0, 524296, 655360, 0, 589832, 589824, 0, 262153, 655360, 0, 327689, 655360, 0, 393225, 786432, 0, 458761, 786432, 0, 524297, 655360, 0, 589833, 720896, 0, 262154, 720896, 0, 327690, 786432, 0, 393226, 589824, 0, 458762, 589824, 0, 524298, 589824, 0, 589834, 655360, 0, 262155, 720896, 0, 327691, 786432, 0, 393227, 786432, 0, 458763, 720896, 0, 524299, 589824, 0, 589835, 589824, 0)
+
+[node name="TileMap4" type="TileMap" parent="Firstplan/Grass/Grass"]
+position = Vector2(200, 300)
+tile_set = SubResource("TileSet_mrqji")
+rendering_quadrant_size = 17
+format = 2
+layer_0/tile_data = PackedInt32Array(131065, 262144, 0, 196601, 262144, 0, 262137, 196608, 0, 327673, 262144, 0, 393209, 65536, 0, 458745, 196608, 0, 524281, 262144, 0, 589817, 131072, 0, 655353, 262144, 0, 720889, 262144, 0, 786425, 131072, 0, 851961, 262144, 0, 131066, 65536, 0, 196602, 65536, 0, 262138, 131072, 0, 327674, 131072, 0, 393210, 196608, 0, 458746, 65536, 0, 524282, 196608, 0, 589818, 196608, 0, 655354, 196608, 0, 720890, 262144, 0, 786426, 196608, 0, 851962, 196608, 0, 131067, 131072, 0, 196603, 65536, 0, 262139, 131072, 0, 327675, 262144, 0, 393211, 262144, 0, 458747, 131072, 0, 524283, 196608, 0, 589819, 131072, 0, 655355, 196608, 0, 720891, 196608, 0, 786427, 196608, 0, 851963, 131072, 0, 327676, 131072, 0, 393212, 131072, 0, 458748, 131072, 0, 524284, 131072, 0, 589820, 262144, 0, 655356, 65536, 0, 720892, 262144, 0, 786428, 131072, 0, 851964, 65536, 0, 327677, 196608, 0, 393213, 262144, 0, 458749, 196608, 0, 524285, 196608, 0, 589821, 196608, 0, 655357, 131072, 0, 720893, 65536, 0, 786429, 262144, 0, 851965, 262144, 0, 327678, 262144, 0, 393214, 131072, 0, 458750, 262144, 0, 524286, 196608, 0, 589822, 196608, 0, 655358, 65536, 0, 720894, 196608, 0, 786430, 65536, 0, 851966, 262144, 0, 327679, 131072, 0, 393215, 196608, 0, 458751, 131072, 0, 524287, 131072, 0, 589823, 196608, 0, 655359, 65536, 0, 720895, 65536, 0, 786431, 262144, 0, 851967, 131072, 0, 262144, 196608, 0, 327680, 65536, 0, 393216, 131072, 0, 458752, 131072, 0, 524288, 262144, 0, 589824, 262144, 0, 655360, 262144, 0, 720896, 131072, 0, 786432, 65536, 0, 262145, 262144, 0, 327681, 196608, 0, 393217, 262144, 0, 458753, 131072, 0, 524289, 196608, 0, 589825, 196608, 0, 655361, 131072, 0, 720897, 196608, 0, 786433, 262144, 0, 65538, 131072, 0, 131074, 65536, 0, 196610, 196608, 0, 262146, 65536, 0, 327682, 131072, 0, 393218, 262144, 0, 458754, 196608, 0, 524290, 131072, 0, 589826, 65536, 0, 655362, 65536, 0, 720898, 262144, 0, 786434, 131072, 0, 65539, 131072, 0, 131075, 131072, 0, 196611, 65536, 0, 262147, 262144, 0, 327683, 65536, 0, 393219, 131072, 0, 458755, 262144, 0, 524291, 131072, 0, 589827, 65536, 0, 655363, 196608, 0, 720899, 196608, 0, 786435, 131072, 0, 65540, 262144, 0, 131076, 65536, 0, 196612, 65536, 0, 262148, 65536, 0, 327684, 196608, 0, 393220, 196608, 0, 458756, 196608, 0, 524292, 131072, 0, 589828, 131072, 0, 655364, 65536, 0, 720900, 131072, 0, 786436, 196608, 0, 65541, 262144, 0, 131077, 262144, 0, 196613, 65536, 0, 262149, 131072, 0, 327685, 196608, 0, 393221, 196608, 0, 458757, 262144, 0, 524293, 196608, 0, 589829, 196608, 0, 655365, 262144, 0, 720901, 262144, 0, 786437, 65536, 0, 65542, 262144, 0, 131078, 262144, 0, 196614, 327680, 0, 262150, 393216, 0, 327686, 458752, 0, 393222, 393216, 0, 458758, 393216, 0, 524294, 458752, 0, 589830, 327680, 0, 655366, 131072, 0, 720902, 65536, 0, 786438, 262144, 0, 196615, 393216, 0, 262151, 393216, 0, 327687, 524288, 0, 393223, 524288, 0, 458759, 327680, 0, 524295, 458752, 0, 589831, 458752, 0, 196616, 327680, 0, 262152, 458752, 0, 327688, 458752, 0, 393224, 393216, 0, 458760, 458752, 0, 524296, 327680, 0, 589832, 393216, 0, 196617, 327680, 0, 262153, 524288, 0, 327689, 327680, 0, 393225, 524288, 0, 458761, 327680, 0, 524297, 327680, 0, 589833, 458752, 0, 196618, 524288, 0, 262154, 327680, 0, 327690, 327680, 0, 393226, 327680, 0, 458762, 524288, 0, 524298, 458752, 0, 589834, 327680, 0, 196619, 524288, 0, 262155, 524288, 0, 327691, 458752, 0, 393227, 393216, 0, 458763, 327680, 0, 524299, 524288, 0, 589835, 327680, 0)
+
+[node name="Flowers" type="TileMap" parent="Firstplan/Grass/Grass"]
+tile_set = SubResource("TileSet_xlhkl")
+format = 2
+layer_0/tile_data = PackedInt32Array(262150, 458754, 0, 262151, 327681, 0)
+
+[node name="TileMap6" type="TileMap" parent="Firstplan/Grass/Grass"]
+position = Vector2(200, 350)
+tile_set = SubResource("TileSet_mrqji")
+rendering_quadrant_size = 17
+format = 2
+layer_0/tile_data = PackedInt32Array(196614, 131072, 0, 196615, 65536, 0, 196613, 196608, 0, 262151, 196608, 0, 327687, 196608, 0, 393223, 65536, 0, 458759, 196608, 0, 524295, 131072, 0, 196616, 196608, 0, 262152, 131072, 0, 327688, 262144, 0, 393224, 262144, 0, 458760, 262144, 0, 524296, 262144, 0, 196617, 65536, 0, 262153, 262144, 0, 327689, 262144, 0, 393225, 196608, 0, 458761, 65536, 0, 524297, 65536, 0, 196618, 262144, 0, 262154, 65536, 0, 327690, 131072, 0, 393226, 196608, 0, 458762, 65536, 0, 524298, 196608, 0, 196619, 196608, 0, 262155, 131072, 0, 327691, 262144, 0, 393227, 262144, 0, 458763, 196608, 0, 524299, 196608, 0, 589835, 196608, 0)
+
+[node name="Stone" type="TileMap" parent="Firstplan"]
+tile_set = SubResource("TileSet_surju")
+format = 2
+layer_0/tile_data = PackedInt32Array(196605, 65536, 0, 196606, 131072, 0, 196607, 65536, 0, 262141, 131072, 0, 262142, 65536, 0, 262143, 196608, 0, 131072, 65536, 0, 131073, 196608, 0, 131074, 196608, 0, 196608, 196608, 0, 196609, 131072, 0, 196610, 65536, 0, 196600, 65536, 0, 196601, 196608, 0, 196602, 131072, 0, 196603, 131072, 0, 196604, 131072, 0, 131075, 65536, 0, 131076, 131072, 0, 131077, 196608, 0, 131078, 65536, 0, 131079, 196608, 0, 131080, 196608, 0, 196611, 131072, 0, 262140, 196608, 0, 262139, 196608, 0, 196612, 196608, 0, 196613, 196608, 0, 196614, 196608, 0, 196615, 196608, 0, 196616, 196608, 0, 262136, 131072, 0, 262137, 131072, 0, 262138, 131072, 0, 131081, 196608, 0, 196617, 65536, 0, 131082, 196608, 0, 196618, 196608, 0, 131083, 196608, 0, 196619, 131072, 0, 131084, 65536, 0, 196620, 65536, 0)
+
+[node name="Waterpond" type="TileMap" parent="Firstplan"]
+z_index = 1
+material = SubResource("ShaderMaterial_0ohdr")
+position = Vector2(0, 320)
+tile_set = SubResource("TileSet_eix4b")
+format = 2
+layer_0/tile_data = PackedInt32Array(131069, 3, 0, 131070, 2, 0, 131071, 3, 0, 65536, 2, 0, 65537, 2, 0, 65538, 3, 0, 131068, 4, 0, 196604, 2, 536870912, 196603, 8, 0, 131064, 8, 0, 131065, 8, 0, 131066, 8, 0, 131067, 8, 0, 65539, 8, 0, 65540, 8, 0, 65541, 8, 0, 65542, 8, 0, 65543, 8, 0, 65544, 8, 0, 262139, 10, 1342177280, 131077, 2, 536870912, 131078, 2, 536870912, 131079, 2, 536870912, 131080, 2, 536870912, 131076, 2, 536870912, 196600, 2, 536870912, 196601, 2, 536870912, 196602, 2, 536870912, 131081, 2, 536870912, 131082, 2, 536870912, 131083, 2, 536870912, 131084, 2, 536870912, 65545, 8, 0, 65546, 8, 0, 65547, 8, 0, 65548, 8, 0, 196605, 2, 536870912, 196606, 2, 536870912, 196607, 2, 536870912, 131072, 2, 536870912, 131073, 2, 536870912, 131074, 2, 536870912, 131075, 2, 536870912)
+
+[node name="DarkTrees2" type="Sprite2D" parent="Firstplan"]
+position = Vector2(0, 1124)
+scale = Vector2(1, -0.758461)
+texture = ExtResource("33_apc3j")
+
+[node name="DarkTrees2" type="Sprite2D" parent="Firstplan/DarkTrees2"]
+position = Vector2(2223, -14.5031)
+texture = ExtResource("33_apc3j")
+
+[node name="DarkTrees3" type="Sprite2D" parent="Firstplan"]
+position = Vector2(819, 1162)
+scale = Vector2(1, -0.758461)
+texture = ExtResource("33_apc3j")
+
+[node name="DarkTrees2" type="Sprite2D" parent="Firstplan/DarkTrees3"]
+position = Vector2(2223, -14.5031)
+texture = ExtResource("33_apc3j")
+
+[node name="Trees" type="Sprite2D" parent="Firstplan"]
+z_index = 1
+
+[node name="Tree006" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(-2061, 509)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree007" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(-1550, 509)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree002" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(-995, 495)
+texture = ExtResource("35_15kcp")
+
+[node name="Tree001" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(-1796, 685)
+texture = ExtResource("36_pdlin")
+
+[node name="Tree008" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(2102, 583)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree003" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(1760, 635)
+texture = ExtResource("36_pdlin")
+
+[node name="Tree000" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(2448, 582)
+texture = ExtResource("37_vcea0")
+
+[node name="Tree005" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(1291, 2553)
+texture = ExtResource("37_vcea0")
+
+[node name="Swamptree000" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(-2303, 988)
+texture = ExtResource("38_1i2ch")
+
+[node name="Tree009" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(-314, 505)
+texture = ExtResource("39_p23d0")
+
+[node name="Tree017" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(1731, 2436)
+texture = ExtResource("39_p23d0")
+
+[node name="Tree010" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(-2010, 2762)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree011" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(-1526, 2948)
+texture = ExtResource("40_1qsh1")
+
+[node name="Tree012" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(148, 2951)
+texture = ExtResource("40_1qsh1")
+
+[node name="Tree013" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(-2456, 2908)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree018" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(2381, 3244)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree019" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(3846, 3187)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree016" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(928, 2773)
+texture = ExtResource("34_t4c2d")
+
+[node name="Tree014" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(-944, 2805)
+texture = ExtResource("40_1qsh1")
+
+[node name="Tree020" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(2906, 3521)
+texture = ExtResource("40_1qsh1")
+
+[node name="Tree021" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(3403, 3480)
+texture = ExtResource("40_1qsh1")
+
+[node name="Tree015" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(-404, 2842)
+scale = Vector2(-1, 1)
+texture = ExtResource("40_1qsh1")
+
+[node name="Tree004" type="Sprite2D" parent="Firstplan/Trees"]
+z_index = 2
+position = Vector2(599, 2837)
+texture = ExtResource("36_pdlin")
+
+[node name="Swamptree001" type="Sprite2D" parent="Firstplan/Trees"]
+position = Vector2(2881, 768)
+texture = ExtResource("41_sfyms")
+
+[node name="DarkTrees" type="Sprite2D" parent="."]
+position = Vector2(503, 37)
+texture = ExtResource("33_apc3j")
+
+[node name="MoonLakeBackground5" type="Sprite2D" parent="DarkTrees"]
+position = Vector2(-2185, 0)
+texture = ExtResource("33_apc3j")
+
+[node name="MoonLakeBackground7" type="Sprite2D" parent="DarkTrees"]
+position = Vector2(2591, 0)
+texture = ExtResource("33_apc3j")
+
+[node name="Trees" type="Node2D" parent="."]
+modulate = Color(0.685752, 0.710364, 0.930594, 1)
+
+[node name="BurntTree9" type="Sprite2D" parent="Trees"]
+z_index = 1
+position = Vector2(3681, 783)
+texture = ExtResource("42_ieska")
+
+[node name="BurntTree1" type="Sprite2D" parent="Trees"]
+z_index = 1
+position = Vector2(1288, 649)
+texture = ExtResource("43_fajhj")
+
+[node name="BurntTree4" type="Sprite2D" parent="Trees"]
+z_index = 2
+position = Vector2(3082, 2733)
+texture = ExtResource("42_ieska")
+
+[node name="BurntTree5" type="Sprite2D" parent="Trees"]
+z_index = 2
+position = Vector2(2405, 2622)
+texture = ExtResource("42_ieska")
+
+[node name="BurntTree3" type="Sprite2D" parent="Trees"]
+z_index = 1
+position = Vector2(3918, 826)
+scale = Vector2(-1, 1)
+texture = ExtResource("44_omnxy")
+
+[node name="BurntTree6" type="Sprite2D" parent="Trees"]
+z_index = 2
+position = Vector2(1545, 3192)
+texture = ExtResource("42_ieska")
+
+[node name="BurntTree7" type="Sprite2D" parent="Trees"]
+z_index = 2
+position = Vector2(2216, 2522)
+rotation = 3.14159
+scale = Vector2(1, -1)
+texture = ExtResource("43_fajhj")
+
+[node name="BurntTree15" type="Sprite2D" parent="Trees"]
+z_index = 1
+position = Vector2(3347, 787)
+texture = ExtResource("44_omnxy")
+
+[node name="Player1" parent="." instance=ExtResource("45_bunbf")]
+z_index = 1
+position = Vector2(-1987, 1263)
+
+[node name="Camera2D" type="Camera2D" parent="Player1"]
+position = Vector2(921, -312)
+offset = Vector2(5, 5)
+zoom = Vector2(0.25, 0.25)
+limit_left = -2000
+limit_top = -800
+limit_right = 4000
+limit_bottom = 3000
+rotation_smoothing_enabled = true
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0
+
+[node name="spawn1" type="Marker2D" parent="."]
+position = Vector2(-1637, 1090)
+
+[node name="spawn2" type="Marker2D" parent="."]
+position = Vector2(3316, 1108)
+
+[node name="Portal to the Moonlake" type="Area2D" parent="."]
+script = ExtResource("46_01jix")
+target_scene_path = "uid://dkp3xothyse8v"
+target_spawn_point_name = "spawnfromspiders"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal to the Moonlake"]
+position = Vector2(-2360, 1553)
+shape = SubResource("RectangleShape2D_ncdqf")
+
+[node name="Portal to the Moonlake2" type="Area2D" parent="."]
+script = ExtResource("46_01jix")
+target_scene_path = "uid://b5ktxvem6wok5"
+target_spawn_point_name = "spawnfromthemoonlake"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal to the Moonlake2"]
+position = Vector2(4479, 1809)
+shape = SubResource("RectangleShape2D_ncdqf")
+
+[node name="SpiderRunStart" type="Marker2D" parent="."]
+position = Vector2(-1251, 1702)
+
+[node name="SpiderRunEnd" type="Marker2D" parent="."]
+position = Vector2(5374, 1755)

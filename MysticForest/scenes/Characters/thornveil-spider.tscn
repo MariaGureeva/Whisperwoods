@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0smkfon0d5lw"]
+
+[ext_resource type="Script" uid="uid://cnmcj55gf4ufa" path="res://MysticForest/scripts/thornveil.gd" id="1_wae5m"]
+[ext_resource type="Texture2D" uid="uid://cnpdtms77tjuk" path="res://MysticForest/assets/characters/Spiders/Thornveil/spidersNPCs7.png" id="2_8bmkd"]
+[ext_resource type="Texture2D" uid="uid://cnjjw27uql7lh" path="res://MysticForest/assets/characters/Spiders/Thornveil/spidersNPCs8.png" id="3_eqs3m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w5hd4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8bmkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_eqs3m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="Thornveil" type="CharacterBody2D"]
+script = ExtResource("1_wae5m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w5hd4")
+animation = &"idle"
+frame = 1
+frame_progress = 0.911723

@@ -1,20 +1,28 @@
-[gd_scene load_steps=27 format=3 uid="uid://5nsifwmqpylr"]
+[gd_scene load_steps=35 format=3 uid="uid://5nsifwmqpylr"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsxesaxt1tj" path="res://MysticForest/assets/characters/player/CharacterBody2D.png" id="1_hb7ha"]
 [ext_resource type="Script" uid="uid://dxt58kjofywdb" path="res://MysticForest/scripts/player_1.gd" id="1_xguq6"]
 [ext_resource type="Texture2D" uid="uid://cq6isu7cjwnyb" path="res://MysticForest/assets/characters/player/Walk right/Character walk right1.png" id="2_xguq6"]
 [ext_resource type="Texture2D" uid="uid://dmfagyxcoufuw" path="res://MysticForest/assets/characters/player/Walk right/Character walk right2.png" id="3_0mt38"]
+[ext_resource type="Texture2D" uid="uid://b2k565m4hbol7" path="res://MysticForest/assets/characters/player/Walk down/player walking straight1.png" id="3_ry5dv"]
 [ext_resource type="Texture2D" uid="uid://b5bj5pl7tykl4" path="res://MysticForest/assets/characters/player/Walk right/Character walk right3.png" id="4_24cm5"]
-[ext_resource type="Texture2D" uid="uid://cu1646icp36eh" path="res://MysticForest/assets/characters/player/Walk down/Character walk up2.png" id="4_tavxa"]
-[ext_resource type="Texture2D" uid="uid://g5h5xvib74fl" path="res://MysticForest/assets/characters/player/Walk down/Character walk up3.png" id="5_bk6ln"]
+[ext_resource type="Texture2D" uid="uid://db5kpwvh1nyr6" path="res://MysticForest/assets/characters/player/Walk down/player walking straight2.png" id="4_61gx7"]
+[ext_resource type="Texture2D" uid="uid://bpnlney8b2khs" path="res://MysticForest/assets/characters/player/Walk down/player walking straight3.png" id="5_728py"]
 [ext_resource type="Texture2D" uid="uid://b4iip4pbo22m5" path="res://MysticForest/assets/characters/player/Walk right/Character walk right4.png" id="5_h5imq"]
 [ext_resource type="Texture2D" uid="uid://d08rfgd0qnid3" path="res://MysticForest/assets/characters/player/Walk right/Character walk right5.png" id="6_ftc8y"]
+[ext_resource type="Texture2D" uid="uid://dansbss3cq1j6" path="res://MysticForest/assets/characters/player/Walk down/player walking straight4.png" id="6_ntfov"]
+[ext_resource type="Texture2D" uid="uid://cujgkwgrgpqin" path="res://MysticForest/assets/characters/player/Walk down/player walking straight5.png" id="7_ji32m"]
 [ext_resource type="Texture2D" uid="uid://0yx2gv7h035y" path="res://MysticForest/assets/characters/player/Walk right/Character walk right6.png" id="7_khrvs"]
+[ext_resource type="Texture2D" uid="uid://l8b13m2e15kp" path="res://MysticForest/assets/characters/player/Walk down/player walking straight6.png" id="8_il5bp"]
 [ext_resource type="Texture2D" uid="uid://r4007k53vpuw" path="res://MysticForest/assets/characters/player/Walk right/Character walk right7.png" id="8_u3ga8"]
 [ext_resource type="Texture2D" uid="uid://bausowsj23m00" path="res://MysticForest/assets/characters/player/Walk right/Character walk right8.png" id="9_tavxa"]
+[ext_resource type="Texture2D" uid="uid://dcecalx6pt3vw" path="res://MysticForest/assets/characters/player/Walk down/player walking straight7.png" id="9_xdas2"]
+[ext_resource type="Texture2D" uid="uid://bhoctdtqclnps" path="res://MysticForest/assets/characters/player/Walk down/player walking straight8.png" id="10_3j2bd"]
 [ext_resource type="Texture2D" uid="uid://dctccsetscfty" path="res://MysticForest/assets/characters/player/Walk left/Character walk left1.png" id="10_bk6ln"]
+[ext_resource type="Texture2D" uid="uid://bi1mho7mjx2wg" path="res://MysticForest/assets/characters/player/Walk down/player walking straight9.png" id="11_011xo"]
 [ext_resource type="Texture2D" uid="uid://b5iklaigc8s5f" path="res://MysticForest/assets/characters/player/Walk left/Character walk left2.png" id="11_cc37w"]
 [ext_resource type="Texture2D" uid="uid://ckd2hmd6ehd0l" path="res://MysticForest/assets/characters/player/Walk left/Character walk left3.png" id="12_6ae3v"]
+[ext_resource type="Texture2D" uid="uid://cbk30smairbl8" path="res://MysticForest/assets/characters/player/Walk down/player walking straight10.png" id="12_288fp"]
 [ext_resource type="Texture2D" uid="uid://bmg2hxrel7s5f" path="res://MysticForest/assets/characters/player/Walk left/Character walk left4.png" id="13_hnhln"]
 [ext_resource type="Texture2D" uid="uid://fbbndqyoomef" path="res://MysticForest/assets/characters/player/Walk left/Character walk left5.png" id="14_omp70"]
 [ext_resource type="Texture2D" uid="uid://d0swflldfdxvd" path="res://MysticForest/assets/characters/player/Walk left/Character walk left6.png" id="15_npt4g"]
@@ -40,14 +48,38 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_tavxa")
+"texture": ExtResource("3_ry5dv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_bk6ln")
+"texture": ExtResource("4_61gx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_728py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ntfov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ji32m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_il5bp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xdas2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3j2bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_011xo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_288fp")
 }],
 "loop": true,
 "name": &"walk_down",
-"speed": 5.0
+"speed": 18.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -130,7 +162,8 @@ position = Vector2(586, 572)
 shape = SubResource("RectangleShape2D_riycg")
 
 [node name="Player" type="AnimatedSprite2D" parent="."]
-position = Vector2(604, 280)
+position = Vector2(581, 301)
+scale = Vector2(1.01875, 1.01406)
 sprite_frames = SubResource("SpriteFrames_6rosy")
 animation = &"walk_down"
 

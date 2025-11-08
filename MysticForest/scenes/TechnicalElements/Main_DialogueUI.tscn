@@ -1,49 +1,124 @@
-[gd_scene load_steps=5 format=3 uid="uid://caaaytigj6ebi"]
+[gd_scene load_steps=6 format=3 uid="uid://caaaytigj6ebi"]
 
 [ext_resource type="Script" uid="uid://d0vck44vt6oy3" path="res://MysticForest/ui/dialogue_ui.gd" id="1_e3mjw"]
 [ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="2_jfn2a"]
+[ext_resource type="Texture2D" uid="uid://bdnmmha7ssygv" path="res://MysticForest/assets/UI/panel_background_9patch.png" id="2_oedhu"]
+[ext_resource type="SpriteFrames" uid="uid://gbx4sj4mlvk3" path="res://MysticForest/assets/UI/Lily talking/Lily talking.tres" id="3_kt50e"]
 [ext_resource type="FontFile" uid="uid://c307wrx23n856" path="res://MysticForest/Fonts/Pixeloid/PixeloidSansBold-PKnYd.ttf" id="3_oedhu"]
-
-[sub_resource type="GDScript" id="GDScript_et3w5"]
-script/source = "extends Panel
-"
 
 [node name="DialogueUI" type="CanvasLayer" groups=["dialogue_ui"]]
 process_mode = 3
 layer = 2
 script = ExtResource("1_e3mjw")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="NinePatchRect" parent="."]
 process_mode = 3
-offset_left = -1.0
-offset_top = 528.0
-offset_right = 2594.0
-offset_bottom = 1212.0
-mouse_filter = 2
-script = SubResource("GDScript_et3w5")
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -138.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_oedhu")
+
+[node name="Portrait" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -258.0
+offset_right = 273.0
+grow_vertical = 0
+texture = ExtResource("2_oedhu")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="PortraitAnimation" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(129, 136)
+scale = Vector2(0.348437, 0.348437)
+sprite_frames = ExtResource("3_kt50e")
+animation = &"talking"
+
+[node name="PortraitAnimation2" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(129, 136)
+scale = Vector2(0.348437, 0.348437)
+sprite_frames = ExtResource("3_kt50e")
+animation = &"idle"
+
+[node name="PortraitAnimation3" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(129, 136)
+scale = Vector2(0.348437, 0.348437)
+sprite_frames = ExtResource("3_kt50e")
+animation = &"talking"
+frame_progress = 0.708528
+
+[node name="PortraitAnimation4" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(129, 136)
+scale = Vector2(0.348437, 0.348437)
+sprite_frames = ExtResource("3_kt50e")
+animation = &"talking"
+
+[node name="NameBox" type="NinePatchRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -312.0
+offset_top = -117.0
+offset_right = 89.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oedhu")
+
+[node name="NameLabel" type="Label" parent="Panel/NameBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.188235, 0.137255, 1)
+theme_override_fonts/font = ExtResource("3_oedhu")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="text_box" type="RichTextLabel" parent="Panel"]
 process_mode = 3
 layout_mode = 0
-offset_left = 11.0
+offset_left = 266.0
 offset_top = 22.0
-offset_right = 1136.0
-offset_bottom = 368.0
+offset_right = 1117.0
+offset_bottom = 122.0
 mouse_filter = 2
+theme_override_colors/table_border = Color(0, 0.188235, 0.137255, 1)
 theme_override_fonts/normal_font = ExtResource("2_jfn2a")
 theme_override_fonts/mono_font = ExtResource("3_oedhu")
 theme_override_fonts/bold_italics_font = ExtResource("3_oedhu")
 theme_override_fonts/bold_font = ExtResource("3_oedhu")
+theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+theme_override_font_sizes/mono_font_size = 15
+theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/bold_font_size = 15
 scroll_active = false
 
 [node name="choice_box" type="VBoxContainer" parent="Panel"]
 process_mode = 3
 z_index = 2
 layout_mode = 0
-offset_left = 372.0
-offset_top = 23.0
-offset_right = 1317.0
-offset_bottom = 340.0
+offset_left = 768.0
+offset_top = 26.0
+offset_right = 1104.0
+offset_bottom = 101.0
 
 [node name="choice_1" type="Button" parent="Panel/choice_box"]
 process_mode = 3
