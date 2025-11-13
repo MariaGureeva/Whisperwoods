@@ -41,11 +41,11 @@ func start_dialogue():
 
 func get_pre_quest_dialogue():
 	return [
-		{ "speaker": "Frog Twin", "text": "Hmph. Don't talk to me. We've lost our harmony." },
-		{ "speaker": "Frog Twin", "text": "The Singing Totems around the pond are silent... There can be no song without them." }
+		{ "speaker": "La", "text": "Hmph. Don't talk to me. We've lost our harmony." },
+		{ "speaker": "La", "text": "The Singing Totems around the pond are silent... There can be no song without them." }
 	]
 
 func get_post_quest_dialogue():
 	return [
-		{ "speaker": "Frog Twin", "text": "The pond sings again! Thank you, Listener!" }
+		{ "speaker": "La", "text": "The pond sings again! Thank you, Listener!" }
 	]

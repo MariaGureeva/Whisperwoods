@@ -1,6 +1,5 @@
 extends Node
 
-# Здесь будут храниться все возможные записи
 var entries = {
 	"creatures": {
 		"display_name": "Creatures",

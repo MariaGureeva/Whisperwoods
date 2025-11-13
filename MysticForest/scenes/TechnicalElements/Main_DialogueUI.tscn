@@ -1,10 +1,111 @@
-[gd_scene load_steps=6 format=3 uid="uid://caaaytigj6ebi"]
+[gd_scene load_steps=41 format=3 uid="uid://caaaytigj6ebi"]
 
 [ext_resource type="Script" uid="uid://d0vck44vt6oy3" path="res://MysticForest/ui/dialogue_ui.gd" id="1_e3mjw"]
+[ext_resource type="Texture2D" uid="uid://cw5dj0ufpgsds" path="res://MysticForest/assets/UI/Branch UI.png" id="2_dytxf"]
 [ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="2_jfn2a"]
-[ext_resource type="Texture2D" uid="uid://bdnmmha7ssygv" path="res://MysticForest/assets/UI/panel_background_9patch.png" id="2_oedhu"]
-[ext_resource type="SpriteFrames" uid="uid://gbx4sj4mlvk3" path="res://MysticForest/assets/UI/Lily talking/Lily talking.tres" id="3_kt50e"]
 [ext_resource type="FontFile" uid="uid://c307wrx23n856" path="res://MysticForest/Fonts/Pixeloid/PixeloidSansBold-PKnYd.ttf" id="3_oedhu"]
+[ext_resource type="Texture2D" uid="uid://c1lfi3sks17hi" path="res://MysticForest/assets/UI/Branch UI square.png" id="3_r32s2"]
+[ext_resource type="SpriteFrames" uid="uid://jo6wul2ogtk0" path="res://MysticForest/assets/UI/Spider waver talking/Spider waver talking.tres" id="4_dytxf"]
+[ext_resource type="Texture2D" uid="uid://bdfpnk6n02dx4" path="res://MysticForest/assets/UI/UI background 3.png" id="5_dytxf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dytxf"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r32s2"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d3jop"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tsywp"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2qiv6"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_op02p"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ckiao"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6ag7x"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ugo6i"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qvxdq"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i1sdq"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5v8gp"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d5cs5"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_67wyw"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c3rd5"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgdc4"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5k3rt"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fgm4t"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ehicq"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1glb"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dd445"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ueht"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2jn1h"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fhvx4"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0dvp2"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jjlcb"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bi7wy"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ubjo"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7p78y"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_582a6"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xa0sr"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ewk1p"]
+texture = ExtResource("5_dytxf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_irntb"]
+texture = ExtResource("5_dytxf")
 
 [node name="DialogueUI" type="CanvasLayer" groups=["dialogue_ui"]]
 process_mode = 3
@@ -17,50 +118,101 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -138.0
+offset_top = -188.0
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("2_oedhu")
+texture = ExtResource("2_dytxf")
 
 [node name="Portrait" type="TextureRect" parent="Panel"]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
 offset_top = -258.0
-offset_right = 273.0
+offset_right = 274.0
 grow_vertical = 0
-texture = ExtResource("2_oedhu")
+texture = ExtResource("3_r32s2")
 expand_mode = 1
 stretch_mode = 4
 
 [node name="PortraitAnimation" type="AnimatedSprite2D" parent="Panel/Portrait"]
 visible = false
-position = Vector2(129, 136)
-scale = Vector2(0.348437, 0.348437)
-sprite_frames = ExtResource("3_kt50e")
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
 animation = &"talking"
 
 [node name="PortraitAnimation2" type="AnimatedSprite2D" parent="Panel/Portrait"]
 visible = false
-position = Vector2(129, 136)
-scale = Vector2(0.348437, 0.348437)
-sprite_frames = ExtResource("3_kt50e")
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
 animation = &"idle"
 
 [node name="PortraitAnimation3" type="AnimatedSprite2D" parent="Panel/Portrait"]
 visible = false
-position = Vector2(129, 136)
-scale = Vector2(0.348437, 0.348437)
-sprite_frames = ExtResource("3_kt50e")
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
 animation = &"talking"
 frame_progress = 0.708528
 
 [node name="PortraitAnimation4" type="AnimatedSprite2D" parent="Panel/Portrait"]
 visible = false
-position = Vector2(129, 136)
-scale = Vector2(0.348437, 0.348437)
-sprite_frames = ExtResource("3_kt50e")
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+
+[node name="PortraitAnimation5" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+
+[node name="PortraitAnimation6" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+
+[node name="PortraitAnimation7" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+
+[node name="PortraitAnimation8" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+
+[node name="PortraitAnimation9" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+frame_progress = 0.0137428
+
+[node name="PortraitAnimation10" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+
+[node name="PortraitAnimation11" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
 animation = &"talking"
 
 [node name="NameBox" type="NinePatchRect" parent="Panel"]
@@ -70,13 +222,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -312.0
-offset_top = -117.0
-offset_right = 89.0
-offset_bottom = -83.0
+offset_left = -314.0
+offset_top = -143.0
+offset_right = 73.0
+offset_bottom = -87.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_oedhu")
+texture = ExtResource("5_dytxf")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
 
 [node name="NameLabel" type="Label" parent="Panel/NameBox"]
 layout_mode = 1
@@ -85,9 +241,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_oedhu")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -95,11 +251,18 @@ vertical_alignment = 1
 process_mode = 3
 layout_mode = 0
 offset_left = 266.0
-offset_top = 22.0
-offset_right = 1117.0
-offset_bottom = 122.0
+offset_top = 49.0
+offset_right = 766.0
+offset_bottom = 160.0
 mouse_filter = 2
 theme_override_colors/table_border = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/default_color = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/font_selected_color = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/selection_color = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/font_outline_color = Color(0, 0.188235, 0.137255, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.188235, 0.137255, 1)
 theme_override_fonts/normal_font = ExtResource("2_jfn2a")
 theme_override_fonts/mono_font = ExtResource("3_oedhu")
 theme_override_fonts/bold_italics_font = ExtResource("3_oedhu")
@@ -116,24 +279,60 @@ process_mode = 3
 z_index = 2
 layout_mode = 0
 offset_left = 768.0
-offset_top = 26.0
+offset_top = 43.0
 offset_right = 1104.0
-offset_bottom = 101.0
+offset_bottom = 147.0
 
 [node name="choice_1" type="Button" parent="Panel/choice_box"]
 process_mode = 3
+custom_minimum_size = Vector2(20, 40)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_jfn2a")
+theme_override_styles/focus = SubResource("StyleBoxTexture_dytxf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_r32s2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_d3jop")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_tsywp")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_2qiv6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_op02p")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ckiao")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_6ag7x")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ugo6i")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_qvxdq")
+theme_override_styles/normal = SubResource("StyleBoxTexture_i1sdq")
 
 [node name="choice_2" type="Button" parent="Panel/choice_box"]
 process_mode = 3
+custom_minimum_size = Vector2(20, 40)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_jfn2a")
+theme_override_styles/focus = SubResource("StyleBoxTexture_5v8gp")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_d5cs5")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_67wyw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_c3rd5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_jgdc4")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_5k3rt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fgm4t")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_ehicq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_a1glb")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_dd445")
+theme_override_styles/normal = SubResource("StyleBoxTexture_4ueht")
 
 [node name="choice_3" type="Button" parent="Panel/choice_box"]
 process_mode = 3
+custom_minimum_size = Vector2(20, 40)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_jfn2a")
+theme_override_styles/focus = SubResource("StyleBoxTexture_2jn1h")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_fhvx4")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_0dvp2")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_jjlcb")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bi7wy")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_4ubjo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7p78y")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_582a6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_xa0sr")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_ewk1p")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irntb")
 
 [connection signal="pressed" from="Panel/choice_box/choice_1" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Panel/choice_box/choice_2" to="." method="_on_button_2_pressed"]

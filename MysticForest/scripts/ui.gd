@@ -1,9 +1,9 @@
 extends CanvasLayer
 
 @onready var menu = $Menu
-@onready var inventory_tab = $Menu/MenuWindow/TabsContainer/InventoryTab
-@onready var journal_tab = $Menu/MenuWindow/TabsContainer/JournalTab
-@onready var map_tab = $Menu/MenuWindow/TabsContainer/MapTab
+@onready var inventory_tab = $Menu/TabsContainer/InventoryTab
+@onready var journal_tab = $Menu/TabsContainer/JournalTab
+@onready var map_tab = $Menu/TabsContainer/MapTab
 
 @onready var inventory_page = $Menu/MenuWindow/Pages/InventoryPage
 @onready var journal_page = $Menu/MenuWindow/Pages/JournalPage

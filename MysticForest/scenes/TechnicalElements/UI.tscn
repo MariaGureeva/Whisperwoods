@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://b6s3076j1f4vn"]
+[gd_scene load_steps=43 format=3 uid="uid://b6s3076j1f4vn"]
 
 [ext_resource type="Script" uid="uid://df0kuu6g5he05" path="res://MysticForest/scripts/ui.gd" id="1_8bteh"]
 [ext_resource type="Texture2D" uid="uid://copeijxbpd6ix" path="res://MysticForest/assets/UI/attunement panel.png" id="2_s5agi"]
-[ext_resource type="Texture2D" uid="uid://bdnmmha7ssygv" path="res://MysticForest/assets/UI/panel_background_9patch.png" id="3_fb3mg"]
+[ext_resource type="Texture2D" uid="uid://di535j4c7hgxp" path="res://MysticForest/assets/UI/UI background2.png" id="4_fb3mg"]
 [ext_resource type="FontFile" uid="uid://c307wrx23n856" path="res://MysticForest/Fonts/Pixeloid/PixeloidSansBold-PKnYd.ttf" id="4_mrk2n"]
 [ext_resource type="Script" uid="uid://cnclwpuwktsrl" path="res://MysticForest/scripts/item_slot.gd" id="5_fb3mg"]
+[ext_resource type="Texture2D" uid="uid://bbq8q3m1nfg4f" path="res://MysticForest/assets/UI/UI background 4.png" id="5_mrk2n"]
 [ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="6_fb3mg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s5agi"]
@@ -14,6 +15,105 @@ region = Rect2(0, 0, 257, 85)
 [sub_resource type="AtlasTexture" id="AtlasTexture_fb3mg"]
 atlas = ExtResource("2_s5agi")
 region = Rect2(256, 0, 256, 88)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mrk2n"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_evcvx"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ykxke"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_keiqb"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_exir8"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8rhp8"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dya8l"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kb5kp"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wj338"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wpw7b"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sc1at"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dk1o6"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkrdw"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p7uj6"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lde6t"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1mqbn"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_evo45"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ap5cw"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ar3ws"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_27qq3"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y05o6"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2shdc"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5t55n"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wwpvx"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lgc0h"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mgl0u"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7f8ho"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_37nn6"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rlyv4"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qkqlg"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7acpe"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eauub"]
+texture = ExtResource("5_mrk2n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qn3y0"]
+texture = ExtResource("5_mrk2n")
 
 [node name="UI" type="CanvasLayer"]
 process_mode = 3
@@ -60,6 +160,71 @@ offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
 
+[node name="TabsContainer" type="HBoxContainer" parent="Menu"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 4.0
+offset_right = 1176.0
+offset_bottom = 57.0
+
+[node name="InventoryTab" type="Button" parent="Menu/TabsContainer"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_mrk2n")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxTexture_mrk2n")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_evcvx")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ykxke")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_keiqb")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_exir8")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_8rhp8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_dya8l")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_kb5kp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wj338")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_wpw7b")
+theme_override_styles/normal = SubResource("StyleBoxTexture_sc1at")
+toggle_mode = true
+button_pressed = true
+text = "Inventory"
+
+[node name="JournalTab" type="Button" parent="Menu/TabsContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_mrk2n")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxTexture_dk1o6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_nkrdw")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_p7uj6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_lde6t")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1mqbn")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_evo45")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ap5cw")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_ar3ws")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_27qq3")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_y05o6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2shdc")
+toggle_mode = true
+text = "Journal"
+
+[node name="MapTab" type="Button" parent="Menu/TabsContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_mrk2n")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxTexture_5t55n")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_wwpvx")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_lgc0h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_mgl0u")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_7f8ho")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_37nn6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rlyv4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_qkqlg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7acpe")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_eauub")
+theme_override_styles/normal = SubResource("StyleBoxTexture_qn3y0")
+toggle_mode = true
+text = "Map"
+
 [node name="MenuWindow" type="NinePatchRect" parent="Menu"]
 layout_mode = 1
 anchors_preset = 15
@@ -70,37 +235,7 @@ offset_right = 1113.0
 offset_bottom = 606.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_fb3mg")
-
-[node name="TabsContainer" type="HBoxContainer" parent="Menu/MenuWindow"]
-layout_mode = 0
-offset_top = -40.0
-offset_right = 1150.0
-
-[node name="InventoryTab" type="Button" parent="Menu/MenuWindow/TabsContainer"]
-custom_minimum_size = Vector2(150, 40)
-layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mrk2n")
-theme_override_font_sizes/font_size = 20
-toggle_mode = true
-button_pressed = true
-text = "Inventory"
-
-[node name="JournalTab" type="Button" parent="Menu/MenuWindow/TabsContainer"]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mrk2n")
-theme_override_font_sizes/font_size = 20
-toggle_mode = true
-text = "Journal"
-
-[node name="MapTab" type="Button" parent="Menu/MenuWindow/TabsContainer"]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-theme_override_fonts/font = ExtResource("4_mrk2n")
-theme_override_font_sizes/font_size = 20
-toggle_mode = true
-text = "Map"
+texture = ExtResource("4_fb3mg")
 
 [node name="Pages" type="Control" parent="Menu/MenuWindow"]
 layout_mode = 1

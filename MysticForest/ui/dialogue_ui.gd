@@ -28,6 +28,27 @@ const CHARACTERS = {
 	},
 	"Lily": {
 		"animations": preload("res://MysticForest/assets/UI/Lily talking/Lily talking.tres")
+	},
+	"Grumble": {
+		"animations": preload("res://MysticForest/assets/UI/Grumble talking/Grumble talking.tres")
+	},
+	"La": {
+		"animations": preload("res://MysticForest/assets/UI/La talking/La talking.tres")
+	},
+	"Sol": {
+		"animations": preload("res://MysticForest/assets/UI/Sol talking/Sol talking.tres")
+	},
+	"Elder Spore": {
+		"animations": preload("res://MysticForest/assets/UI/Mycelian grandpa talking/Grandpa talking.tres")
+	},
+	"Grandma Myra": {
+		"animations": preload("res://MysticForest/assets/UI/Myra talking/Myra talking.tres")
+	},
+	"Child Mushroom": {
+		"animations": preload("res://MysticForest/assets/UI/Child mushroom talking/Child mushroom talking.tres")
+	},
+	"The Weaver": {
+		"animations": preload("res://MysticForest/assets/UI/Spider waver talking/Spider waver talking.tres")
 	}
 }
 

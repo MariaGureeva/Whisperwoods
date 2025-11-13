@@ -1,0 +1,58 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://jo6wul2ogtk0"]
+
+[ext_resource type="Texture2D" uid="uid://kgqumt06djdw" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking1.png" id="1_d3yc8"]
+[ext_resource type="Texture2D" uid="uid://cgbcoeaasf03s" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking2.png" id="2_27l7c"]
+[ext_resource type="Texture2D" uid="uid://cs5qfigsbgssx" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking3.png" id="3_5inp0"]
+[ext_resource type="Texture2D" uid="uid://lbxn7ppduxdc" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking4.png" id="4_swbw5"]
+[ext_resource type="Texture2D" uid="uid://mtdg3yig5goo" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking5.png" id="5_cy0e8"]
+[ext_resource type="Texture2D" uid="uid://d1rfsmafxxl3r" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking6.png" id="6_3w2mx"]
+[ext_resource type="Texture2D" uid="uid://beuborl1eledi" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking7.png" id="7_ib8mw"]
+[ext_resource type="Texture2D" uid="uid://bxo1plhk5lqse" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking8.png" id="8_3edvy"]
+[ext_resource type="Texture2D" uid="uid://ct18jybrtgj5b" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking9.png" id="9_rp4nt"]
+[ext_resource type="Texture2D" uid="uid://6ixu1n55ltcr" path="res://MysticForest/assets/UI/Spider waver talking/Spider talking10.png" id="10_8e8wc"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_d3yc8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_d3yc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_27l7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5inp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_swbw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cy0e8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3w2mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ib8mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3edvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rp4nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8e8wc")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 10.0
+}]

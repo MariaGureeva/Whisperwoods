@@ -1,0 +1,70 @@
+[gd_resource type="SpriteFrames" load_steps=14 format=3 uid="uid://ban1bamr275sf"]
+
+[ext_resource type="Texture2D" uid="uid://crb6n1vrvwra1" path="res://MysticForest/assets/UI/Sol talking/Sol talking1.png" id="1_vb5ci"]
+[ext_resource type="Texture2D" uid="uid://dvtga1fheigai" path="res://MysticForest/assets/UI/Sol talking/Sol talking2.png" id="2_kud68"]
+[ext_resource type="Texture2D" uid="uid://b7o2g5oaxkwen" path="res://MysticForest/assets/UI/Sol talking/Sol talking3.png" id="3_3p4tw"]
+[ext_resource type="Texture2D" uid="uid://d0yx15b0d0ums" path="res://MysticForest/assets/UI/Sol talking/Sol talking4.png" id="4_e8o31"]
+[ext_resource type="Texture2D" uid="uid://mabl1upm6ssg" path="res://MysticForest/assets/UI/Sol talking/Sol talking5.png" id="5_3oo5p"]
+[ext_resource type="Texture2D" uid="uid://brpst4oip307k" path="res://MysticForest/assets/UI/Sol talking/Sol talking6.png" id="6_suf0c"]
+[ext_resource type="Texture2D" uid="uid://qeo2pq7sxl3g" path="res://MysticForest/assets/UI/Sol talking/Sol talking7.png" id="7_82psb"]
+[ext_resource type="Texture2D" uid="uid://hnqcptn856y6" path="res://MysticForest/assets/UI/Sol talking/Sol talking8.png" id="8_mu4te"]
+[ext_resource type="Texture2D" uid="uid://bbljlq0172ag4" path="res://MysticForest/assets/UI/Sol talking/Sol talking9.png" id="9_ehyrj"]
+[ext_resource type="Texture2D" uid="uid://d2f2qxt4gc6ki" path="res://MysticForest/assets/UI/Sol talking/Sol talking10.png" id="10_0upy7"]
+[ext_resource type="Texture2D" uid="uid://t7mpqne4ih3x" path="res://MysticForest/assets/UI/Sol talking/Sol talking11.png" id="11_mlnmo"]
+[ext_resource type="Texture2D" uid="uid://brba4fgdqxtn" path="res://MysticForest/assets/UI/Sol talking/Sol talking12.png" id="12_uddgw"]
+[ext_resource type="Texture2D" uid="uid://dxssoopsa82f8" path="res://MysticForest/assets/UI/Sol talking/Sol talking13.png" id="13_xa0sg"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vb5ci")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vb5ci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kud68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3p4tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_e8o31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3oo5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_suf0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_82psb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mu4te")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ehyrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0upy7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mlnmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uddgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_xa0sg")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 12.0
+}]

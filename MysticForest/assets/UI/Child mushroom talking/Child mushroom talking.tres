@@ -1,0 +1,62 @@
+[gd_resource type="SpriteFrames" load_steps=12 format=3 uid="uid://bbvr67fkj0xjo"]
+
+[ext_resource type="Texture2D" uid="uid://cxv5ftcw0ig3p" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child1.png" id="1_2k0c6"]
+[ext_resource type="Texture2D" uid="uid://bl5gkfgor08rq" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child2.png" id="2_0452p"]
+[ext_resource type="Texture2D" uid="uid://dvx7nsqymaoy6" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child3.png" id="3_5h1uu"]
+[ext_resource type="Texture2D" uid="uid://cvy3evqcp1425" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child4.png" id="4_ke16p"]
+[ext_resource type="Texture2D" uid="uid://la88ar08sx6m" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child5.png" id="5_o2aym"]
+[ext_resource type="Texture2D" uid="uid://dh61irwbp2tfe" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child6.png" id="6_qn5ly"]
+[ext_resource type="Texture2D" uid="uid://dydu24rm87fe" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child7.png" id="7_fjvb0"]
+[ext_resource type="Texture2D" uid="uid://dj6qyf2gtbqd2" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child8.png" id="8_8wkuo"]
+[ext_resource type="Texture2D" uid="uid://c7uek6uxnybh3" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child9.png" id="9_iye0j"]
+[ext_resource type="Texture2D" uid="uid://cfnltaod5u63j" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child10.png" id="10_53rek"]
+[ext_resource type="Texture2D" uid="uid://btcf3lo87hn0r" path="res://MysticForest/assets/UI/Child mushroom talking/Mushroom child11.png" id="11_112ur"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2k0c6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2k0c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0452p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5h1uu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ke16p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o2aym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qn5ly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fjvb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8wkuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_iye0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_53rek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_112ur")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 10.0
+}]

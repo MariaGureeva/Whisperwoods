@@ -98,7 +98,7 @@ func solve_harmony_puzzle():
 	await dialogue_ui.start_dialogue([
 		{ "speaker": "La", "text": "Do you hear that?.. The harmony..." },
 		{ "speaker": "Sol", "text": "I hear it. I'm sorry I was so stubborn." },
-		{ "speaker": "La & Sol", "text": "Thank you, Listener! You've returned our song. Take this for your kindness." }
+		{ "speaker": "La", "text": "Thank you, Listener! You've returned our song. Take this for your kindness." }
 	])
 	GameState.add_item("harmony_shells")
 	check_overall_quest_completion()

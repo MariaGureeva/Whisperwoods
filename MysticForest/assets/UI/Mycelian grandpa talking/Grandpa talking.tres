@@ -1,0 +1,50 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://b4upat5fo4alq"]
+
+[ext_resource type="Texture2D" uid="uid://nut0sxedxecc" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking1.png" id="1_qr4bw"]
+[ext_resource type="Texture2D" uid="uid://choexnlbiwn34" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking2.png" id="2_vr6qn"]
+[ext_resource type="Texture2D" uid="uid://bdffcrgk0kgen" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking3.png" id="3_w54ln"]
+[ext_resource type="Texture2D" uid="uid://r6y77qe618k7" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking4.png" id="4_x04ve"]
+[ext_resource type="Texture2D" uid="uid://def7jt42wexu" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking5.png" id="5_4bhwg"]
+[ext_resource type="Texture2D" uid="uid://d1lwqowoan27y" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking6.png" id="6_1hqew"]
+[ext_resource type="Texture2D" uid="uid://bnacl3k1qivmu" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking7.png" id="7_uwd4q"]
+[ext_resource type="Texture2D" uid="uid://cwpocbn4qoqrh" path="res://MysticForest/assets/UI/Mycelian grandpa talking/Mycelian grandpa talking8.png" id="8_sjugf"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qr4bw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qr4bw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vr6qn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w54ln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x04ve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4bhwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1hqew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uwd4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sjugf")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 12.0
+}]

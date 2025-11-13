@@ -120,7 +120,7 @@ func play_final_cutscene():
 	withered_tree.hide()
 	var outro_dialogue = [
 		{ "speaker": "Elder Spore", "text": "<You have cleansed the heart of our home, Listener. You reminded us that even in the deepest dark, a single light can restore life.>" },
-		{ "speaker": "Myra", "text": "<The children feel it too. Their light returns. Take this, as a symbol of our gratitude.>" }
+		{ "speaker": "Grandma Myra", "text": "<The children feel it too. Their light returns. Take this, as a symbol of our gratitude.>" }
 	]
 	dialogue_ui.start_dialogue(outro_dialogue)
 	await dialogue_ui.dialogue_finished
@@ -232,10 +232,10 @@ func move_character_to_position(character: CharacterBody2D, target_pos: Vector2,
 # --- 6. ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ (СТАРЫЕ) ---
 func get_mira_dialogue():
 	return [
-		{ "speaker": "Myra (Elder Sp-re's wife)", "text": "<The Listener... The Elder told us you would come.>" },
-		{ "speaker": "Myra", "text": "<Look at our grandchildren... their light fades. The Great Willow that sings them to sleep has lost its voice.>" },
-		{ "speaker": "Myra", "text": "<The Lullaby is weak because its very heart, the Heart Crystal deep in the labyrinth, is shrouded in silence.>" },
-		{ "speaker": "Myra", "text": "<We fear the Weaver-Spider guards it. Please, find the Crystal. Your gift is our only hope.>" }
+		{ "speaker": "Grandma Myra", "text": "<The Listener... The Elder told us you would come.>" },
+		{ "speaker": "Grandma Myra", "text": "<Look at our grandchildren... their light fades. The Great Willow that sings them to sleep has lost its voice.>" },
+		{ "speaker": "Grandma Myra", "text": "<The Lullaby is weak because its very heart, the Heart Crystal deep in the labyrinth, is shrouded in silence.>" },
+		{ "speaker": "Grandma Myra", "text": "<We fear the Weaver-Spider guards it. Please, find the Crystal. Your gift is our only hope.>" }
 	]
 
 func stop_player_animation():
