@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://drip8h3nyouco" path="res://MysticForest/Fonts/Pixeloid/PixeloidSans-mLxMm.ttf" id="2_jfn2a"]
 [ext_resource type="FontFile" uid="uid://c307wrx23n856" path="res://MysticForest/Fonts/Pixeloid/PixeloidSansBold-PKnYd.ttf" id="3_oedhu"]
 [ext_resource type="Texture2D" uid="uid://c1lfi3sks17hi" path="res://MysticForest/assets/UI/Branch UI square.png" id="3_r32s2"]
-[ext_resource type="SpriteFrames" uid="uid://jo6wul2ogtk0" path="res://MysticForest/assets/UI/Spider waver talking/Spider waver talking.tres" id="4_dytxf"]
+[ext_resource type="SpriteFrames" uid="uid://bcl0hg3vd8pn" path="res://MysticForest/assets/UI/King spider talking/King spider talking.tres" id="4_dytxf"]
 [ext_resource type="Texture2D" uid="uid://bdfpnk6n02dx4" path="res://MysticForest/assets/UI/UI background 3.png" id="5_dytxf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dytxf"]
@@ -214,6 +214,23 @@ position = Vector2(128.76, 134.76)
 scale = Vector2(0.293, 0.293)
 sprite_frames = ExtResource("4_dytxf")
 animation = &"talking"
+
+[node name="PortraitAnimation12" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+frame_progress = 0.157619
+
+[node name="PortraitAnimation13" type="AnimatedSprite2D" parent="Panel/Portrait"]
+visible = false
+position = Vector2(128.76, 134.76)
+scale = Vector2(0.293, 0.293)
+sprite_frames = ExtResource("4_dytxf")
+animation = &"talking"
+frame = 5
+frame_progress = 0.904388
 
 [node name="NameBox" type="NinePatchRect" parent="Panel"]
 layout_mode = 1

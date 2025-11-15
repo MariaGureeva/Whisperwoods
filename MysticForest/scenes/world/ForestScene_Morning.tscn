@@ -628,7 +628,7 @@ libraries = {
 [node name="DialogueUI" parent="." instance=ExtResource("29_hb02w")]
 layer = 10
 
-[node name="Player1" parent="." groups=["player"] instance=ExtResource("30_et3w5")]
+[node name="Player1" parent="." instance=ExtResource("30_et3w5")]
 z_index = 4
 position = Vector2(1673, 272)
 collision_mask = 3

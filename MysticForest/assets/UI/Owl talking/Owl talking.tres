@@ -1,0 +1,130 @@
+[gd_resource type="SpriteFrames" load_steps=29 format=3 uid="uid://1usuyhfe7bt8"]
+
+[ext_resource type="Texture2D" uid="uid://d03hf3ovwt0xo" path="res://MysticForest/assets/UI/Owl talking/Owl talking1.png" id="1_nqnfh"]
+[ext_resource type="Texture2D" uid="uid://ckhqs0pbqqh3" path="res://MysticForest/assets/UI/Owl talking/Owl talking2.png" id="2_ttelo"]
+[ext_resource type="Texture2D" uid="uid://c2p5bg6i3j06" path="res://MysticForest/assets/UI/Owl talking/Owl talking3.png" id="3_vhqpa"]
+[ext_resource type="Texture2D" uid="uid://cn8q7ukc0gvpb" path="res://MysticForest/assets/UI/Owl talking/Owl talking4.png" id="4_k5cyc"]
+[ext_resource type="Texture2D" uid="uid://ceqt5nm280no3" path="res://MysticForest/assets/UI/Owl talking/Owl talking5.png" id="5_m5a7y"]
+[ext_resource type="Texture2D" uid="uid://osku8xo7yjw8" path="res://MysticForest/assets/UI/Owl talking/Owl talking6.png" id="6_v71t1"]
+[ext_resource type="Texture2D" uid="uid://jt80l4k8y3lk" path="res://MysticForest/assets/UI/Owl talking/Owl talking7.png" id="7_57pro"]
+[ext_resource type="Texture2D" uid="uid://dv6nhjydc768i" path="res://MysticForest/assets/UI/Owl talking/Owl talking8.png" id="8_kyyxu"]
+[ext_resource type="Texture2D" uid="uid://blwiiwatw7ahq" path="res://MysticForest/assets/UI/Owl talking/Owl talking9.png" id="9_27ie0"]
+[ext_resource type="Texture2D" uid="uid://y3uu226mhjyu" path="res://MysticForest/assets/UI/Owl talking/Owl talking10.png" id="10_365eo"]
+[ext_resource type="Texture2D" uid="uid://caphwidgogbpq" path="res://MysticForest/assets/UI/Owl talking/Owl talking11.png" id="11_63cq7"]
+[ext_resource type="Texture2D" uid="uid://rgf1nhuibr4s" path="res://MysticForest/assets/UI/Owl talking/Owl talking12.png" id="12_0pthf"]
+[ext_resource type="Texture2D" uid="uid://b7saxr07tgcdk" path="res://MysticForest/assets/UI/Owl talking/Owl talking13.png" id="13_wv4u4"]
+[ext_resource type="Texture2D" uid="uid://cqk1h6vhjrpsr" path="res://MysticForest/assets/UI/Owl talking/Owl talking14.png" id="14_o3pd4"]
+[ext_resource type="Texture2D" uid="uid://c3v76jb8vuiv8" path="res://MysticForest/assets/UI/Owl talking/Owl talking15.png" id="15_krgl5"]
+[ext_resource type="Texture2D" uid="uid://ma4ahterlp7b" path="res://MysticForest/assets/UI/Owl talking/Owl talking16.png" id="16_bowr3"]
+[ext_resource type="Texture2D" uid="uid://ub5myjf4p6gr" path="res://MysticForest/assets/UI/Owl talking/Owl talking17.png" id="17_mllp3"]
+[ext_resource type="Texture2D" uid="uid://bgw2lxerv7wbc" path="res://MysticForest/assets/UI/Owl talking/Owl talking18.png" id="18_jxvag"]
+[ext_resource type="Texture2D" uid="uid://dbd4m4jthpcxd" path="res://MysticForest/assets/UI/Owl talking/Owl talking19.png" id="19_8cvfw"]
+[ext_resource type="Texture2D" uid="uid://b5w5hcq17r35a" path="res://MysticForest/assets/UI/Owl talking/Owl talking20.png" id="20_asquh"]
+[ext_resource type="Texture2D" uid="uid://bcbegc6h1ma1" path="res://MysticForest/assets/UI/Owl talking/Owl talking21.png" id="21_y1f3h"]
+[ext_resource type="Texture2D" uid="uid://rgb334pwp6yu" path="res://MysticForest/assets/UI/Owl talking/Owl talking22.png" id="22_ktlu2"]
+[ext_resource type="Texture2D" uid="uid://g5dvy776vh0o" path="res://MysticForest/assets/UI/Owl talking/Owl talking23.png" id="23_6bb1k"]
+[ext_resource type="Texture2D" uid="uid://j2udh0wmsgyl" path="res://MysticForest/assets/UI/Owl talking/Owl talking24.png" id="24_q0tge"]
+[ext_resource type="Texture2D" uid="uid://c2g0a8q3g18he" path="res://MysticForest/assets/UI/Owl talking/Owl talking25.png" id="25_8xn7d"]
+[ext_resource type="Texture2D" uid="uid://nupelejj2pxf" path="res://MysticForest/assets/UI/Owl talking/Owl talking26.png" id="26_13w4t"]
+[ext_resource type="Texture2D" uid="uid://snsj7dgvr2tm" path="res://MysticForest/assets/UI/Owl talking/Owl talking27.png" id="27_d37hi"]
+[ext_resource type="Texture2D" uid="uid://4thf4bwkwcm7" path="res://MysticForest/assets/UI/Owl talking/Owl talking28.png" id="28_vnro2"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nqnfh")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nqnfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ttelo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vhqpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_k5cyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m5a7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_v71t1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_57pro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kyyxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_27ie0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_365eo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_63cq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0pthf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wv4u4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_o3pd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_krgl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bowr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mllp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jxvag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8cvfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_asquh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_y1f3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ktlu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6bb1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_q0tge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_8xn7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_13w4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_d37hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_vnro2")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 17.0
+}]

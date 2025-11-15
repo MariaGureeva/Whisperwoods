@@ -154,7 +154,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="Player1" type="CharacterBody2D"]
+[node name="Player1" type="CharacterBody2D" groups=["player"]]
+collision_layer = 3
+collision_mask = 7
 script = ExtResource("1_xguq6")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
@@ -169,3 +171,13 @@ animation = &"walk_down"
 
 [node name="Attunement_Overlay" parent="." instance=ExtResource("24_u3ga8")]
 layer = 2
+
+[node name="DashTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="DashCooldown" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="DashCooldown" to="." method="_on_dash_cooldown_timeout"]

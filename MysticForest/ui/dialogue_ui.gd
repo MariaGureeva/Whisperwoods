@@ -49,6 +49,12 @@ const CHARACTERS = {
 	},
 	"The Weaver": {
 		"animations": preload("res://MysticForest/assets/UI/Spider waver talking/Spider waver talking.tres")
+	},
+	"Owl Guardian":{
+		"animations": preload("res://MysticForest/assets/UI/Owl talking/Owl talking.tres")
+	},
+	"Spider King":{
+		"animations": preload("res://MysticForest/assets/UI/King spider talking/King spider talking.tres")
 	}
 }
 

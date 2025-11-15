@@ -39,7 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://cu57sgohcoct2" path="res://MysticForest/assets/objects/3 act waver items/3 items sprites for waver quest5.png" id="34_5y8aq"]
 [ext_resource type="Texture2D" uid="uid://d2xjtils7mu57" path="res://MysticForest/assets/objects/3 act waver items/3 items sprites for waver quest6.png" id="35_1jdha"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w5wtw"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n31n7"]
 texture = ExtResource("1_clwsx")
 texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
@@ -53,7 +53,7 @@ texture_region_size = Vector2i(320, 320)
 
 [sub_resource type="TileSet" id="TileSet_kh8vf"]
 tile_size = Vector2i(320, 320)
-sources/0 = SubResource("TileSetAtlasSource_w5wtw")
+sources/0 = SubResource("TileSetAtlasSource_n31n7")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gu56"]
 texture = ExtResource("2_svqgt")
@@ -443,11 +443,12 @@ shape = SubResource("RectangleShape2D_0l4lq")
 z_index = 1
 position = Vector2(-10, -57)
 
-[node name="Player1" parent="." groups=["player"] instance=ExtResource("5_x286a")]
+[node name="Player1" parent="." instance=ExtResource("5_x286a")]
 z_index = 1
 position = Vector2(-260, -838)
 collision_layer = 3
 collision_mask = 7
+speed = 2000
 
 [node name="Camera2D" type="Camera2D" parent="Player1"]
 position = Vector2(608, 250)

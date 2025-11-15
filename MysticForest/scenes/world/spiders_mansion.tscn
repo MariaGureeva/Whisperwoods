@@ -182,6 +182,7 @@ texture = SubResource("GradientTexture2D_yp034")
 visible = false
 
 [node name="UI" parent="." instance=ExtResource("18_orgdu")]
+visible = false
 
 [node name="ShadowSpider" parent="." instance=ExtResource("19_orgdu")]
 position = Vector2(1482, 4439)

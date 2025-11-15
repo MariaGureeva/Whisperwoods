@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bps18ntloepk0"]
+
+[ext_resource type="Script" uid="uid://chkkmy0tw1pps" path="res://MysticForest/scripts/shockwave.gd" id="1_b01wj"]
+[ext_resource type="Texture2D" uid="uid://ci18v8xspdkyr" path="res://MysticForest/assets/Textures/Shock wave.png" id="2_dqx3s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7xwds"]
+custom_solver_bias = 0.155
+radius = 951.0
+height = 3718.0
+
+[node name="Shockwave" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_b01wj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.803922, 0.803922, 0.803922, 0.247059)
+texture = ExtResource("2_dqx3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_7xwds")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

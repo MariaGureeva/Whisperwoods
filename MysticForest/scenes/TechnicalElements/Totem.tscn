@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://b22v5s3q55hyv"]
+
+[ext_resource type="Script" uid="uid://fqnobrg3unbp" path="res://MysticForest/scripts/totem.gd" id="1_0s1y2"]
+[ext_resource type="Texture2D" uid="uid://n0tehd2w53j6" path="res://MysticForest/assets/objects/SingingStones/SingingStone1.png" id="2_t6xn1"]
+
+[sub_resource type="Gradient" id="Gradient_571rh"]
+colors = PackedColorArray(0, 0, 0, 0, 1, 0.223529, 0.258824, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0s1y2"]
+gradient = SubResource("Gradient_571rh")
+fill_from = Vector2(0.405983, 0)
+fill_to = Vector2(0.465812, 0.700855)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6xn1"]
+size = Vector2(622, 856)
+
+[node name="Totem" type="Area2D" groups=["totems"]]
+position = Vector2(-15, 18)
+script = ExtResource("1_0s1y2")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(20, -108)
+scale = Vector2(4.39063, 8.96875)
+color = Color(1, 0.305882, 0.435294, 1)
+energy = 0.3
+texture = SubResource("GradientTexture2D_0s1y2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9, -64)
+shape = SubResource("RectangleShape2D_t6xn1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.61339, 0.61339, 0.61339, 1)
+position = Vector2(14, -150)
+texture = ExtResource("2_t6xn1")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
